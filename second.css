@@ -84,12 +84,14 @@ font-weight: 400;
 
 .customer-cards h5{
     text-align: center;
+    
 }
 
 .customer-cards img{
     width: 150px;
     height: 150px;
 }
+
 
 .section-margin{
     margin-top: 50px;
@@ -360,8 +362,10 @@ object-fit: contain;
     height: 200px;
     object-fit: contain;
 }
-.method-card p {
+.methods-desc{
     text-align: center;
+    padding: 0px 50px;
+    
     
 }
 
