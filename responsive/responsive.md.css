@@ -1,0 +1,49 @@
+@media only screen and (max-width: 768px) {
+    .second-top{
+        flex-direction: row;
+    }
+
+    .top-right img {
+        height: auto;
+        width: 250px;
+    }
+
+    .safety-top{
+        justify-content: end;
+        align-items: center;
+    }
+     .safety-img img{
+        width: 120px !important;
+    }
+
+    .card img{
+        height: 100px;
+        width: 100px;
+    }
+
+    /* Advantages  */
+
+   .adv-card {
+flex-direction: column;
+border: 0px;
+    }
+    .adv-card-title{
+        text-align: center;
+    }
+
+    /* Initiative  */
+
+    .methods{
+        justify-content: center;
+    }
+
+    .method-card img {
+        width: 100%;
+        height: 100px;
+        object-fit: contain;
+    }
+    .method-card p {
+        text-align: center;
+        /* padding: 0px 50px */
+    }
+  }

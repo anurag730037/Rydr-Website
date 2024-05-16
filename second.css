@@ -1,0 +1,400 @@
+
+p{
+font-size: 1rem;
+/* font-size: 16px; */
+font-family: 'Poppins,snas-serif';
+font-weight: 400;
+}
+
+.color-green{
+    color: #1e9c61;
+}
+
+.second-top{
+
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.top-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0;
+    text-align: center;
+}
+.top-left h4{
+    text-align: center;
+
+}
+
+.top-right img{
+    width: 300px;
+}
+
+
+.second-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-img{
+    width: 100%;
+    justify-content: center;
+}
+
+/* <!-- Coustomers --> */
+
+.box{
+    border: 1px solid black;
+    width: fit-content;
+    text-wrap: nowrap;
+    font-size: 1rem;
+}
+
+.box-1{
+    padding: 0 80px;
+}
+.box-2{
+    display: flex;
+    border-top: 1px solid black;
+    
+}
+.bottom-box{
+    width: 50%;
+}
+
+.right-border{
+    border-right: 1px solid black;
+}
+
+.customer-cards,.driver-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    text-align: center;
+}
+
+.customer-cards h5{
+    text-align: center;
+}
+
+.customer-cards img{
+    width: 150px;
+    height: 150px;
+}
+
+.section-margin{
+    margin-top: 50px;
+}
+
+.page-margin{
+    margin-top: 80px;
+}
+
+
+.bottom-box,
+.customer-cards,
+.driver-cards {
+  cursor: pointer;
+}
+
+.bottom-box.active {
+  background-color: lightcoral;
+}
+
+.fixed-top {
+  top: 0;  /* Position the "box" element at the top of the page */
+  left: 50%;
+  transform: translateX(-50%);  /* Center the element horizontally */
+  z-index: 10;  /* Ensure the fixed element stays on top during scrolling */
+}
+
+
+/* Safety part  */
+
+.safety-top{
+    
+    display: flex;
+    
+    align-items: center;
+    
+}
+
+.safety-text{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 3%; */
+}
+.safety-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:fit-content;
+    /* gap: 5px; */
+}
+
+/* .card-img-top , .card-img-top{
+width: 200px;
+height: 200px;
+} */
+
+.covers {
+    justify-content: space-around;
+    text-align: center;
+}
+
+.covers img {
+    width: 200px;
+    
+    height: 200px;
+}
+
+
+.safety-cards{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+.safety-cards img{
+    width: 100px;
+    height: 100px;
+}
+
+.customer-safety-section{
+    background-color:rgb(243, 224, 224); 
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 75px;
+}
+
+.card{
+    border: none !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-section{
+    width: 100%;
+    height: 170px;
+    background-color:rgb(243, 224, 224);
+}
+
+#footer {
+    background-color: #212529;  /* Black background color */
+    color: #fff;               /* White text color */
+    padding: 30px 0;
+    margin-top: 30px;
+  }
+  
+  #footer h3 {
+    color: inherit;  /* Inherit white color from parent */
+    margin-bottom: 15px;
+  }
+  
+  #footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  #footer ul li a {
+    color: inherit;  /* Inherit white color from parent */
+    text-decoration: none;
+  }
+  
+  #footer ul li a:hover {
+    color: #f2f2f2;  /* Light gray hover color */
+  }
+  
+  #footer .text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #footer .btn-primary {
+    background-color: rgb(221, 33, 33);
+    border-color: your-color;
+  }
+  
+  /* Added CSS for form field layout */
+  .form-group.row {
+    margin-bottom: 5px;  /* Reduce space between fields */
+  }
+
+  .form-group button{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-group textarea{
+    /* width: 70%; */
+  }
+
+  .form-group label{
+    width: auto;
+  }
+
+  table td {
+    
+    padding: 5px;
+  }
+
+  .contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* Privacy-Poilicy */
+
+.sub-points{
+    margin-left: 20px; 
+}
+
+
+/* Advantages Page  */
+
+
+.adv-card {
+ 
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+ 
+  margin: 10px;
+
+  display: flex;
+  align-items: center;
+ 
+}
+.adv-card-img {
+  /* width: 100%; */
+  height: 100px;
+}
+.adv-card-content {
+  /* padding: 10px; */
+}
+.adv-card-title {
+  /* font-size: 20px; */
+  /* margin-bottom: 10px; */
+  padding-left: 10px;
+}
+.adv-card-description {
+  /* font-size: 10px; */
+}
+
+
+/* Initiatives  */
+.initiative-top{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+.initi-img{
+width: 100%;
+height: 300px; 
+  object-fit: contain; 
+  border-radius: 50px 0 0 50px; /* Specify corner radii */
+  /* object-fit: cover;  */
+  
+}
+
+.details{
+    
+  margin-top: 10px;
+}
+
+.center-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.methods{
+    
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.method-card{
+    /* border: 1px solid black; */
+    justify-content: space-around;
+}
+.method-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+.method-card p {
+    text-align: center;
+    
+}
+
+/* CONTACT US FORM  */
+
+
+.sub-btn{
+    /* background-color:var(--primary-clr); */
+     color: white;
+    border-radius: 20px;
+}
+
+
+/* Drive With us  */
+
+/* Drive With Us - Driver Registration  */
+
+.error {
+    color: red;
+}
+
+ /* .container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        } */
+
+        #profile-form {
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            background-color: #f8f9fa;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          }
+

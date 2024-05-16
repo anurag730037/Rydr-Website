@@ -1,0 +1,13 @@
+@media only screen and (max-width: 1200px) {
+   .second-top{
+    flex-direction: row;
+   }
+
+   .top-right img {
+    width: 250px;
+   }
+
+   .safety-img img {
+    width: 200px !important;
+   }
+  }

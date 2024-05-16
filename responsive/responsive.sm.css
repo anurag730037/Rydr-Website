@@ -1,0 +1,76 @@
+@media only screen and (max-width: 425px) {
+    .second-top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .top-left{
+        width: 100%;
+        
+    }
+
+    .customer-cards{
+        flex-direction: column;
+    }
+    .customer-cards img {
+        width: 100px;
+        height: auto;
+    }
+
+   .driver-cards img{
+    width: 140px;
+   }
+
+    .driver-cards{
+        display: block;
+        /* width: 100%; */
+
+    }
+   
+
+    .safety-top{
+    /* flex-direction: column; */
+    }
+    .safety-top img{
+        width: 200px;
+    }
+
+    .covers {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .safety-page-heading{
+        margin: 0px 20px;
+    }
+
+    /* Advantages  */
+
+   .adv-card {
+    flex-direction: column;
+    border: 0px;
+    
+    }
+
+    .adv-card-img{
+        height: 60px;
+    }
+    
+
+.adv-card-title{
+    font-size: 12px;
+}
+
+    /* Initiative  */
+
+    .methods{
+        flex-direction: column;
+    }
+    .method-card p {
+
+        padding: 0px 50px
+    }
+}
