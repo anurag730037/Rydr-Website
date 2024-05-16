@@ -73,4 +73,16 @@
 
         padding: 0px 50px
     }
+
+    .initiative-top{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 100px 22px;
+        text-align: center;
+    }
+
+    .initi-img{
+        height: 200px;
+    }
 }
