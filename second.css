@@ -1,15 +1,97 @@
+a{
+  text-decoration: none !important;
+}
+
+
+/* NAV BAR  */
+
+.classy-navbar{
+background-color: #fde8e8;
+border-bottom: 1px solid #d34c4c;
+
+}
+
+.nav-items a{
+  font-size: 1.1rem !important;
+ 
+}
+
+.classynav{
+justify-content: space-between;
+align-items: center;
+}
+
+.classynav a{
+  font-size: 20px;
+}
+
+.rydr-btn{
+  background-color:  #fde8e8!important;
+  color: black !important;
+  padding: 0 !important;
+  text-align: center;
+}
+
 
 p{
-font-size: 1rem;
+font-size: 20px;
 /* font-size: 16px; */
 font-family: 'Poppins,snas-serif';
 font-weight: 400;
+line-height:inherit;
+}
+
+.green-text{
+  color: #1e9c61 !important;
+  /* background-color: #1e9c61; */
+ /* background-color:#C30000 ;
+ border-radius: 20px;
+ padding: 0 9px; */
+/* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+
+.know-more{
+  background-color:#C30000;
+  padding: 3px 7px;
+  text-decoration: none;
+  color:white;
+  font-size: 15px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .color-green{
     color: #1e9c61;
 }
 
+.about-us-content{
+  display: flex;
+  flex-direction: row;
+  margin: 40px 0px; 
+}
+
+.mission-content{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission-content p {
+  padding: 0 80px;
+  /* font-size:20px; */
+}
+
+.mission-img{
+  width: 80%;
+ 
+  object-fit: contain;
+}
+.mission-img-3{
+  width: 30%;
+  /* height: 100px; */
+}
 .second-top{
 
     display: flex;
@@ -52,18 +134,24 @@ font-weight: 400;
 /* <!-- Coustomers --> */
 
 .box{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: fit-content;
     text-wrap: nowrap;
     font-size: 1rem;
+    text-align: center;
+    align-items: center;
 }
 
 .box-1{
-    padding: 0 80px;
+    padding: 10px 50px;
+    align-items: center;
+    text-align: center;
 }
 .box-2{
     display: flex;
-    border-top: 1px solid black;
+    /* border-top: 1px solid black; */
+    align-items: center;
+    text-align: center;
     
 }
 .bottom-box{
@@ -135,11 +223,18 @@ font-weight: 400;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 200px;
+    
+}
+
+.safety-text p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
 }
 
 .text-shrink{
-padding: 0 60px;
+padding: 0 70px;
 }
 
 .safety-img{
@@ -240,9 +335,22 @@ height: 200px;
   
   #footer .btn-primary {
     background-color: rgb(221, 33, 33);
-    border-color: your-color;
+    border-color: white;
   }
   
+  .app-png img{
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+  
+    
+  }
+  .address h6 ,p {
+    /* line-height: normal ;
+    font-size: .8rem;
+    margin: 0; */
+  }
+
   /* Added CSS for form field layout */
   .form-group.row {
     margin-bottom: 5px;  /* Reduce space between fields */

@@ -47,6 +47,11 @@
         margin: 0px 20px;
     }
 
+    
+    .safety-text p{
+width: 100%;
+    }
+
     /* Advantages  */
 
    .adv-card {

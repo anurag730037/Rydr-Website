@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>About Us</title>
+
+        <link rel="icon" href="images/favicon/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="css/style.css">
+        <script defer referrerpolicy="origin" src="js/s.js"></script>
+    </head>
+
+    <body>
+        <div id="preloader">
+            <div class="wrapper">
+                <div class="cssload-loader"></div>
+            </div>
+        </div>
+
+        <!-- DOWNLOAD APP MODAL -->
+        <div class="top-search-area">
+            <div class="modal fade bd-example-modal-lg" id="download_rydr" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="btn close-btn" data-dismiss="modal">
+                                <i class="fa fa-times"></i>
+                            </button>
+                            <div class="container text-center">
+                                <div class="row app-links">
+                                    <div class="col-12 col-md-6 driver-app border-right">
+                                        <h5 class="mb-5">Driver App Download</h5>
+                                        <a href=""><img class="mb-4" src="images/logo.png" alt=""></a>
+                                        <p>Android</p>
+                                    </div>
+                                    <div class="col-12 col-md-6 customer-app">
+                                        <h5 class="mb-5">Customer App Download</h5>
+                                        <div class="row">
+                                            <div class="col-12 col-md-6">
+                                                <a href=""><img src="images/playstore.png" alt=""></a>
+                                                <p>Android</p>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <a href=""><img src="images/app_store.png" alt=""></a>
+                                                <p>IOS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CUSTOMER LOGIN MODAL -->
+        <!-- <div class="modal fade" id="customer-login" role="dialog">
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <h4 class="modal-title">Login</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="col-lg-12 my-5">
+                                <h3 class="mb-3">Login</h3>
+                                <div class="form-group mt-5">
+                                    <input type="text" id="name" class="form-control" required>
+                                    <label class="form-control-placeholder" for="name">Full Name</label>
+                                </div>
+                                <div class="form-group mt-4">
+                                    <input type="email" id="mail" class="form-control" required>
+                                    <label class="form-control-placeholder" for="mail">Email</label>
+                                </div>
+                                <div class="row justify-content-center my-3">
+                                    <button class="btn btn-gray">Sign up</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="bottom text-center mb-3">
+                            <a href="#" class="sm-text mx-auto mb-3">Already have an account?</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div> -->
+
+        <!-- CUSTOMER SIGNUP MODAL -->
+        <div class="modal fade" id="customer_signup_form" role="dialog">
+            <div class="modal-dialog">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <h4 class="modal-title">Forgot Password</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmai1" aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <a href="#" data-dismiss="modal" data-toggle="modal" id="forgotPassword" data-target="#customer-login" class="form-check-label">back to previous</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DRIVER SIGNUP FORM MODAL -->
+        <div class="top-search-area">
+            <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="btn close-btn" data-dismiss="modal">
+                                <i class="fa fa-times"></i>
+                            </button>
+                            <div class="rydr-contact-form">
+                                <div class="contact-heading">
+                                    <h4>Become a Driver</h4>
+                                </div>
+                                <form action="#" method="post">
+                                    <div class="col-12">
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control mb-30" name="full-name" placeholder="Enter Full Name" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <input type="number" class="form-control mb-30" name="full-name" placeholder="Phone" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control mb-30" name="email" placeholder="Organization" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <textarea class="form-control mb-30" name="message" rows="8" cols="80" placeholder="Message" required=""></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <button class="btn rydr-btn btn-3 mt-15">Contact Us</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header class="header-area">
+            <div class="main-header-area">
+                <div class="classy-nav-container breakpoint-off">
+                    <nav class="classy-navbar justify-content-between rydrNav">
+                        <a class="nav-brand" href="index.html"><img src="images/logo.png" alt="Ryder Logo"></a>
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </div>
+                        <div class="classy-menu">
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap">
+                                    <span class="top"></span>
+                                    <span class="bottom"></span>
+                                </div>
+                            </div>
+                            <div class="classynav">
+                                <ul id="nav">
+                                    <li>
+                                        <a href="./index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="faq.html">FAQs</a>
+                                    </li>
+                                    <!-- <li class="current-item"><a href="about.html">About</a></li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li><a href="careers.html">Careers</a></li> -->
+                                    <li>
+                                        <a href="contact.html">Contact Us</a>
+                                    </li>
+                                </ul>
+                                <div class="get-a-quote ml-4 mr-3" data-toggle="modal" data-target="#download_rydr">
+                                    <a href="#" class="btn rydr-btn">Download App</a>
+                                </div>
+                                <div class="login-register-btn mx-3" data-toggle="modal" data-target="#customer-login">
+                                    <a href="#">
+                                        <i class="bi bi-person-circle"></i>
+                                        <span class="mb-menu-show">Customer Login/Signup</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div class="breadcrumb-area">
+            <div class="container h-100">
+                <div class="row h-100 align-items-end">
+                    <div class="col-12">
+                        <div class="breadcumb--con">
+                            <h2 class="title">About</h2>
+                            <!-- <nav aria-label="breadcrumb">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <ol class="breadcrumb">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-home"></i> Home</a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="breadcrumb-item active" aria-current="page">About</li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ol>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </nav> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="breadcrumb-bg-curve">
+                <img src="images/curve-5.png" alt="">
+            </div>
+        </div>
+
+        <section class="rydr-about-us-area section-padding-80">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6">
+                        <div class="about-us-thumbnail mb-80">
+                            <img src="images/Delivery address-pana.png" alt="">
+                            <div class="rydr-video-area hi-icon-effect-8">
+                                <a href="https://www.youtube.com/watch?v=sSakBz_eYzQ" class="hi-icon video-play-btn">
+                                    <i class="fa fa-play" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <div class="section-heading mb-5">
+                            <h2>India’s Beloved<br><span style="color: var(--theme-clr);">Bike Taxi Service</span>
+                            </h2>
+                        </div>
+                        <p>We are not an option, we are a choice We're #1 choice of 10 Million people because we're the solution of India's intra-city commuting problems. With assured safety, we also provide economically priced rides.</p>
+
+                            <p>What makes us different? Our bike taxis can dodge the traffic during peak hours and get you to the destination in a jiffy! So when you think travel, think Rydr.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-bg-pattern">
+                <img src="images/curve-2.png" alt="">
+            </div>
+        </section>
+
+        <section class="rydr-why-choose-us-area">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-12 col-lg-6">
+                        <div class="choose-us-content mb-80">
+                            <div class="section-heading mb-4">
+                                <h2>Why Choose Us</h2>
+                                <p>We are Your Partner in Your Success</p>
+                            </div>
+                            <ul>
+                                <li>
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    Lorem Ipsum is simply dummy text of the
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            printing
+                                </li>
+                                <li>
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    Lorem Ipsum is simply dummy text of the
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            printing
+                                </li>
+                                <li>
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    Lorem Ipsum is simply dummy text of the
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            and typesetting industry.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            printing
+                                </li>
+                                <li>
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    Lorem Ipsum is simply dummy text of the
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            and typesetting.
+                                </li>
+                                <li>
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    Lorem Ipsum is simply dummy text of the
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            printing
+                                </li>
+                                <li>
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    Lorem Ipsum is simply dummy text of the
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            typesetting industry.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            printing
+                                </li>
+                                <li>
+                                    <i class="fa fa-check" aria-hidden="true"></i>
+                                    Lorem Ipsum is simply dummy text of the
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            and typesetting industry.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            printing
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <div class="choose-us-thumbnail mb-80">
+                            <img class="w-100" src="images/Rider image-03.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rydr-portfolio-area section-padding-80">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12">
+                        <div class="section-heading text-center">
+                            <h2>Team of Experts</h2>
+                            <p>We stay on top of our industry by being experts in yours.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="team-sildes owl-carousel">
+
+                        <div class="single-team-slide">
+                            <img src="images/team-01.jpg" alt="">
+
+                            <div class="overlay-effect">
+                                <h6>FOUNDER</h6>
+                                <h4>Vijay Sharma</h4>
+                                <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            sanctus est.</p>
+                            </div>
+
+                            <div class="team-social-info">
+                                <a href="#" class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#" class="pinterest" data-toggle="tooltip" data-placement="top" title="Pinterest">
+                                    <i class="fa fa-pinterest"></i>
+                                </a>
+                                <a href="#" class="instagram" data-toggle="tooltip" data-placement="top" title="Instagram">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                                <a href="#" class="youtube" data-toggle="tooltip" data-placement="top" title="YouTube">
+                                    <i class="fa fa-youtube-play"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="single-team-slide">
+                            <img src="images/team-02.jpg" alt="">
+
+                            <div class="overlay-effect">
+                                <h6>FOUNDER</h6>
+                                <h4>Sharath Malliya</h4>
+                                <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            sanctus est.</p>
+                            </div>
+
+                            <div class="team-social-info">
+                                <a href="#" class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#" class="pinterest" data-toggle="tooltip" data-placement="top" title="Pinterest">
+                                    <i class="fa fa-pinterest"></i>
+                                </a>
+                                <a href="#" class="instagram" data-toggle="tooltip" data-placement="top" title="Instagram">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                                <a href="#" class="youtube" data-toggle="tooltip" data-placement="top" title="YouTube">
+                                    <i class="fa fa-youtube-play"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="single-team-slide">
+                            <img src="images/team-03.jpg" alt="">
+
+                            <div class="overlay-effect">
+                                <h6>FOUNDER</h6>
+                                <h4>Devashish Sharma</h4>
+                                <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            sanctus est.</p>
+                            </div>
+
+                            <div class="team-social-info">
+                                <a href="#" class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#" class="pinterest" data-toggle="tooltip" data-placement="top" title="Pinterest">
+                                    <i class="fa fa-pinterest"></i>
+                                </a>
+                                <a href="#" class="instagram" data-toggle="tooltip" data-placement="top" title="Instagram">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                                <a href="#" class="youtube" data-toggle="tooltip" data-placement="top" title="YouTube">
+                                    <i class="fa fa-youtube-play"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="single-team-slide">
+                            <img src="images/team-01.jpg" alt="">
+
+                            <div class="overlay-effect">
+                                <h6>FOUNDER</h6>
+                                <h4>Vijay Sharma</h4>
+                                <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            sanctus est.</p>
+                            </div>
+
+                            <div class="team-social-info">
+                                <a href="#" class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#" class="pinterest" data-toggle="tooltip" data-placement="top" title="Pinterest">
+                                    <i class="fa fa-pinterest"></i>
+                                </a>
+                                <a href="#" class="instagram" data-toggle="tooltip" data-placement="top" title="Instagram">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                                <a href="#" class="youtube" data-toggle="tooltip" data-placement="top" title="YouTube">
+                                    <i class="fa fa-youtube-play"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="single-team-slide">
+                            <img src="images/team-02.jpg" alt="">
+
+                            <div class="overlay-effect">
+                                <h6>FOUNDER</h6>
+                                <h4>Sharath Malliya</h4>
+                                <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            sanctus est.</p>
+                            </div>
+
+                            <div class="team-social-info">
+                                <a href="#" class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#" class="pinterest" data-toggle="tooltip" data-placement="top" title="Pinterest">
+                                    <i class="fa fa-pinterest"></i>
+                                </a>
+                                <a href="#" class="instagram" data-toggle="tooltip" data-placement="top" title="Instagram">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                                <a href="#" class="youtube" data-toggle="tooltip" data-placement="top" title="YouTube">
+                                    <i class="fa fa-youtube-play"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="single-team-slide">
+                            <img src="images/team-01.jpg" alt="">
+
+                            <div class="overlay-effect">
+                                <h6>FOUNDER</h6>
+                                <h4>Vijay Sharma</h4>
+                                <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            sanctus est.</p>
+                            </div>
+
+                            <div class="team-social-info">
+                                <a href="#" class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#" class="pinterest" data-toggle="tooltip" data-placement="top" title="Pinterest">
+                                    <i class="fa fa-pinterest"></i>
+                                </a>
+                                <a href="#" class="instagram" data-toggle="tooltip" data-placement="top" title="Instagram">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                                <a href="#" class="youtube" data-toggle="tooltip" data-placement="top" title="YouTube">
+                                    <i class="fa fa-youtube-play"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="single-team-slide">
+                            <img src="images/team-02.jpg" alt="">
+
+                            <div class="overlay-effect">
+                                <h6>FOUNDER</h6>
+                                <h4>Sharath Malliya</h4>
+                                <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            sanctus est.</p>
+                            </div>
+
+                            <div class="team-social-info">
+                                <a href="#" class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#" class="pinterest" data-toggle="tooltip" data-placement="top" title="Pinterest">
+                                    <i class="fa fa-pinterest"></i>
+                                </a>
+                                <a href="#" class="instagram" data-toggle="tooltip" data-placement="top" title="Instagram">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                                <a href="#" class="youtube" data-toggle="tooltip" data-placement="top" title="YouTube">
+                                    <i class="fa fa-youtube-play"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="single-team-slide">
+                            <img src="images/team-03.jpg" alt="">
+
+                            <div class="overlay-effect">
+                                <h6>FOUNDER</h6>
+                                <h4>Devashish Sharma</h4>
+                                <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet gubergren no sea takimata
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            sanctus est.</p>
+                            </div>
+
+                            <div class="team-social-info">
+                                <a href="#" class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#" class="pinterest" data-toggle="tooltip" data-placement="top" title="Pinterest">
+                                    <i class="fa fa-pinterest"></i>
+                                </a>
+                                <a href="#" class="instagram" data-toggle="tooltip" data-placement="top" title="Instagram">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                                <a href="#" class="youtube" data-toggle="tooltip" data-placement="top" title="YouTube">
+                                    <i class="fa fa-youtube-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="container">
+                                                <div class="border-line mt-80"></div>
+                                                </div> -->
+        </section>
+
+
+        <!-- <div class="clients-feedback-area section-padding-0-80 clearfix">
+                                <div class="container">
+                                <div class="row">
+                                <div class="col-12">
+                                
+                                <div class="testimonial-slides owl-carousel">
+                                
+                                <div class="single-testimonial-slide d-flex align-items-center">
+                                
+                                <div class="testimonial-thumbnail">
+                                <img src="images/user-1.jpg" alt="">
+                                </div>
+                                
+                                <div class="testimonial-content">
+                                <h4>“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been
+                                the industry's standard dummy text ever since the 1500s, when an unknown printer
+                                took a galley of
+                                type and scrambled it to make a type specimen book. It has survived not only five
+                                centuries, but
+                                also the leap into electronic typesetting, remaining essentially unchanged.”</h4>
+                                
+                                <div class="ratings">
+                                <i class="icon_star"></i>
+                                <i class="icon_star"></i>
+                                <i class="icon_star"></i>
+                                <i class="icon_star"></i>
+                                <i class="icon_star"></i>
+                                </div>
+                                
+                                <div class="author-info">
+                                <h5>Lorem Ipsum
+                                </h5>
+                                </div>
+                                
+                                <div class="quote-icon"><img src="img/core-img/quote.png" alt=""></div>
+                                </div>
+                                </div>
+                                
+                                <div class="single-testimonial-slide d-flex align-items-center">
+                                
+                                <div class="testimonial-thumbnail">
+                                <img src="images/user-2.jpg" alt="">
+                                </div>
+                                
+                                <div class="testimonial-content">
+                                <h4>“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been
+                                the industry's standard dummy text ever since the 1500s, when an unknown printer
+                                took a galley of
+                                type and scrambled it to make a type specimen book. It has survived not only five
+                                centuries, but
+                                also the leap into electronic typesetting, remaining essentially unchanged.”</h4>
+                                
+                                <div class="ratings">
+                                <i class="icon_star"></i>
+                                <i class="icon_star"></i>
+                                <i class="icon_star"></i>
+                                <i class="icon_star"></i>
+                                <i class="icon_star"></i>
+                                </div>
+                                
+                                <div class="author-info">
+                                <h5>Lorem Ipsum
+                                </h5>
+                                </div>
+                                
+                                <div class="quote-icon"><img src="img/core-img/quote.png" alt=""></div>
+                                </div>
+                                </div>
+                                
+                                <div class="single-testimonial-slide d-flex align-items-center">
+                                
+                                <div class="testimonial-thumbnail">
+                                <img src="images/user-3.jpg" alt="">
+                                </div>
+                                
+                                <div class="testimonial-content">
+                                <h4>“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been
+                                the industry's standard dummy text ever since the 1500s, when an unknown printer
+                                took a galley of
+                                type and scrambled it to make a type specimen book. It has survived not only five
+                                centuries, but
+                                also the leap into electronic typesetting, remaining essentially unchanged.”</h4>
+                                
+                                <div class="ratings">
+                                <i class="icon_star"></i>
+                                <i class="icon_star"></i>
+                                <i class="icon_star"></i>
+                                <i class="icon_star"></i>
+                                <i class="icon_star"></i>
+                                </div>
+                                
+                                <div class="author-info">
+                                <h5>Lorem Ipsum <span>- CEO Rudr</span></h5>
+                                </div>
+                                
+                                <div class="quote-icon"><img src="img/core-img/quote.png" alt=""></div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div> -->
+
+
+        <section class="rydr-cta-area">
+            <div class="container callUsNow">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-8">
+                        <div class="cta-content">
+                            <h2>Interested in working with us?</h2>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="cta-content">
+                            <div class="call-now-btn">
+                                <a href="#">
+                                    <span>Call us now:</span>
+                                    (+91) 124 4842223</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonial section -->
+
+        <section id="testimonial-area" class="section-padding-80">
+            <div class="container">
+                <div class="col-sm-12">
+                    <div class="section-heading text-center">
+                        <h2>A Word From Our Customers</h2>
+                    </div>
+                </div>
+
+                <div class="testi-wrap">
+
+                    <div class="client-single active position-1" data-position="position-1">
+                        <div class="client-img">
+                            <img src="images/user-1.jpg" alt="">
+                        </div>
+                        <div class="client-comment">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <span>
+                                <i class="fa fa-quote-left"></i>
+                            </span>
+                        </div>
+                        <div
+                            class="client-info">
+                            <!-- <h3>Design By</h3> -->
+                            <p>Cheena Rana</p>
+                        </div>
+                    </div>
+
+                    <div class="client-single inactive position-2" data-position="position-2">
+                        <div class="client-img">
+                            <img src="images/user-2.jpg" alt="">
+                        </div>
+                        <div class="client-comment">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <span>
+                                <i class="fa fa-quote-left"></i>
+                            </span>
+                        </div>
+                        <div
+                            class="client-info">
+                            <!-- <h3>Design By</h3> -->
+                            <p>Dilshad Ansari</p>
+                        </div>
+                    </div>
+
+                    <div class="client-single inactive position-3" data-position="position-3">
+                        <div class="client-img">
+                            <img src="images/user-3.jpg" alt="">
+                        </div>
+                        <div class="client-comment">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <span>
+                                <i class="fa fa-quote-left"></i>
+                            </span>
+                        </div>
+                        <div
+                            class="client-info">
+                            <!-- <h3>Design By</h3> -->
+                            <p>Ashish Solanki</p>
+                        </div>
+                    </div>
+
+                    <div class="client-single inactive position-4" data-position="position-4">
+                        <div class="client-img">
+                            <img src="images/user-4.jpg" alt="">
+                        </div>
+                        <div class="client-comment">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <span>
+                                <i class="fa fa-quote-left"></i>
+                            </span>
+                        </div>
+                        <div
+                            class="client-info">
+                            <!-- <h3>Design By</h3> -->
+                            <p>Pallavi Sengar</p>
+                        </div>
+                    </div>
+
+                    <div class="client-single inactive position-5" data-position="position-5">
+                        <div class="client-img">
+                            <img src="images/user-5.jpg" alt="">
+                        </div>
+                        <div class="client-comment">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <span>
+                                <i class="fa fa-quote-left"></i>
+                            </span>
+                        </div>
+                        <div
+                            class="client-info">
+                            <!-- <h3>Design By</h3> -->
+                            <p>Maitrayee Handique</p>
+                        </div>
+                    </div>
+
+                    <div class="client-single inactive position-6" data-position="position-6">
+                        <div class="client-img">
+                            <img src="images/user-6.jpg" alt="">
+                        </div>
+                        <div class="client-comment">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <span>
+                                <i class="fa fa-quote-left"></i>
+                            </span>
+                        </div>
+                        <div
+                            class="client-info">
+                            <!-- <h3>Design By</h3> -->
+                            <p>Shahwaj Akhtar</p>
+                        </div>
+                    </div>
+
+                    <div class="client-single inactive position-7" data-position="position-7">
+                        <div class="client-img">
+                            <img src="images/user-7.png" width="40px" alt="">
+                        </div>
+                        <div class="client-comment">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <span>
+                                <i class="fa fa-quote-left"></i>
+                            </span>
+                        </div>
+                        <div
+                            class="client-info">
+                            <!-- <h3>Design By</h3> -->
+                            <p>Sunny Dhiman</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <!-- <div class="rydr-cf-area section-padding-80-0">
+                        <div class="container">
+                        <div class="row ">
+                        
+                        <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-cf-area d-flex align-items-center mb-80">
+                        <h2><span class="counter">25</span><small style="font-size: 14px;">+M</small></h2>
+                        <div class="cf-text">
+                        <h6>Downloads</h6>
+                        </div>
+                        <div class="bg-icon"><i class="icon_quotations"></i></div>
+                        </div>
+                        </div>-->
+
+        <!-- <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-cf-area d-flex align-items-center mb-80">
+                        <h2><span class="counter">100</span><small style="font-size: 14px;">+</small></h2>
+                        <div class="cf-text">
+                        <h6>Cities</h6>
+                        </div>
+                        <div class="bg-icon"><i class="icon_heart_alt"></i></div>
+                        </div>
+                        </div> -->
+        <!--
+                        <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-cf-area d-flex align-items-center mb-80">
+                        <h2><span class="counter">1</span><small style="font-size: 14px;">+M</small></h2>
+                        <div class="cf-text">
+                        <h6>Drivers</h6>
+                        </div>
+                        <div class="bg-icon"><i class="icon_book_alt"></i></div>
+                        </div>
+                        </div>
+                        
+                        <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-cf-area d-flex align-items-center mb-80">
+                        <h2><span class="counter">10</span><small style="font-size: 14px;">+M</small></h2>
+                        <div class="cf-text">
+                        <h6>Customers</h6>
+                        </div>
+                        <div class="bg-icon"><i class="icon_profile"></i></div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div> -->
+
+        <!-- <section class="rydr-newsletter-area">
+                        <div class="container">
+                        <div class="row align-items-center justify-content-between">
+                        
+                        <div class="col-12 col-md-6 col-lg-6">
+                        <div class="nl-content mb-80">
+                        <h2>Subscribe to our Newsletter</h2>
+                        <p>Subscribe our newsletter gor get notification about new updates, etc...</p>
+                        </div>
+                        </div>
+                        
+                        <div class="col-12 col-md-6 col-lg-5">
+                        <div class="nl-form mb-80">
+                        <form action="#" method="post">
+                        <input type="email" name="nl-email" value="" placeholder="Your Email">
+                        <button type="submit">Subscribe</button>
+                        </form>
+                        </div>
+                        </div>
+                        </div>
+                        
+                        <div class="border-line"></div>
+                        </div>
+                        </section> -->
+
+        <footer class="footer-area section-padding-80-0">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-80">
+                            <h4 class="widget-title">About Us</h4>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-80">
+                            <h4 class="widget-title">Quick Link</h4>
+                            <nav>
+                                <ul class="our-link">
+                                    <li>
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <!-- <li><a href="about.html">About Us</a></li><li><a href="careers.html">Careers</a></li> -->
+                                    <li>
+                                        <a href="contact.html">Contact Us</a>
+                                    </li>
+                                    <!-- <li><a href="#">Forum Registeration</a></li> -->
+                                    <!-- <li><a href="#">Forum Sign In</a></li> -->
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-80">
+                            <h4 class="widget-title">Resources</h4>
+                            <nav>
+                                <ul
+                                    class="our-link">
+                                    <!-- <li><a href="#">Customer Support</a></li> -->
+                                    <li>
+                                        <a href="privacy.html">Privacy</a>
+                                    </li>
+                                    <li>
+                                        <a href="terms.html">Our Terms</a>
+                                    </li>
+                                    <li>
+                                        <a href="faq.html">FAQs</a>
+                                    </li>
+                                    <!-- <li><a href="contact.html">Contact</a></li> -->
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-80">
+                            <h4 class="widget-title">Contact Us</h4>
+                            <div class="footer-content mb-15">
+                                <h3>(+91) 124 4842223</h3>
+                                <p>701, 7th Floor, Silverton Towers Golf Course Extn. Road,<br>
+                                    Sector 50, Gurgaon-122018<br>
+                                    info@rydr.com
+                                </p>
+                            </div>
+                            <div class="footer-social-info">
+                                <a href="#" class="facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#" class="instagram" data-toggle="tooltip" data-placement="top" title="Instagram">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-row">Copyright © 2023 All rights reserved.</div>
+        </footer>
+
+        <script src="js/jquery.min.js"></script>
+
+        <script src="js/popper.min.js"></script>
+
+        <script src="js/bootstrap.min.js"></script>
+
+        <script src="js/uza.bundle.js"></script>
+
+        <script src="js/active.js"></script>
+
+        <script src="js/testimonial.js"></script>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-23581568-13');
+        </script>
+
+    </body>
+
+</html>
