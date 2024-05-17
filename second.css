@@ -67,7 +67,7 @@ line-height:inherit;
 .about-us-content{
   display: flex;
   flex-direction: row;
-  margin: 40px 0px; 
+  margin: 40px 10px; 
 }
 
 .mission-content{
@@ -166,8 +166,10 @@ line-height:inherit;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 20px;
+    gap: 10px;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .customer-cards h5{
@@ -194,6 +196,10 @@ line-height:inherit;
 .customer-cards,
 .driver-cards {
   cursor: pointer;
+}
+.driver-cards img {
+width: 150px;
+height: 150px;
 }
 
 .bottom-box.active {
@@ -345,11 +351,14 @@ height: 200px;
   
     
   }
-  .address h6 ,p {
-    /* line-height: normal ;
-    font-size: .8rem;
-    margin: 0; */
+  .address p {
+  font-size: 13px;
   }
+
+  .copyright-content{
+    font-size: 13px !important;
+  }
+
 
   /* Added CSS for form field layout */
   .form-group.row {
