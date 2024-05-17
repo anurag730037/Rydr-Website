@@ -1,4 +1,8 @@
 @media only screen and (max-width: 768px) {
+
+    h2{
+        font-size: 35px !important;
+    }
     .second-top{
         flex-direction: row;
     }
@@ -19,6 +23,14 @@
     .card img{
         height: 100px;
         width: 100px;
+    }
+
+    .safety-text{
+        padding: 0px;
+    }
+
+    .text-shrink{
+        padding: 0 30px;
     }
 
     /* Advantages  */
@@ -45,5 +57,9 @@ border: 0px;
     .method-card p {
         text-align: center;
         /* padding: 0px 50px */
+    }
+
+    .methods-desc{
+        padding: 0px;
     }
   }

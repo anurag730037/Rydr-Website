@@ -135,7 +135,7 @@ font-weight: 400;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 400px;
+    padding: 0 200px;
 }
 
 .text-shrink{
@@ -383,6 +383,10 @@ object-fit: contain;
 
 
 /* Drive With us  */
+
+.font-family-Aileron{
+  font-family: "Aileron" !important;
+}
 
 /* Drive With Us - Driver Registration  */
 
