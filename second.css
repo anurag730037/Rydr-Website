@@ -125,7 +125,6 @@ font-weight: 400;
 .safety-top{
     
     display: flex;
-    
     align-items: center;
     
 }
@@ -136,8 +135,13 @@ font-weight: 400;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* margin-top: 3%; */
+    padding: 0 400px;
 }
+
+.text-shrink{
+padding: 0 60px;
+}
+
 .safety-img{
     display: flex;
     flex-direction: row;
@@ -158,7 +162,6 @@ height: 200px;
 
 .covers img {
     width: 200px;
-    
     height: 200px;
 }
 
