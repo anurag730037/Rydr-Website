@@ -19,6 +19,19 @@
      .safety-img img{
         width: 120px !important;
     }
+    .customer-cards ,.driver-cards{
+        flex-direction: column;
+        
+    }
+    .cust-box-1,
+    .cust-box-2,
+    .cust-box-3 ,
+    .driver-box-1,
+    .driver-box-2,
+    .driver-box-3,
+    .driver-box-4 {
+      width: fit-content; 
+    }
 
     .card img{
         height: 100px;
@@ -62,4 +75,7 @@ border: 0px;
     .methods-desc{
         padding: 0px;
     }
+
+
+  
   }

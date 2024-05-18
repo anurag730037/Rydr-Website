@@ -23,9 +23,14 @@
    }
 
     .driver-cards{
-        display: block;
+        /* display: block; */
         /* width: 100%; */
 
+    }
+
+    .social-icons{
+        flex-direction: row !important;
+        margin-top: 15px;
     }
    
 

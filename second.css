@@ -184,10 +184,12 @@ margin-right: 225px;
     border-right: 1px solid black;
 }
 
+  /* Customer Cards  */
+
 .customer-cards,.driver-cards{
 
   background-color: #fde8e8;
-  width: 70%;
+  width: 80%;
   padding: 20px;
 
     display: flex;
@@ -214,11 +216,6 @@ margin-right: 225px;
 }
 
 
-
-.cust-box-1{
-  width: 100%;
-
-}
 
 .section-margin{
     margin-top: 50px;
@@ -257,6 +254,7 @@ height: 150px;
     
     display: flex;
     align-items: center;
+    justify-content: center;
     
 }
 
@@ -567,4 +565,182 @@ object-fit: contain;
             background-color: #f8f9fa;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
           }
+
+
+
+
+
+
+
+          /* Adjustments for smaller screens */
+@media only screen and (max-width: 768px) {
+  .mission-heading {
+    margin-right: 0; /* Remove margin for smaller screens */
+  }
+  
+  .about-us-content {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Reduce gap between elements */
+  }
+  
+  .mission-content {
+    text-align: center; /* Center text content */
+   /* Add some bottom margin */
+  }
+  
+  .mission-img,
+  .mission-img-3 {
+    width: 100%; /* Make images take full width */
+  }
+}
+
+/* Additional adjustments for very small screens */
+@media only screen and (max-width: 480px) {
+  .mission-content h3 {
+    font-size: 18px; /* Decrease heading font size for smaller screens */
+  }
+  
+  .mission-content p {
+    font-size: 14px; /* Decrease paragraph font size for smaller screens */
+  }
+}
+
+
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 768px) {
+  .mission-heading {
+    margin-right: 0; /* Remove margin for smaller screens */
+  }
+  
+  .about-us-content {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Reduce gap between elements */
+  }
+  
+  .mission-content {
+    text-align: center; /* Center text content */
+/* Add some bottom margin */
+  }
+  
+  .mission-img {
+    width: 80%; /* Make images take 80% width on smaller screens */
+    max-width: 300px; /* Set maximum width for images */
+  }
+}
+
+/* Additional adjustments for very small screens */
+@media only screen and (max-width: 480px) {
+  .mission-content h3 {
+    font-size: 18px; /* Decrease heading font size for smaller screens */
+  }
+  
+  .mission-content p {
+    font-size: 14px; /* Decrease paragraph font size for smaller screens */
+  }
+}
+
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 768px) {
+  .mission-heading {
+    margin-right: 0; /* Remove margin for smaller screens */
+  }
+  
+  .about-us-content {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Reduce gap between elements */
+  }
+  
+  .mission-content {
+    text-align: center; /* Center text content */
+    /* Add some bottom margin */
+  }
+  
+  .mission-img
+  {
+    width: 80%; /* Make images take 80% width on smaller screens */
+    max-width: 300px; /* Set maximum width for images */
+  }
+  
+  /* Reorder image above content */
+  .mission-content {
+    order: 2; /* Set content order to 2 */
+  }
+  
+  .mission-img,
+  .mission-img-3 {
+    order: 1; /* Set image order to 1 */
+  }
+}
+
+/* Additional adjustments for very small screens */
+@media only screen and (max-width: 480px) {
+  .mission-content h3 {
+    font-size: 18px; /* Decrease heading font size for smaller screens */
+  }
+  
+  .mission-content p {
+    font-size: 14px; /* Decrease paragraph font size for smaller screens */
+  }
+}
+
+
+
+
+
+
+ /* TESTING CSS  */
+
+ .customer-cards, .driver-cards {
+  background-color: #fde8e8;
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row; /* Change flex direction to column */
+  align-items: center; /* Center items vertically */
+  gap: 20px; /* Increase gap between cards */
+  border-radius: 20px;
+  font-size: 16px; /* Increase font size for better readability */
+}
+
+.cust-box-1,
+.cust-box-2,
+.cust-box-3,
+.driver-box-1,
+.driver-box-2,
+.driver-box-3,
+.driver-box-4 {
+  width: 100%; 
+}
+
+.card {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 20px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto; /* Allow images to adjust their height based on width */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.customer-cards img,
+.driver-cards img {
+  width: 100%; /* Make images fill their parent container */
+  height: 200px; /* Set a fixed height for better consistency */
+  object-fit: cover; /* Ensure images cover the entire container */
+}
+
+
+
 
