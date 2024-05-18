@@ -194,7 +194,7 @@
     <header class="header-area">
         <div class="main-header-area">
           <div class="classy-nav-container breakpoint-off">
-            <nav class="classy-navbar justify-content-between bg-white" id="uzaNav">
+            <nav class="classy-navbar justify-content-between" id="uzaNav">
               <a class="nav-brand" href="index.html"><img src="images/logo.png" alt="Ryder Logo"></a>
               <div class="classy-navbar-toggler">
                 <span class="navbarToggler"><span></span><span></span><span></span></span>
@@ -208,16 +208,16 @@
     
                 <div class="classynav">
                   <ul id="nav">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="safety.html">Safety</a></li>
-                    <li><a href="Drive_with_us.html">Drive with us</a></li>
-                    <li><a href="AboutUs.html">About Us</a></li>
-                    <li><a href="Initiative.html">Initiative</a></li>
+                    <li class="current-item text-decoration-none nav-items"><a href="./index.html">Home</a></li>
+                    <li class="text-decoration-none nav-items"><a href="safety.html">Safety</a></li>
+                    <li class="text-decoration-none nav-items"><a href="Drive_with_us.html">Drive with us</a></li>
+                    <li class="text-decoration-none nav-items"><a href="AboutUs.html">About Us</a></li>
+                    <li class="text-decoration-none nav-items"><a href="Initiative.html">Our Initiatives</a></li>
                   </ul>
     
-                  <div class="get-a-quote ml-4 mr-3" data-toggle="modal" data-target="#download_rydr">
+                  <!-- <div class="get-a-quote ml-4 mr-3" data-toggle="modal" data-target="#download_rydr">
                     <a href="#" class="btn rydr-btn">Download App</a>
-                  </div>
+                  </div> -->
     
                   <div class="login-register-btn mx-3" data-toggle="modal" data-target="#customer-login">
                     <a href="#">
@@ -309,7 +309,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-12">
-                    <div class="about-us-content mb-80">
+                    <div class="mb-80">
                         <p>Your privacy matters to -First And Last Mile Connectivity India Private Limited
                             (the “Company”,
                             “we”, “ Rydr”, “us” or “our”).</p>
@@ -1550,81 +1550,99 @@
                         <!-- FOOTER SECTION -->
 
                         <!-- FOOTER SECTION  -->
-<footer id="footer">
+  
+  <footer id="footer">
     <div class="container">
-        <div class="row flex-row justify-content-center ">
-            <div class="col-md-3">
-                <h3>Quick Links</h3>
-                <ul class="list-unstyled text-light">
-                    <li><a href="index.html"><h5>Home</h5></a></li>
-                    <li><a href="safety.html"><h5>Safety</h5></a></li>
-                    <li><a href="Drive_with_us.html"><h5>Drive with us</h5></a></li>
-                    <li><a href="AboutUs.html"><h5>About us</h5></a></li>
-                    <li><a href="Initiative.html"><h5>Initiative</h5></a></li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                
-                <ul class="list-unstyled text-light">
-                    <li><a href="faq.html"><h4>FAQs</h4></a></li>
-                    <li><a href="privacy.html"><h4>Privacy Policy</h4></a></li>
-                    <li><a href="#"><h4>Terms & Conditions</h4></a></li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h3>Download Our Apps</h3>
-                <ul class="list-unstyled text-light">
-                    <li><a href="#">Download Customer App</a> (Play Store / App Store)</li>
-                
-                    <li><a href="#">Download Driver App</a> (Play Store / App Store)</li>
-                
-                </ul>
-            </div>
-            <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
-                <div class="form-heading">
-                    <h3>Contact Us</h3>
-                  </div>
-                <div class="contact-form">
-                    <table class="table-black">
-                        <tbody>
-                            <tr>
-                                <td><input placeholder="Name" type="text" class="form-control form-input-block"></td>
-                            </tr>
-                            <tr>
-                                <td><input placeholder="Contact Number" type="number" class="form-control"></td>
-                            </tr>
-                            <tr>
-                                <td><input placeholder="Email" type="email" class="form-control"></td>
-                            </tr>
-                            <tr>
-                                <td><textarea placeholder="Message" name="" id="" class="form-control" rows="3"></textarea></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="sub-btn">
-                    <button type="submit" class="btn btn-primary"><span>Contact</span></button>
-                </div>
-            </div>
-        </div>
-        <hr style="border-top: 1px solid rgba(255, 255, 255, 0.2);">
-        <div class="row flex-row justify-content-center mt-2">
-            <div class="col-md-12 text-center">
-                <ul class="social-icons list-inline">
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i>fb</a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i>twitter</a></li>
-                    <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i>insta</a></li>
-                   
-                </ul>
-            </div>
-        </div>
-        <div class="row flex-row justify-content-center">
-            <div class="col-md-12 text-center mt-2">
-                <p style="opacity: 0.6;">&copy; 2024 @ First And last Mile Connectivity India PVT. Limied. All Rights Reserved.</p>
-            </div>
-        </div>
-    </div>
-  </footer>
+      <div class="row justify-content-between ">
+          <div class="col-md-5 d-flex gap-5">
+              <ul class="list-unstyled text-light ">
+                  <li class="d-flex flex-column">
+                      <h4>Download Customer App</h4>
+                      <a class="app-png" href="#"><img src="images/demo/google-play-png-logo-3798.png" alt=""></a>
+                      <a class="app-png" href="#"><img src="images/demo/app-store-png-logo-33112.png" alt=""></a>
+                  </li>
+                  <li>
+                      <h4 class="mt-3"> Download Driver App</h4>
+                      <a class="app-png" href="#"><img src="images/demo/google-play-png-logo-3798.png" alt=""></a>
+                  </li>
+              </ul>
+              <ul class="list-unstyled text-light">
+                  <li><a href="index.html"><h6>Home</h6></a></li>
+                  <li><a href="safety.html"><h6>Safety</h6></a></li>
+                  <li><a href="Drive_with_us.html"><h6>Drive with us</h6></a></li>
+                  <li><a href="AboutUs.html"><h6>About us</h6></a></li>
+                  <li><a href="Initiative.html"><h6>Initiative</h6></a></li>
+              </ul>
+          </div>
+
+          <!-- <div class="col-md-3">
+              <ul class="list-unstyled text-light">
+                  <li><a href="index.html"><h6>Home</h6></a></li>
+                  <li><a href="safety.html"><h6>Safety</h6></a></li>
+                  <li><a href="Drive_with_us.html"><h6>Drive with us</h6></a></li>
+                  <li><a href="AboutUs.html"><h6>About us</h6></a></li>
+                  <li><a href="Initiative.html"><h6>Initiative</h6></a></li>
+              </ul>
+          </div> -->
+          <div class="col-md-3">
+              <ul class="list-unstyled text-light">
+                  <li><a href="faq.html"><h6>FAQs</h6></a></li>
+                  <li><a href="privacy.html"><h6>Privacy Policy</h6></a></li>
+                  <li><a href="#"><h6>Terms & Conditions</h6></a></li>
+              </ul>
+              <div class="address">
+                  <h6>Address:</h6>
+                  <p>Register Office: 737-738, 7 Floor, Mall of Jaipur, Gandhi Path, W B Block, Vaishali Nagar, Jaipur, Raj 302021</p>
+                  <p>Branch Office:G 148 First Floor South City 2, Gurugram, Haryana 122018</p>
+                  <p>Email: reachus@rydr.co.in</p>
+              </div>
+          </div>
+
+          <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
+              <div class="form-heading">
+                  <h3>Contact Us</h3>
+              </div>
+              <div class="contact-form">
+                  <table class="table-black">
+                      <tbody>
+                          <tr>
+                              <td><input placeholder="Name" type="text" class="form-control form-input-block"></td>
+                          </tr>
+                          <tr>
+                              <td><input placeholder="Contact Number" type="number" class="form-control"></td>
+                          </tr>
+                          <tr>
+                              <td><input placeholder="Email" type="email" class="form-control"></td>
+                          </tr>
+                          <tr>
+                              <td><textarea placeholder="Message" name="" id="" class="form-control" rows="3"></textarea></td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+              <div class="sub-btn">
+                  <button type="submit" class="btn btn-primary"><span>Contact</span></button>
+              </div>
+             
+          </div>
+          <div class="col-md-1 d-flex align-items-center justify-content-center ">
+            
+              <ul class="social-icons list-inline d-flex flex-column">
+                  <li class="list-inline-item"><a href="#"><img src="images/demo/insta.png" alt=""></a></li>
+                  <li class="list-inline-item"><a href="#"><img src="images/demo/fb.png" alt=""></a></li>
+                  <li class="list-inline-item"><a href="#"><img src="images/demo/twitter.png" alt=""></a></li>
+              </ul>
+          </div>
+          
+      </div>
+      <hr style="border-top: 1px solid rgba(255, 255, 255, 0.2);">
+      <div class="row flex-row justify-content-center mt-2">
+          <div class="col-md-12 text-center">
+              <p class="copyright-content" style="opacity: 0.6;">&copy; 2024 @ First And last Mile Connectivity India PVT. Limied. All Rights Reserved.</p>
+          </div>
+      </div>
+  </div>
+</footer>
   
 
                        
