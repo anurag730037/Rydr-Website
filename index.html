@@ -800,13 +800,21 @@
           
       </div>
       <hr style="border-top: 1px solid rgba(255, 255, 255, 0.2);">
-      <div class="row flex-row justify-content-center mt-2">
-          <div class="col-md-12 text-center">
-              <p class="copyright-content" style="opacity: 0.6;">&copy; 2024 @ First And last Mile Connectivity India PVT. Limied. All Rights Reserved.</p>
-          </div>
+    <div class="row flex-row justify-content-center mt-2">
+      <div class="col-md-12 text-center">
+        <p id="copyright" class="copyright-content" style="opacity: 0.6;">&copy; <span id="year"></span> @ First And Last Mile Connectivity India PVT. Limited. All Rights Reserved.</p>
       </div>
+    </div>
   </div>
 </footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const yearSpan = document.getElementById('year');
+    const currentYear = new Date().getFullYear();
+    yearSpan.textContent = currentYear;
+  });
+</script>
 
 
 
