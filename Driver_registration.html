@@ -55,7 +55,7 @@
     
                 <div class="classynav">
                   <ul id="nav">
-                    <li class=" text-decoration-none nav-items"><a href="./index.html">Home</a></li>
+                    <li class="current-item text-decoration-none nav-items"><a href="./index.html">Home</a></li>
                     <li class="text-decoration-none nav-items"><a href="safety.html">Safety</a></li>
                     <li class="current-item text-decoration-none nav-items"><a href="Drive_with_us.html">Drive with us</a></li>
                     <li class="text-decoration-none nav-items"><a href="AboutUs.html">About Us</a></li>
@@ -178,7 +178,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="d-grid gap-2">
+                                <div class="text-center gap-2">
                                     <button type="button" class="btn btn-primary" id="profile-next">Next</button>
                                 </div>
 
@@ -207,7 +207,7 @@
                                     <input type="text" class="form-control" id="dl_number" name="dl_number"
                                         placeholder="Example: DL-1234567890" required>
                                 </div>
-                                <div class="d-grid gap-2">
+                                <div class="text-center gap-2">
                                     <button type="button" class="btn btn-primary"
                                         id="driving-license-next">Next</button>
                                 </div>
@@ -262,7 +262,7 @@
                                         <option value="Other">Other</option>
                                     </select>
                                 </div>
-                                <div class="d-grid gap-2">
+                                <div class="text-center gap-2">
                                     <button type="button" class="btn btn-primary"   id="vehicle-rc-next">Next</button>
                                 </div>
                             </form>
@@ -288,7 +288,7 @@
                     <input type="text" class="form-control" id="pan_number" name="pan_number"
                         placeholder="Enter PAN Card number" required>
                 </div>
-                <div class="d-grid gap-2">
+                <div class="text-center gap-2">
                     <button type="button" class="btn btn-primary" id="pan-card-next">Next</button>
                 </div>
             </form>
@@ -314,7 +314,7 @@
                     <input type="text" class="form-control" id="aadhaar_number" name="aadhaar_number"
                         placeholder="Enter Aadhaar Card number" required>
                 </div>
-                <div class="d-grid gap-2">
+                <div class=" text-center gap-2">
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </form>
@@ -406,9 +406,9 @@
               </div>
              
           </div>
-          <div class="col-md-1 d-flex align-items-center justify-content-center ">
+          <div class="col-md-1 d-flex align-items-center justify-content-center  mt-2">
             
-              <ul class="social-icons list-inline d-flex flex-column">
+              <ul class="social-icons list-inline d-flex flex-column  mt-2">
                   <li class="list-inline-item"><a href="#"><img src="images/demo/insta.png" alt=""></a></li>
                   <li class="list-inline-item"><a href="#"><img src="images/demo/fb.png" alt=""></a></li>
                   <li class="list-inline-item"><a href="#"><img src="images/demo/twitter.png" alt=""></a></li>
@@ -428,6 +428,34 @@
         
         
     </section>
+
+    
+
+  <script src="JavaScript/onclicked.js"></script>
+
+
+  <script src="js/jquery.min.js"></script>
+
+  <script src="js/popper.min.js"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+
+  <script src="js/uza.bundle.js"></script>
+
+  <script src="js/active.js"></script>
+
+  <script src="js/testimonial.js"></script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-23581568-13');
+  </script>
 
     <script>
         document.getElementById('profile-next').addEventListener('click', function () {

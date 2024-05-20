@@ -582,9 +582,9 @@ input:focus {
 
 .rydr-btn.btn-3 {
   border: 2px solid #cdcdcd;
-  line-height: 46px;
+  line-height: 32px;
   color: #cdcdcd;
-  filter: blur(0.6px);
+  /* filter: blur(0.6px); */
 }
 
 .login-register-btn .mb-menu-show {
