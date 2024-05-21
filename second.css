@@ -178,10 +178,16 @@ margin-right: 225px;
     /* border-top: 1px solid black; */
     align-items: center;
     text-align: center;
+    justify-content: center;
     
 }
 .bottom-box{
     width: 50%;
+    
+}
+.bottom-box h4{
+margin: 0;
+padding: 5px 0;
 }
 
 .right-border{
@@ -206,6 +212,8 @@ margin-right: 225px;
     border-radius: 20px;
     font-size: 10px;
 }
+
+
 
 .customer-cards h5{
     text-align: center;
@@ -241,7 +249,8 @@ height: 150px;
 }
 
 .bottom-box.active {
-  background-color: lightcoral;
+  background-color: #c51b1b;
+    color: white;
 }
 
 .fixed-top {
@@ -554,14 +563,7 @@ object-fit: contain;
     color: red;
 }
 
- /* .container {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 100vh;
-        } */
-
-        #profile-form {
+#profile-form {
             border-radius: 10px;
             padding: 20px;
             margin: 20px;
@@ -570,34 +572,6 @@ object-fit: contain;
           }
 
 
-
-
-
-
-
-          /* Adjustments for smaller screens */
-@media only screen and (max-width: 768px) {
-  .mission-heading {
-    margin-right: 0; /* Remove margin for smaller screens */
-  }
-  
-  .about-us-content {
-    flex-direction: column; /* Stack elements vertically on smaller screens */
-    align-items: center; /* Center items vertically */
-    gap: 20px; /* Reduce gap between elements */
-  }
-  
-  .mission-content {
-    text-align: center; /* Center text content */
-   /* Add some bottom margin */
-  }
-  
-  .mission-img,
-  .mission-img-3 {
-    width: 100%; /* Make images take full width */
-  }
-}
-
 /* Additional adjustments for very small screens */
 @media only screen and (max-width: 480px) {
   .mission-content h3 {
@@ -610,30 +584,6 @@ object-fit: contain;
 }
 
 
-
-/* Adjustments for smaller screens */
-@media only screen and (max-width: 768px) {
-  .mission-heading {
-    margin-right: 0; /* Remove margin for smaller screens */
-  }
-  
-  .about-us-content {
-    flex-direction: column; /* Stack elements vertically on smaller screens */
-    align-items: center; /* Center items vertically */
-    gap: 20px; /* Reduce gap between elements */
-  }
-  
-  .mission-content {
-    text-align: center; /* Center text content */
-/* Add some bottom margin */
-  }
-  
-  .mission-img {
-    width: 80%; /* Make images take 80% width on smaller screens */
-    max-width: 300px; /* Set maximum width for images */
-  }
-}
-
 /* Additional adjustments for very small screens */
 @media only screen and (max-width: 480px) {
   .mission-content h3 {
@@ -642,41 +592,6 @@ object-fit: contain;
   
   .mission-content p {
     font-size: 14px; /* Decrease paragraph font size for smaller screens */
-  }
-}
-
-
-/* Adjustments for smaller screens */
-@media only screen and (max-width: 768px) {
-  .mission-heading {
-    margin-right: 0; /* Remove margin for smaller screens */
-  }
-  
-  .about-us-content {
-    flex-direction: column; /* Stack elements vertically on smaller screens */
-    align-items: center; /* Center items vertically */
-    gap: 20px; /* Reduce gap between elements */
-  }
-  
-  .mission-content {
-    text-align: center; /* Center text content */
-    /* Add some bottom margin */
-  }
-  
-  .mission-img
-  {
-    width: 80%; /* Make images take 80% width on smaller screens */
-    max-width: 300px; /* Set maximum width for images */
-  }
-  
-  /* Reorder image above content */
-  .mission-content {
-    order: 2; /* Set content order to 2 */
-  }
-  
-  .mission-img,
-  .mission-img-3 {
-    order: 1; /* Set image order to 1 */
   }
 }
 
@@ -782,11 +697,6 @@ object-fit: contain;
   object-fit: cover; /* Maintain aspect ratio and cover entire space */
 }
 
-@media (max-width: 768px) {
-  .customer-safety-cards {
-    width: 100%; /* Set full width on smaller screens */
-  }
-}
 
 @media (max-width: 576px) {
   .customer-safety-cards .card {
