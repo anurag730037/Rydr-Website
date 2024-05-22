@@ -11,7 +11,7 @@
 
   <link rel="icon" href="images/favicon/favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="css/style.css">
 
   <!-- --  -->
@@ -80,7 +80,7 @@
   <section class="Safety-section container-fluid">
 
     <div class="safety page-margin" id="safety">
-      <div class="headin text-center">
+      <div class="heading text-center section-margin">
         <h2>Safety</h2>
       </div>
       <!-- <div class="safety-top section-margin">
@@ -106,7 +106,7 @@
       <div class="safety-bottom section-margin">
         <div class="center-head">
           <div class="safety-page-heading">
-            <h4 class="text-center section-margin " style="margin-top: 7rem;">We ensure the well being of our Drivers</h4>
+            <h4 class="text-center section-margin ">We ensure the well being of our Drivers</h4>
           </div>
         </div>
 
@@ -137,20 +137,14 @@
 
       </div>
 
-      <div class="safety-page section-margin">
-
-
-
-        <div class="safety-cards section-margin ">
-
           <!-- Editing  -->
 
-          <div class="customer-safety-cards section-margin container-fluid col-md-9 flex-wrap">
+          <div class="customer-safety-cards container-fluid col-md-9 flex-wrap" data-aos="zoom-in">
 
             
 
 
-              <div class="card" style="background-color:transparent">
+              <div class="card" style="background-color:transparent" data-aos="zoom-in">
                 <img src="images/demo/insurance.png" alt="img-1">
                 <div class="card-body">
                   <h5 class="">Insurance</h5>
@@ -167,7 +161,7 @@
            
             
 
-              <div class="card" style="background-color: transparent">
+              <div class="card" style="background-color: transparent" data-aos="zoom-in">
                 <img src="images/demo/support.png" alt="img-2">
                 <div class="card-body">
                   <h5 class="">24 X 7 Customer Support</h5>
@@ -185,7 +179,7 @@
 
             
 
-              <div class="card" style="background-color: transparent">
+              <div class="card" style="background-color: transparent" data-aos="zoom-in">
                 <img src="images/demo/rating.png"  alt="...">
                 <div class="card-body">
                   <h5 class="card-title ">Two-way Rating System</h5>
@@ -208,9 +202,9 @@
           <!-- Editing End   -->
 
     
-        </div>
+        
 
-      </div>
+    
 
 
 
@@ -335,6 +329,16 @@
       yearSpan.textContent = currentYear;
     });
   </script>
+
+  <!-- AOS Data  -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 80,
+    duration: 1000,
+  });
+</script>
+
 
 
 

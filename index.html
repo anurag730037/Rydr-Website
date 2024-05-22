@@ -11,6 +11,7 @@
 
   <link rel="icon" href="images/favicon/favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <link rel="stylesheet" href="css/style.css">
 
@@ -329,7 +330,7 @@
           <h3>What is in it for you</h3>
         </div>
         <div class="box-2">
-          <div class="bottom-box  customers active">
+          <div class="bottom-box customers active">
             <h4>Customers</h4>
           </div>
           <div class="bottom-box drivers-riders">
@@ -349,16 +350,10 @@
     <div class="carousel-inner">
       <div class="carousel-item active" id="customer-part">
         <!-- crousal edit  -->
-        <div class="customer-cards section-margin container-fluid col-md-7">
+        <div class="customer-cards section-margin container-fluid col-md-7" data-aos="zoom-in">
 
-          <div class="cust-box-1">
-            <!-- <img src="images/riding-bike.jpg" alt="img-1"> -->
-            <!-- <p class="heading h6">Pick & Drop from and to Any Metro station</p> -->
-            <!-- <h4 class="mt-3">Pick & Drop from and to Any Metro station</h4>
-            <p class="desc-font-size text-shrink">The only Service Dedicated to
-              pick you up from any Metro
-              Station and Drop you at your
-              destination and Vice-Versa</p> -->
+          <div class="cust-box-1" data-aos="zoom-in">
+
 
               <div class="card" style="background-color: #ffd7d7;" >
                 <img src="images/Rider image-04.png" alt="img-1">
@@ -372,7 +367,7 @@
               </div>
 
           </div>
-          <div class="cust-box-2 ">
+          <div class="cust-box-2 " data-aos="zoom-in">
 
             <div class="card" style="background-color: #ffd7d7;" >
               <img src="images/Rider image-04.png" alt="img-2">
@@ -386,15 +381,10 @@
               </div>
             </div>
 
-            <!-- <img src="images/affordablre.jpg" alt="img-2">
-            <h4 class="mt-3">Low cost rides</h4>
-            <p class="desc-font-size text-shrink">Rides available at a very
-              attractive rates. Low surge
-              charges and no hidden cost.
-              Pay before you start the ride.</p> -->
+           
 
           </div>
-          <div class="cust-box-3">
+          <div class="cust-box-3" data-aos="zoom-in">
 
             <div class="card" style="background-color: #ffd7d7;" >
               <img src="images/Rider image-04.png" alt="img-3">
@@ -408,14 +398,7 @@
               </div>
             </div>
 
-            <!-- <img src="images/Rider image-04.png" alt="img-3">
-            <h4 class="mt-3 ">Assured Rides</h4>
-            <p class="desc-font-size text-shrink">
-              Get assured rides from any
-              metro station to your
-              destination and vice versa, in
-              least time.
-            </p> -->
+           
 
           </div>
         </div>
@@ -423,8 +406,8 @@
 
 
       <div class="carousel-item" id="driver-part">
-        <div class="driver-cards section-margin container-fluid col-md-10">
-          <div class="driver-box-1">
+        <div class="driver-cards section-margin container-fluid col-md-10" data-aos="zoom-in">
+          <div class="driver-box-1" data-aos="zoom-in">
 
             <div class="card" style="background-color: #ffd7d7;" >
               <img src="images/Rider image-04.png" alt="img-1">
@@ -442,19 +425,9 @@
               </div>
             </div>
 
-            <!-- <img src="images/demo/drive-at.png" alt="img-1">
-            <h4 class="heading ">Drive at your
-              convenience & maximize
-              your earnings</h4>
-            <p class="desc-font-size ">Make money on your
-              chosen schedule with
-              rides or deliveries or
-              both. You can use your
-              own vehicle or choose a
-              rental through Rydr.</p> -->
-
+           
           </div>
-          <div class="driver-box-2 ">
+          <div class="driver-box-2 " data-aos="zoom-in">
 
             <div class="card" style="background-color: #ffd7d7;" >
               <img src="images/Rider image-04.png" alt="img-2">
@@ -467,14 +440,10 @@
               </div>
             </div>
 
-            <!-- <img src="images/demo/get-paid-fast.png" alt="img-2">
-            <h4 class="heading ">Get Paid Fast</h4>
-            <p class="desc-font-size">Get Weekly Payments
-              directly in your bank
-              accounts.</p> -->
+       
 
           </div>
-          <div class="driver-box-3 ">
+          <div class="driver-box-3 " data-aos="zoom-in">
 
             <div class="card" style="background-color: #ffd7d7;" >
               <img src="images/Rider image-04.png" alt="img-3">
@@ -488,19 +457,11 @@
               </div>
             </div>
 
-            <!-- <img src="images/demo/support.png" alt="img-3">
-            <h4 class="heading ">Get support when
-              you need</h4>
-            <p class="desc-font-size">
-              You can reach us
-              anytime for any
-              support necessary.
-
-            </p> -->
+         
 
           </div>
 
-          <div class="driver-box-4 ">
+          <div class="driver-box-4 " data-aos="zoom-in">
 
             <div class="card" style="background-color: #ffd7d7;" >
               <img src="images/Rider image-04.png" alt="img-3">
@@ -516,17 +477,7 @@
               </div>
             </div>
 
-            <!-- <img src="images/demo/support.png" alt="img-3">
-            <h4 class="heading">Insured Rides</h4>
-            <p class="desc-font-size">
-              All rides are insured.
-              Accidental coverage
-              and medical benefits
-              covered up to Rs ___
-              Lakh for Driver &
-              family.
-
-            </p> -->
+           
 
           </div>
         </div>
@@ -816,7 +767,14 @@
   });
 </script>
 
-
+<!-- AOS Data  -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 80,
+    duration: 1000,
+  });
+</script>
 
 
 
@@ -848,33 +806,57 @@
     gtag('js', new Date());
     gtag('config', 'UA-23581568-13');
   </script>
+<script>
+  $(document).ready(function () {
+    // Add event listener for carousel slide events
+    $('#carouselExampleIndicators').on('slide.bs.carousel', function (event) {
+      const slideIndex = event.to; // Get the index of the slide being transitioned to
 
-  <script>
-    $(document).ready(function () {
-      // Add event listener for carousel slide events
-      $('#carouselExampleIndicators').on('slide.bs.carousel', function (event) {
-        const slideIndex = event.to; // Get the index of the slide being transitioned to
+      // Remove "active" class from both boxes initially
+      $('.bottom-box.customers').removeClass('active');
+      $('.bottom-box.drivers-riders').removeClass('active');
 
-        // Remove "active" class from both boxes initially
-        $('.bottom-box.customers').removeClass('active');
-        $('.bottom-box.drivers-riders').removeClass('active');
-
-        // Add "active" class based on the slide index
-        if (slideIndex === 0) {
-          $('.bottom-box.customers').addClass('active');
-        } else {
-          $('.bottom-box.drivers-riders').addClass('active');
-        }
-      });
-
-      // Add click event handler for the "Drivers / Riders" box (optional)
-      $('.bottom-box.drivers-riders').click(function (event) {
-        event.preventDefault();
-        // Trigger carousel navigation to the "Drivers / Riders" slide
-        $('#carouselExampleIndicators').carousel('to', 1);
-      });
+      // Add "active" class based on the slide index
+      if (slideIndex === 0) {
+        $('.bottom-box.customers').addClass('active');
+      } else {
+        $('.bottom-box.drivers-riders').addClass('active');
+      }
     });
-  </script>
+
+
+    // Add click event handler for the "Drivers / Riders" box
+    $('.bottom-box.drivers-riders').click(function (event) {
+      event.preventDefault();
+      
+      // Trigger carousel navigation to the "Drivers / Riders" slide
+      $('#carouselExampleIndicators').carousel('to', 1);
+
+      // Add zoom-in effect to the cards in the "Drivers / Riders" section
+      $('#driver-part .card').addClass('zoom-in');
+      
+      // Remove the zoom-in class after animation completes to allow for re-application
+      setTimeout(function() {
+        $('#driver-part .card').removeClass('zoom-in');
+      }, 1000); // Match this duration with the animation duration
+    });
+
+
+    // Add click event handler for the "Customer" box
+    $('.bottom-box.customers').click(function (event) {
+      event.preventDefault();
+    
+      // Add zoom-in effect to the cards in the "Drivers / Riders" section
+      $('#customer-part .card').addClass('zoom-in');
+      
+      // Remove the zoom-in class after animation completes to allow for re-application
+      setTimeout(function() {
+        $('#customer-part .card').removeClass('zoom-in');
+      }, 1000); // Match this duration with the animation duration
+    });
+  });
+</script>
+
 
 
 </body>

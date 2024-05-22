@@ -230,11 +230,28 @@ padding: 5px 0;
 
 
 .section-margin{
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .page-margin{
     margin-top: 80px;
+}
+
+/* keyframes for zoom-in effect */
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Create a class to apply the zoom-in effect */
+.zoom-in {
+  animation: zoomIn 1s forwards; /* Adjust the duration as needed */
 }
 
 
@@ -299,10 +316,7 @@ padding: 0 70px;
     /* gap: 5px; */
 }
 
-/* .card-img-top , .card-img-top{
-width: 200px;
-height: 200px;
-} */
+
 
 .covers {
     justify-content: space-around;
@@ -314,6 +328,9 @@ height: 200px;
     height: 200px;
 }
 
+.heading{
+  margin-top: 115px;
+}
 
 .safety-cards{
     display: flex;
@@ -682,6 +699,9 @@ object-fit: contain;
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .customer-safety-cards .card-body {
@@ -700,13 +720,11 @@ object-fit: contain;
 
 @media (max-width: 576px) {
   .customer-safety-cards .card {
-    width: calc(50% - 20px); /* Adjust card width to fit screen */
-    margin: 10px; /* Add margin to cards for better spacing */
+    margin: 10px;
   }
 }
 
 
-/* --------------------  */
 
 
 

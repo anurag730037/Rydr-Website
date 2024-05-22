@@ -76,17 +76,19 @@
         </div>
       </header>
 
+
     <section class="page-margin">
         <div class="safety-bottom section-margin">
             <div class="center-head">
                 <div class="safety-page-heading " style="margin-top: 7rem;">
-                    <h4 class="text-center section-margin">We ensure the well being of both, our Customers and Drivers
-                    </h4>
+                    <h3 class="text-center section-margin">We ensure the well being of both, our Customers and Drivers
+                    </h3>
                 </div>
             </div>
 
             <div class="covers d-flex section-margin">
-                <div class="card" style="width: 18rem;">
+
+                <div class="card safety-both" style="width: 18rem;" >
                     <img src="images/demo/cust_safeety.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">For Customer</h5>
@@ -96,7 +98,7 @@
                     </div>
                 </div>
 
-                <div class="card" style="width: 18rem;">
+                <div class="card safety-both" style="width: 18rem;" >
                     <img src="images/demo/rider-safety.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">For Drivers</h5>
@@ -214,7 +216,20 @@
       const currentYear = new Date().getFullYear();
       yearSpan.textContent = currentYear;
     });
+
+    document.addEventListener('DOMContentLoaded', function() {
+    // Select all card elements
+    const cards = document.querySelectorAll('.safety-both');
+    
+    // Add the 'zoom-in' class to each card
+    cards.forEach(card => {
+        card.classList.add('zoom-in');
+    });
+});
   </script>
+
+
+
 
 
       
