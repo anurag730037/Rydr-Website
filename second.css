@@ -601,6 +601,25 @@ line-height: 50px;
   /* font-size: 10px; */
 }
 
+/* Drviver Registration acoordians / */
+
+
+.next-btn{
+  background-color: #C30000;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid  white;
+  padding: 5px 10px;
+}
+
+  
+  .next-btn:hover{
+    background-color:white;
+    color: #C30000;
+    border: 1px solid  #C30000;
+  }
+
+
 
 /* Initiatives  */
 .initiative-top{
