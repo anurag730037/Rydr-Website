@@ -79,7 +79,7 @@
       </header>
 
 
-      <section>
+      <section class="log-sec">
         <div class="login">
             <div>
                 <h3 class="mb-4">Login</h3>
@@ -101,8 +101,131 @@
                     <button type="submit" class="form-login loginBTN text-center">Login</button>
                 </form>
             </div>
+
         </div>
+
+        <div>
+          <a href="Driver_registration.html"><button class="form-login text-center mt-5 reg-but">Driver Registration</button></a>
+          </div>
     </section>
+
+
+    
+  <footer id="footer">
+    <div class="container">
+      <div class="row justify-content-between ">
+          <div class="col-md-5 d-flex gap-5">
+              <ul class="list-unstyled text-light ">
+                  <li class="d-flex flex-column">
+                      <h4>Download Customer App</h4>
+                      <a class="app-png" href="#"><img src="images/demo/google-play-png-logo-3798.png" alt=""></a>
+                      <a class="app-png" href="#"><img src="images/demo/app-store-png-logo-33112.png" alt=""></a>
+                  </li>
+                  <li>
+                      <h4 class="mt-3"> Download Driver App</h4>
+                      <a class="app-png" href="#"><img src="images/demo/google-play-png-logo-3798.png" alt=""></a>
+                  </li>
+              </ul>
+              <ul class="list-unstyled text-light">
+                  <li><a href="index.html"><h6>Home</h6></a></li>
+                  <li><a href="safety.html"><h6>Safety</h6></a></li>
+                  <li><a href="Drive_with_us.html"><h6>Drive with us</h6></a></li>
+                  <li><a href="AboutUs.html"><h6>About us</h6></a></li>
+                  <li><a href="Initiative.html"><h6>Initiative</h6></a></li>
+              </ul>
+          </div>
+
+          <!-- <div class="col-md-3">
+              <ul class="list-unstyled text-light">
+                  <li><a href="index.html"><h6>Home</h6></a></li>
+                  <li><a href="safety.html"><h6>Safety</h6></a></li>
+                  <li><a href="Drive_with_us.html"><h6>Drive with us</h6></a></li>
+                  <li><a href="AboutUs.html"><h6>About us</h6></a></li>
+                  <li><a href="Initiative.html"><h6>Initiative</h6></a></li>
+              </ul>
+          </div> -->
+          <div class="col-md-3">
+              <ul class="list-unstyled text-light">
+                  <li><a href="faq.html"><h6>FAQs</h6></a></li>
+                  <li><a href="privacy.html"><h6>Privacy Policy</h6></a></li>
+                  <li><a href="#"><h6>Terms & Conditions</h6></a></li>
+              </ul>
+              <div class="address">
+                  <h6>Address:</h6>
+                  <p>Register Office: 737-738, 7 Floor, Mall of Jaipur, Gandhi Path, W B Block, Vaishali Nagar, Jaipur, Raj 302021</p>
+                  <p>Branch Office:G 148 First Floor South City 2, Gurugram, Haryana 122018</p>
+                  <p>Email: reachus@rydr.co.in</p>
+              </div>
+          </div>
+
+          <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
+              <div class="form-heading">
+                  <h3>Contact Us</h3>
+              </div>
+              <div class="contact-form">
+                  <table class="table-black">
+                      <tbody>
+                          <tr>
+                              <td><input placeholder="Name" type="text" class="form-control form-input-block"></td>
+                          </tr>
+                          <tr>
+                              <td><input placeholder="Contact Number" type="number" class="form-control"></td>
+                          </tr>
+                          <tr>
+                              <td><input placeholder="Email" type="email" class="form-control"></td>
+                          </tr>
+                          <tr>
+                              <td><textarea placeholder="Message" name="" id="" class="form-control" rows="3"></textarea></td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+              <div class="sub-btn mt-3">
+                  <button type="submit" class="btn btn-primary"><span>Contact</span></button>
+              </div>
+             
+          </div>
+          <div class="col-md-1 d-flex align-items-center justify-content-center  mt-2">
+            
+              <ul class="social-icons list-inline d-flex flex-column mt-2">
+                  <li class="list-inline-item"><a href="#"><img src="images/demo/insta.png" alt=""></a></li>
+                  <li class="list-inline-item"><a href="#"><img src="images/demo/fb.png" alt=""></a></li>
+                  <li class="list-inline-item"><a href="#"><img src="images/demo/twitter.png" alt=""></a></li>
+              </ul>
+          </div>
+          
+      </div>
+      <hr style="border-top: 1px solid rgba(255, 255, 255, 0.2);">
+    <div class="row flex-row justify-content-center mt-2">
+      <div class="col-md-12 text-center">
+        <p id="copyright" class="copyright-content" style="opacity: 0.6;">&copy; <span id="year"></span> @ First And Last Mile Connectivity India PVT. Limited. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+
+<script src="js/popper.min.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/uza.bundle.js"></script>
+
+<script src="js/active.js"></script>
+
+<script src="js/testimonial.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'UA-23581568-13');
+</script>
 
     <script>
         document.getElementById('form-login').addEventListener('submit', (event) => {
