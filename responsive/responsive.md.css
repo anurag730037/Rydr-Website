@@ -123,6 +123,10 @@ border: 0px;
         padding: 0px;
     }
 
+    .planting-section p,h1{
+      padding-left: 0;
+    }
+
 
   
   }

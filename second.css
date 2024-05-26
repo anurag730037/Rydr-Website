@@ -678,6 +678,21 @@ object-fit: contain;
     
 }
 
+.planting-section p,h1{
+  padding-left: 80px;
+}
+
+  /* New section styles */
+  .carbon_img{
+    width: 80%;
+    /* height: 50vh; */
+  }
+
+ 
+
+ 
+
+
 /* CONTACT US FORM  */
 
 
