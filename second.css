@@ -6,6 +6,14 @@ a{
   margin: 0 20px;
 }
 
+#scrollUp{
+  box-shadow: 0 0px 2px 2px rgb(249 229 229) !important;
+  width: 40px !important;
+  height: 40px !important;
+  right: 60px !important;
+  bottom: 55px !important;
+}
+
 
 /* NAV BAR  */
 
@@ -168,10 +176,37 @@ border: 1px solid  white;
   cursor: pointer;
   padding: 0;
   font-size: 1.2em;
-}
-/* login edit */
 
-/* login edit  ends*/
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-container input {
+  width: 100%;
+  padding-right: 30px; /* Add space for the toggle button */
+}
+
+.password-container button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.bi-eye{
+  margin-right: 15px;
+  margin-bottom: 7px;
+}
+
+.bi-eye-slash{
+  margin-right: 15px;
+  margin-bottom: 7px;
+}
 
 
 /* Mission  */
@@ -680,6 +715,11 @@ object-fit: contain;
 
 .planting-section p,h1{
   padding-left: 80px;
+}
+
+.side-padding{
+  padding-left: 150px;
+  padding-right: 150px;
 }
 
   /* New section styles */
