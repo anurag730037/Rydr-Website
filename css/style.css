@@ -599,7 +599,7 @@ input:focus {
 
 .menu-on .login-register-btn a {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -731,15 +731,20 @@ input:focus {
   position: relative;
   z-index: 1;
   font-weight: 400;
-  /* font-size: 18px; */
+
   font-size: 14px;
   text-transform: capitalize;
   color: #303030;
 }
 
+.classy-nav-container .classy-navbar .classynav ul li.current-item a {
+  color: var(--primary-clr);
+}
+
 .classy-nav-container .classy-navbar .classynav ul li a:focus,
 .classy-nav-container .classy-navbar .classynav ul li a:hover {
-  color: var(--primary-clr);
+color:rgb(255, 86, 86)
+
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -784,11 +789,12 @@ input:focus {
 @media only screen and (max-width: 767px) {
   .classy-nav-container .classy-navbar .classynav ul li.cn-dropdown-item ul li a {
     font-size: 14px;
+    color: #c30000;
   }
 }
 
 .classy-nav-container .classy-navbar .classynav ul li.current-item a::after {
-  content: '';
+  /* content: '';
   position: absolute;
   width: 70%;
   height: 2px;
@@ -799,6 +805,7 @@ input:focus {
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   z-index: 1;
+  color: var(--primary-clr); */
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {

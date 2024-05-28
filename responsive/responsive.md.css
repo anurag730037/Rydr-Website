@@ -132,5 +132,15 @@ border: 0px;
       padding-right: 0;
     }
 
+
+    .customer-cards-second{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .customer-item{
+      width: 46%;
+    }
   
   }
