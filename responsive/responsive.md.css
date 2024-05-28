@@ -132,6 +132,10 @@ border: 0px;
       padding-right: 0;
     }
 
+    .customer-item{
+      width: 45%;
+    }
+   
 
     .customer-cards-second{
       display: flex;
@@ -139,8 +143,7 @@ border: 0px;
       justify-content: center;
       align-items: center;
     }
-    .customer-item{
-      width: 46%;
-    }
+
+    
   
   }

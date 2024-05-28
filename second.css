@@ -280,9 +280,9 @@ margin-right: 225px;
 }
 
 .mission-img{
-  width: 100%;
- 
-  /* object-fit: contain; */
+  width: 90%;
+  height: auto;
+  object-fit: contain;
 }
 .mission-img-3{
   width: 40%;
@@ -365,18 +365,13 @@ padding: 5px 0;
 .customer-cards,.driver-cards{
 
   background-color: #fde8e8;
- 
   padding: 20px;
-
-    display: flex;
+   display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
-    
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-    font-size: 10px;
 }
 
 
@@ -386,12 +381,7 @@ padding: 5px 0;
     
 }
 
-.customer-cards img , .driver-cards img{
-    width: 150px;
-    height: 150px;
-    padding-top: 10px;
-    /* object-fit: contain; */
-}
+
 
 
 
@@ -418,10 +408,7 @@ padding: 5px 0;
 .driver-cards {
   cursor: pointer;
 }
-.driver-cards img {
-width: 150px;
-height: 150px;
-}
+
 
 .bottom-box.active {
   background-color: #c51b1b;
@@ -456,9 +443,6 @@ height: 150px;
 }
 
 .safety-text p{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 50%;
 }
 
@@ -895,9 +879,9 @@ object-fit: contain;
 
 .customer-cards img,
 .driver-cards img {
-  width: 100%; /* Make images fill their parent container */
-  height: 200px; /* Set a fixed height for better consistency */
-  object-fit: cover; /* Ensure images cover the entire container */
+  width: 100%; 
+  height: 200px; 
+  object-fit: contain; 
 }
 
 
@@ -944,6 +928,7 @@ object-fit: contain;
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
+        color : #1b1919;
   }
     .customer-cards-second {
         display: flex;
@@ -957,8 +942,8 @@ object-fit: contain;
         align-items: center;
         width: 40%;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        margin: 10px;
-        padding: 20px;
+        margin: 5px;
+        padding: 15px;
         box-sizing: border-box;
     }
     .customer-item img {
@@ -982,7 +967,7 @@ object-fit: contain;
     }
 
     .driver-items{
-      width: calc(25% - 20px);
+      /* width: calc(25% - 20px); */
     }
 
     .item-img{

@@ -13,17 +13,23 @@
         width: 100%;
         
     }
+    .customer-cards{
+        width: 90%;
+      }
+      .customer-item{
+        width: 90%;
+      }
 
     .customer-cards{
         flex-direction: column;
     }
-    .customer-cards img {
+    /* .customer-cards img {
         width: 100px;
         height: auto;
-    }
+    } */
 
    .driver-cards img{
-    width: 140px;
+    /* width: 140px; */
    }
 
    .customer-safety-cards{
