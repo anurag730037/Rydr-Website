@@ -734,16 +734,16 @@ input:focus {
 
   font-size: 14px;
   text-transform: capitalize;
-  color: #303030;
-}
-
+    color: #303030;
+  }
 .classy-nav-container .classy-navbar .classynav ul li.current-item a {
   color: var(--primary-clr);
 }
 
 .classy-nav-container .classy-navbar .classynav ul li a:focus,
 .classy-nav-container .classy-navbar .classynav ul li a:hover {
-color:rgb(255, 86, 86)
+/* color:rgb(255, 86, 86) */
+/* color: white; */
 
 }
 

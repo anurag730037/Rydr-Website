@@ -46,6 +46,10 @@ a{
     margin: 0 auto;
     bottom: -3px;
 }
+
+.super-sub-points{
+font-size: 25px;
+}
   
   
 
@@ -78,6 +82,10 @@ align-items: center;
 
 .current-item{
   color: #C30000;
+}
+
+.classy-nav-container .classy-navbar .classynav ul li a:hover {
+  font-size: 21px !important; /* Increase font size on hover */
 }
 
 /* .rydr-btn{
