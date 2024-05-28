@@ -261,7 +261,7 @@ border: 1px solid  white;
 }
 
 
-/* Mission  */
+/* old Mission  */
 
 .mission-heading{
 margin-right: 225px;
@@ -329,12 +329,15 @@ margin-right: 225px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
+
+/*  old Mission section End  */
 
 /* why-choose  */
 .why-choose {
   display: flex;
-  width: 90%;
+  width: 70%;
   max-width: 1000px;
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
