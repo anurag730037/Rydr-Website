@@ -124,13 +124,14 @@ text-align: justify;
 
 .know-more{
   background-color:#C30000;
-  padding: 3px 7px;
+  padding: 6px 11px;
   text-decoration: none;
   color:white;
-  font-size: 15px;
+  font-size: 17px;
   border-radius: 25px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-transform: lowercase;
+ 
 }
 
 /* Login Form  */
@@ -333,6 +334,63 @@ margin-right: 225px;
 }
 
 /*  old Mission section End  */
+
+/* Mission new  */
+
+
+.mission-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.mission-section-margin {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-us-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 10px 0;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mission-content,
+.mission-img {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.mission-content h3,
+.mission-content p {
+  margin: 0;
+}
+
+.mission-content p {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.mission-img img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.sec-miss-img{
+width: 100% !important;
+}
+
+/* Mission end  */
 
 /* why-choose  */
 .why-choose {
