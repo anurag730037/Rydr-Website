@@ -912,20 +912,17 @@ margin-top: 50px;
     margin: 20px;
 }
 
-.methods{
-    
-    display: flex;
-    flex-direction: row;
-    /* flex-wrap: wrap; */
-    justify-content: space-evenly;
-    /* align-items: center; */
-    gap: 15px;
-    
+.methods{ 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
 }
 
 .method-card{
     /* border: 1px solid black; */
     /* justify-content: space-around; */
+    width: 25%;
 }
 .method-card img {
     width: 100%;
