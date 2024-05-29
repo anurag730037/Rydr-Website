@@ -871,8 +871,8 @@ z-index: 101000;
     flex-direction: row;
 }
 
-.first-initiative{
-  display: flex;
+.first-initiative {
+  display: flex ;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
