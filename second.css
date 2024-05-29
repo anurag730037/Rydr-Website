@@ -925,7 +925,7 @@ margin-top: 50px;
 
 .method-card{
     /* border: 1px solid black; */
-    justify-content: space-around;
+    /* justify-content: space-around; */
 }
 .method-card img {
     width: 100%;
@@ -934,7 +934,7 @@ margin-top: 50px;
 }
 .methods-desc{
     text-align: center;
-    padding: 0px 50px;
+    padding: 0px 65px;
     
     
 }
