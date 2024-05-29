@@ -734,7 +734,7 @@ input:focus {
 
   font-size: 14px;
   text-transform: capitalize;
-    color: #303030;
+    color: #777777;
   }
 .classy-nav-container .classy-navbar .classynav ul li.current-item a {
   color: var(--primary-clr);
@@ -2387,7 +2387,7 @@ body>#customer_signup_form {
 .breadcrumb-area {
   position: relative;
   z-index: 1;
-  height: 290px;
+  /* height: 290px ; */
   margin-bottom: 40px;
 }
 

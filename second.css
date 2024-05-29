@@ -27,7 +27,7 @@ a{
   font-size: 40px;
   line-height: 60px;
   text-align: center;
-  margin: 0 auto;
+  margin: 100px auto;
   font-weight: 700;
  position: relative;
   display: block;
@@ -726,25 +726,44 @@ line-height: 50px;
     align-items: center;
   }
 
+  /* About us Page  */
+
+  .about-points{
+    padding: 50px 30px;
+  }
+  /* About us Page End  */
+
 /* Privacy-Poilicy */
 
 .sub-points{
     margin-left: 20px; 
 }
 
+title{
+  margin-top: 100px !important;
+}
+
+.terms_main p{
+color: #212529;
+}
 
 /* Advantages Page  */
 
+.adv-section{
+z-index: 101000;
+}
 
 .adv-card {
  
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(245, 126, 126, 0.377);
   overflow: hidden;
- 
+  background-color: white;
+  z-index: 1;
   margin: 10px;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
  
 }
@@ -759,6 +778,7 @@ line-height: 50px;
   /* font-size: 20px; */
   /* margin-bottom: 10px; */
   padding-left: 10px;
+  color: #212529;
 }
 .adv-card-description {
   /* font-size: 10px; */
@@ -1000,36 +1020,124 @@ margin-top: 50px;
 
 
 /* Editing  */
+/* .customer-safety-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  margin: 20px;
+}
 
-.customer-safety-cards .card {
+.safety-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+}
 
+.safety-card-img {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+}
+
+.safety-card-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  flex: 1;
 }
 
-.customer-safety-cards .card-body {
-  text-align: center; /* Center align card content */
-  padding: 10px; /* Reduce padding of card body */
-  flex-grow: 1; /* Allow card body to grow to fill remaining space */
+.safety-card-title {
+  font-size: 1.5rem;
+  margin: 10px 0;
 }
 
-.customer-safety-cards img {
-   padding-top: 10px;
-  height: auto; /* Set auto height for images to maintain aspect ratio */
-  max-height: 150px; /* Set max height for images */
-  object-fit: cover; /* Maintain aspect ratio and cover entire space */
+.safety-card-text {
+  font-size: 1rem;
+  margin: 10px 0;
 }
-
 
 @media (max-width: 576px) {
-  .customer-safety-cards .card {
-    margin: 10px;
+  .customer-safety-cards {
+      grid-template-columns: 1fr;
+      gap: 10px;
   }
+
+  .safety-card {
+      padding: 10px;
+  }
+} */
+
+ /* New Safety  */
+ .new-safety-card-section {
+  padding: 0px 40px;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
 }
 
+.new-safety-card-container {
+  display: flex;
+  gap: 50px;
+}
+
+.new-safety-card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 12;
+}
+
+.new-safety-card-img {
+  z-index: 12;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.new-safety-card-content {
+  padding: 20px;
+  flex: 1;
+}
+
+.new-safety-card-heading {
+  margin: 0;
+  /* font-size: 1.5rem; */
+  margin-bottom: 10px;
+}
+
+.new-safety-card-description {
+  margin: 0;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+.new-safety-card-footer {
+  padding: 30px 20px;
+  
+  /* text-align: center; */
+}
+
+.safety-cust-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ /* New Safety End  */
 
 
 /* ------------------------------------------------------------------------------------------------------------------------- */
