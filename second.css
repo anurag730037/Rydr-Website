@@ -21,13 +21,11 @@ a{
   margin-top: 80px;
 }
 .sub-heading{
- 
-
   color: #000000;
   font-size: 40px;
   line-height: 60px;
   text-align: center;
-  margin: 100px auto;
+  margin: 40px auto;
   font-weight: 700;
  position: relative;
   display: block;
@@ -47,6 +45,10 @@ a{
     bottom: -3px;
 }
 
+.master-head{
+  margin-top: 100px !important;
+  /* margin-bottom: -50px; */
+}
 .super-sub-points{
 font-size: 25px;
 }
