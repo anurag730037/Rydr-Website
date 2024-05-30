@@ -8,6 +8,10 @@ a{
   text-decoration: none !important;
 }
 
+button{
+  text-transform: uppercase;
+}
+
 .whole-page{
   margin: 0 20px;
 }
@@ -168,6 +172,13 @@ text-align: justify;
  
 }
 
+.accordion{
+width: 50%;
+}
+.accordion-button{
+font-size: 20px !important;
+font-weight: 500;
+}
 /* Login Form  */
 .login{
 display: flex;
@@ -896,6 +907,7 @@ z-index: 101000;
   /* margin-bottom: 10px; */
   padding-left: 10px;
   color: #212529;
+  text-align: center;
 }
 .adv-card-description {
   /* font-size: 10px; */
