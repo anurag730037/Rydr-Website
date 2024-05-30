@@ -1,3 +1,9 @@
+
+
+p{
+  font-family: poppins !important;
+}
+
 a{
   text-decoration: none !important;
 }
@@ -101,7 +107,7 @@ background-color: black !important;
 color: white !important;
 line-height: 35px;
 text-align: center;
-font-family: Aileron !important;
+
 
 }
 
@@ -110,7 +116,7 @@ font-family: Aileron !important;
   color: white !important;
   line-height: 35px;
   text-align: center;
-  font-family: Aileron !important;
+  /* font-family: Aileron !important; */
   }
 
 
@@ -154,7 +160,7 @@ margin: 10px;
 
 .login-form{
 
- font-family: Aileron;
+ /* font-family: Aileron; */
 display: flex;
 justify-content: center;
 align-items: center;
@@ -270,14 +276,7 @@ border: 1px solid  white;
 margin-right: 225px;
 }
 
-.about-us-content{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 40px 10px; 
-  gap: 50px;
-}
+
 
 .mission-content{
   display: flex;
@@ -286,20 +285,14 @@ margin-right: 225px;
   justify-content: center; 
 }
 
-.mission-content p {
- 
-  /* font-size:20px; */
-}
+
 
 .mission-img{
   width: 90%;
   height: auto;
   object-fit: contain;
 }
-.mission-img-3{
-  width: 40%;
-  /* height: 100px; */
-}
+
 .second-top{
 
     display: flex;
@@ -338,29 +331,48 @@ margin-right: 225px;
 /*  old Mission section End  */
 
 /* Mission new  */
-
+.rydr-about-us-area{
+display: flex;
+justify-content: center;
+padding: 0 10px
+}
 
 .mission-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  width: 75%;
 }
 
 .mission-section-margin {
   width: 100%;
   text-align: center;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+}
+.mission-section-margin h2{
+  margin-bottom: 10px;
 }
 
 .about-us-content {
-  display: flex;
-  justify-content: space-between;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    
+    gap: 50px;
+    padding: 20px 0px 20px 0px;
+
+  /* justify-content: space-between; */
   align-items: stretch;
   margin: 10px 0;
-  padding: 20px;
+ 
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.desc-font-size{
+ 
 }
 
 .mission-content,
@@ -369,7 +381,9 @@ margin-right: 225px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
+  padding: 0;
+
+
 }
 
 .mission-content h3,
@@ -387,6 +401,8 @@ margin-right: 225px;
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
+  padding: 0;
+
 }
 .sec-miss-img{
 width: 100% !important;
@@ -397,19 +413,20 @@ width: 100% !important;
 /* why-choose  */
 .why-choose {
   display: flex;
-  width: 70%;
-  max-width: 1000px;
+  width: 75%;
+  /* max-width: 1000px; */
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
+  
 }
 .why-choose-content, .why-choose-image {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
+  padding: 20px 20px 20px 0px;
   box-sizing: border-box;
 }
 .why-choose-content {
@@ -474,9 +491,14 @@ padding: 5px 0;
 
   /* Customer Cards  */
 
-.customer-cards,.driver-cards{
+  .carousel-inner{
+    width: 75%;
+  }
 
+.customer-cards,.driver-cards{
+margin-top: 30px;
   background-color: #fde8e8;
+  width: 75% !important;
   padding: 20px;
    display: flex;
     flex-direction: row;
@@ -610,7 +632,7 @@ height: 100px;
 }
 
 .safety-text p{
-  width: 50%;
+  width: 75%;
 }
 
 .text-shrink{
@@ -969,7 +991,7 @@ margin-top: 50px;
 /* Drive With us  */
 
 .font-family-Aileron{
-  font-family: "Aileron" !important;
+  /* font-family: "Aileron" !important; */
 }
 
 /* Drive With Us - Driver Registration  */
