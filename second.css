@@ -58,6 +58,24 @@ a{
 .super-sub-points{
 font-size: 25px;
 }
+
+/* Banner Section  */
+
+.top-banner {
+  width: 100%;
+  height: 70vh;
+  background: url('images/Rider\ image-04.png') no-repeat center center;
+  background-size: cover;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
   
   
 
@@ -628,11 +646,19 @@ height: 100px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+   
+
+   width: 75%;
+    /* align-items: stretch; */
+    margin: 10px 0;
+   
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     
 }
 
 .safety-text p{
-  width: 75%;
+  padding: 20px; 
 }
 
 .text-shrink{
