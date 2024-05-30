@@ -36,6 +36,7 @@ a{
  position: relative;
   display: block;
  margin-bottom: 30px;
+ text-transform: capitalize;
   }
 
 .sub-heading::after{
@@ -57,13 +58,14 @@ a{
 }
 .super-sub-points{
 font-size: 25px;
+text-transform: capitalize;
 }
 
 /* Banner Section  */
 
 .top-banner {
   width: 100%;
-  height: 70vh;
+  height: 350px;
   background: url('images/Rider\ image-04.png') no-repeat center center;
   background-size: cover;
   opacity: 1;
@@ -120,12 +122,18 @@ align-items: center;
   padding: 0 !important;
   text-align: center;
 } */
+
+
+.head-points span{
+  font-weight: 500;
+}
+
 .banner-btn-1{
 background-color: black !important;
 color: white !important;
 line-height: 35px;
 text-align: center;
-
+font-weight: 600;
 
 }
 
@@ -134,7 +142,7 @@ text-align: center;
   color: white !important;
   line-height: 35px;
   text-align: center;
-  /* font-family: Aileron !important; */
+  font-weight: 600;
   }
 
 
@@ -156,7 +164,7 @@ text-align: justify;
   font-size: 17px;
   border-radius: 25px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-transform: lowercase;
+  text-transform: uppercase;
  
 }
 
@@ -511,6 +519,10 @@ padding: 5px 0;
 
   .carousel-inner{
     width: 75%;
+  }
+
+  .carousel-item {
+    transition: transform 0.6s ease, opacity 0.6s ease;
   }
 
 .customer-cards,.driver-cards{

@@ -8,7 +8,7 @@ customerOption.addEventListener('click', () => {
   driverPart.classList.remove('active');
   customerOption.classList.add('active');
   driverOption.classList.remove('active');
-  customerPart.scrollIntoView({ behavior: 'smooth' });  // Smooth scroll to customer part
+  // customerPart.scrollIntoView({ behavior: 'smooth' });  // Smooth scroll to customer part
 });
 
 driverOption.addEventListener('click', () => {
@@ -16,5 +16,5 @@ driverOption.addEventListener('click', () => {
   customerPart.classList.remove('active');
   driverOption.classList.add('active');
   customerOption.classList.remove('active');
-  driverPart.scrollIntoView({ behavior: 'smooth' });  // Smooth scroll to driver part
+  // driverPart.scrollIntoView({ behavior: 'smooth' });  // Smooth scroll to driver part
 });
