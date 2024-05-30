@@ -39,6 +39,57 @@
    
   <script defer referrerpolicy="origin" src="js/s.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+  <style>
+    .image-container {
+  /* Set the container to have a fixed height */
+  height: 400px;
+
+  /* Set the container to take up 75% of the horizontal space */
+  width: 100%;
+  margin: 0 auto; /* Center the container horizontally */
+
+  /* Position the content overlay on top of the image */
+  position: relative;
+}
+
+.first-initi-img {
+  /* Cover the entire container */
+  width: 100%;
+  height: 100%;
+
+  /* Reduce opacity */
+  opacity: 0.4;
+}
+
+.content-overlay {
+  /* Position the content absolutely within the container */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  /* Background color to provide a slight contrast */
+  background-color: rgba(151, 141, 141, 0.3);
+  
+
+  /* Display content flexibly */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* Add some padding for visual separation */
+  padding: 20px;
+}
+
+.first-details{
+  color: black;
+  width: 75%;
+}
+
+  </style>
 </head>
 
 <body>
@@ -87,27 +138,22 @@
 
 
 
-
   <section class="page-margin d-flex justify-content-center align-items-center flex-column">
-    <h1 class=" sub-heading ">
-      Reducing Emissions – Together</h1>
-    <div class="first-initiative side-padding">
-      <div class="first-initi ">
-       
-        <p class="first-details">It's important that we take action to reduce the impact of pollution in the city we love.
-          Rydr's mission is to improve the quality of air we breathe as we ride. you can contribute in reducing carbon
+    <h1 class="sub-heading">Reducing Emissions – Together</h1>
+    <div class="image-container">
+      <img class="first-initi-img" src="images/demo/Emission_together.png" alt="Emission together">
+      <div class="content-overlay">
+        <p class="first-details">"It's important that we take action to reduce the impact of pollution in the city we love.
+          Rydr's mission is to improve the quality of air we breathe as we ride. You can contribute in reducing carbon
           emission by booking a ride with us.
           Rydr's mission is to improve air quality by offering sustainable transportation options. By sharing rides or
           using electric vehicles, we can significantly reduce carbon footprint and create a healthier environment for
-          everyone. Every Rydr ride booked remove CO2 emissions, making a real difference in our city.</p>
-      </div>
-      <div class="">
-        <img class="first-initi-img" src="images/demo/Emission_together.png" alt="">
+          everyone. Every Rydr ride booked removes CO2 emissions, making a real difference in our city."
+        </p>
       </div>
     </div>
-
-
   </section>
+  
 
   <section class="page-margin">
     <div class="center-content">
