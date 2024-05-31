@@ -46,7 +46,7 @@
   height: 400px;
 
   /* Set the container to take up 75% of the horizontal space */
-  width: 100%;
+  width: 72%;
   margin: 0 auto; /* Center the container horizontally */
 
   /* Position the content overlay on top of the image */
@@ -57,30 +57,22 @@
   /* Cover the entire container */
   width: 100%;
   height: 100%;
-
+  object-fit: cover; 
   /* Reduce opacity */
   opacity: 0.4;
 }
 
 .content-overlay {
-  /* Position the content absolutely within the container */
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-
-  /* Background color to provide a slight contrast */
   background-color: rgba(151, 141, 141, 0.3);
-  
-
-  /* Display content flexibly */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  /* Add some padding for visual separation */
   padding: 20px;
 }
 
@@ -89,7 +81,7 @@
   width: 75%;
 }
 
-  </style>
+</style>
 </head>
 
 <body>
@@ -136,9 +128,39 @@
     </div>
   </header>
 
+  <div class="breadcrumb-area mb-0">
+    <div class="container">
+      <div class="row title align-items-end">
+        <div class="col-12">
+          <div class="breadcumb--con">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="breadcrumb-bg-curve">
+      <img src="images/curve-1.png" alt="">
+    </div>
+  </div>
+
+  <!-- Banner Section  -->
+
+<div class="top-banner position-relative">
+  <nav aria-label="breadcrumb" class="position-absolute back-button">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">
+          <i class="fa fa-home"></i>
+          Home</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">Our Initiative</li>
+    </ol>
+  </nav>
+</div>
 
 
-  <section class="page-margin d-flex justify-content-center align-items-center flex-column">
+
+  <section class=" d-flex justify-content-center align-items-center flex-column section-margin">
     <h1 class="sub-heading">Reducing Emissions – Together</h1>
     <div class="image-container">
       <img class="first-initi-img" src="images/demo/Emission_together.png" alt="Emission together">
@@ -155,8 +177,8 @@
   </section>
   
 
-  <section class="page-margin">
-    <div class="center-content">
+  <section class="">
+    <div class="center-content section-margin">
       <div class="content-head">
         <h1 class="text-center sub-heading">How We’re Reducing Emissions</h1>
       </div>
@@ -194,18 +216,18 @@
     </div>
 
     <section>
-      <div class="planting-section page-margin">
+      <div class="planting-section section-margin">
 
         <h1 class=" sub-heading">
           Planting Trees With Every Ride</h1>
 
         <div class="initiative-top side-padding">
           <div class="">
-            <img class="initi-img" src="images/demo/planting.png" alt="">
+            <img class="initi-img" src="images/demo/plant.jpeg" alt="">
           </div>
           <div class="col">
             
-            <p class="details col-md-10">At Rydr, we are dedicated to supporting air quality improvement and various
+            <p class="details">At Rydr, we are dedicated to supporting air quality improvement and various
               other projects across Delhi. Our aim is to enhance lives by planting trees throughout the city.
 
               According to Trees for Cities, vegetation helps remove dangerous air pollutants, including carbon dioxide,
@@ -219,18 +241,38 @@
     </section>
 
     <section id="Empowered">
-      <div class="planting-section page-margin">
+      <div class="planting-section section-margin">
 
-        <h1 class=" sub-heading">
-          Empowered Women & Men - REDEFINE MOBILITY</h1>
+        <h1 class="sub-heading">
+          Empowered Women & Men-REDEFINE MOBILITY</h1>
 
         <div class="initiative-top side-padding">
           <div class="">
-            <img class="initi-img" src="images/demo/Empowering.png" alt="">
+            <img class="initi-img" src="images/demo/emopower.png" alt="">
           </div>
           <div class="col">
             
-            <p class="details col-md-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sint quos velit ipsa fugit quia sapiente quaerat corporis modi ut! Numquam nobis quam doloremque libero provident autem quidem ex quibusdam! Et perferendis cum debitis libero quibusdam labore magnam ad earum sequi saepe? Quo similique cupiditate excepturi porro libero a odio.</p>
+            <p class="details">Lorem ipsum dolor sit amet consectetur Lorem ipsum Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, ducimus? dolor sit amet consectetur adipisicing elit. Atque, eius. adipisicing elit. Suscipit sint quos velit ipsa fugit quia sapiente quaerat corporis modi ut! Numquam nobis quam doloremque libero provident autem quidem ex quibusdam! Et perferendis cum debitis libero quibusdam labore magnam ad earum sequi saepe? Quo similique cupiditate excepturi porro libero a odio.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="green-jobs">
+      <div class="planting-section section-margin">
+
+        <h1 class="sub-heading">
+          Creating Green Jobs</h1>
+
+        <div class="initiative-top side-padding">
+          <div class="">
+            <img class="initi-img" src="images/demo/electric.png" alt="">
+          </div>
+          <div class="col">
+            
+            <p class="details">Lorem ipsum dolor sit amet consectetur Lorem ipsum Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, ducimus? dolor sit amet consectetur adipisicing elit. Atque, eius. adipisicing elit. Suscipit sint quos velit ipsa fugit quia sapiente quaerat corporis modi ut! Numquam nobis quam doloremque libero provident autem quidem ex quibusdam! Et perferendis cum debitis libero quibusdam labore magnam ad earum sequi saepe? Quo similique cupiditate excepturi porro libero a odio.</p>
           </div>
 
         </div>

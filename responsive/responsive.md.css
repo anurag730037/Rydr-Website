@@ -53,10 +53,21 @@
         order: 1; /* Set image order to 1 */
       }
 
+      .why-choose {
+        flex-direction: column; /* Stack items vertically on small screens */
+      }
+    
+      .why-choose-content, .why-choose-image {
+        margin: 10px 0; /* Adjust margins for stacked layout */
+      }
+
       /* Safety  */
 
+   .breadcrumb-area {
+        height:0;
+    }
     .safety-top{
-        justify-content: end;
+       
         align-items: center;
     }
      .safety-img img{
@@ -105,13 +116,14 @@ border: 0px;
 
     /* Initiative  */
 
+    
     .methods{
-        justify-content: center;
+        justify-content: space-around;
     }
 
     .method-card img {
         width: 100%;
-        height: 100px;
+        height: 175px;
         object-fit: contain;
     }
     .method-card p {
@@ -120,7 +132,8 @@ border: 0px;
     }
 
     .methods-desc{
-        padding: 0px;
+      text-align: justify;
+      padding: 10px 0px !important;
     }
 
     .planting-section p,h1{
