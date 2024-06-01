@@ -4,8 +4,52 @@
     height: 60px;
   }
 
+  .section-margin{
+    margin-top: 30px;
+  }
+
+  p{
+    font-size: 17px;
+  }
+
+  .master-head{
+    margin-top: 50px !important;
+    /* margin-bottom: -50px; */
+  }
+
+  .super-sub-points{
+    font-size: 20px;
+    text-transform: capitalize;
+    }
+
+  .sub-heading{
+    color: #000000;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 40px auto;
+    font-weight: 700;
+   position: relative;
+    display: block;
+   margin-bottom: 30px;
+   text-transform: capitalize;
+    }
+  
+  .sub-heading::after{
+      content: "";
+      text-align: center;
+      background: #c30000;
+      width: 90px;
+      height: 2px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      bottom: -3px;
+  }
+
     h2{
-        font-size: 35px !important;
+        font-size: 30px !important;
     }
     .second-top{
         flex-direction: row;
@@ -73,6 +117,19 @@
      .safety-img img{
         width: 120px !important;
     }
+    .new-safety-card-container{
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    .new-safety-card-section{
+flex-direction: row;
+    }
+    .new-safety-card {
+      width: 200px;
+      height: 100%;
+    }
+
     .customer-cards ,.driver-cards{
         flex-direction: column;
         
@@ -138,6 +195,16 @@ border: 0px;
 
     .planting-section p,h1{
       padding-left: 0;
+    }
+
+    .initiative-top {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      gap: 10px; /* Adjust gap for smaller screens */
+    }
+  
+    .initi-img {
+      align-self: center; /* Center the image on smaller screens */
+      object-fit: contain;
     }
 
     .side-padding{

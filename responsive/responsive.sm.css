@@ -42,11 +42,29 @@
 
     }
 
+
+    .mission-content h3 {
+        font-size: 18px; /* Decrease heading font size for smaller screens */
+      }
+      
+      .mission-content p {
+        font-size: 14px; /* Decrease paragraph font size for smaller screens */
+      }
+
     .social-icons{
         flex-direction: row !important;
         margin-top: 15px;
     }
    
+    .new-safety-card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .new-safety-card {
+        width: 250px;
+        height: auto;
+    }
 
     .safety-top{
     /* flex-direction: column; */
@@ -90,19 +108,31 @@ width: 100%;
 
     /* Initiative  */
 
+    .first-details {
+        
+        font-size: 14px;
+    }
+
     .methods{
         flex-direction: column;
     }
-    .method-card p {
+    .method-card {
+     width: auto;}
 
-        /* padding: 0px 50px */
+     .method-card img {
+        width: 100%;
+        margin: 20px;
+        /* object-fit: cover; */
     }
 
+    .method-card p {
+        padding: 0px 15px;
+    }
     .initiative-top{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 100px 22px;
+        margin: 10px 22px;
         text-align: center;
     }
 
