@@ -83,7 +83,23 @@
       color: black;
       width: 100%;
     }
+
+    
   </style>
+
+<style>
+ .bread-container {
+    display: flex;
+    align-items: flex-start;
+  }
+  .text {
+    flex: 1;
+    padding-left: 20px; /* Adjust as needed */
+  }
+  img {
+    max-width: 100%;
+  }
+</style>
 </head>
 
 <body>
@@ -131,7 +147,7 @@
   </header>
 
   <div class="breadcrumb-area mb-0">
-    <div class="container">
+    <div class="bread-container">
       <div class="row title align-items-end">
         <div class="col-12">
           <div class="breadcumb--con">
@@ -140,9 +156,7 @@
         </div>
       </div>
     </div>
-    <div class="breadcrumb-bg-curve">
-      <img src="images/curve-1.png" alt="">
-    </div>
+   
   </div>
 
   <!-- Banner Section  -->
@@ -155,7 +169,7 @@
             <i class="fa fa-home"></i>
             Home</a>
         </li>
-        <li class="breadcrumb-item active" aria-current="page">Our Initiative</li>
+        <!-- <li class="breadcrumb-item active" aria-current="page">Our Initiative</li> -->
       </ol>
     </nav>
   </div>
@@ -222,7 +236,8 @@
       <div class="planting-section section-margin">
 
         <h1 class=" sub-heading">
-          Planting Trees With Every Ride</h1>
+          Planting Trees With Every Ride
+        </h1>
 
         <div class="initiative-top side-padding">
           <div class="">
@@ -235,7 +250,9 @@
 
               According to Trees for Cities, vegetation helps remove dangerous air pollutants, including carbon dioxide,
               dust, and other gaseous toxins. Together, we can do even more to reduce airborne pollution in the city we
-              live in and love, creating a brighter future for all.</p>
+              live in and love, creating a brighter future for all.
+              <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, nemo? Similique iusto error eum saepe mollitia velit debitis dolore rem animi officiis.</p>
           </div>
 
         </div>
@@ -274,9 +291,9 @@
           Creating Green Jobs</h1>
 
         <div class="initiative-top side-padding">
-          <div class="">
+          
             <img class="initi-img" src="images/demo/electric.png" alt="">
-          </div>
+          
           <div class="col">
 
             <p class="details">Lorem ipsum dolor sit amet consectetur Lorem ipsum Lorem ipsum, dolor sit amet
@@ -290,6 +307,8 @@
 
       </div>
     </section>
+
+
 
     <section class="d-flex justify-content-center align-items-center flex-column section-margin">
       <div>
@@ -309,119 +328,118 @@
 
 
 
+ <!-- FOOTER SECTION  -->
 
-  <!-- FOOTER SECTION  -->
+ <footer id="footer">
+  <div class="container">
+    <div class="row justify-content-between ">
+      <div class="col-md-5 d-flex gap-5">
+        <ul class="list-unstyled text-light ">
+          <li class="d-flex flex-column ">
+            <h4>Download Customer App</h4>
+            <a class="app-png" href="#"><img src="images/demo/google-play-png-logo-3798.png" alt=""></a>
+            <a class="app-png" href="#"><img src="images/demo/app-store-png-logo-33112.png" alt=""></a>
+          </li>
+          <li>
+            <h4 class="mt-3"> Download Driver App</h4>
+            <a class="app-png" href="#"><img src="images/demo/google-play-png-logo-3798.png" alt=""></a>
+          </li>
+        </ul>
+        <ul class="list-unstyled text-light">
+          <li><a href="index.html">
+              <h6>Home</h6>
+            </a></li>
+          <li><a href="safety.html">
+              <h6>Safety</h6>
+            </a></li>
+          <li><a href="Drive_with_us.html">
+              <h6>Drive with us</h6>
+            </a></li>
+          <li><a href="AboutUs.html">
+              <h6>About us</h6>
+            </a></li>
+          <li><a href="Initiative.html">
+              <h6>Initiative</h6>
+            </a></li>
+        </ul>
+      </div>
 
-  <footer id="footer">
-    <div class="container">
-      <div class="row justify-content-between ">
-        <div class="col-md-5 d-flex gap-5">
-          <ul class="list-unstyled text-light ">
-            <li class="d-flex flex-column">
-              <h4>Download Customer App</h4>
-              <a class="app-png" href="#"><img src="images/demo/google-play-png-logo-3798.png" alt=""></a>
-              <a class="app-png" href="#"><img src="images/demo/app-store-png-logo-33112.png" alt=""></a>
-            </li>
-            <li>
-              <h4 class="mt-3"> Download Driver App</h4>
-              <a class="app-png" href="#"><img src="images/demo/google-play-png-logo-3798.png" alt=""></a>
-            </li>
-          </ul>
-          <ul class="list-unstyled text-light">
-            <li><a href="index.html">
-                <h6>Home</h6>
-              </a></li>
-            <li><a href="safety.html">
-                <h6>Safety</h6>
-              </a></li>
-            <li><a href="Drive_with_us.html">
-                <h6>Drive with us</h6>
-              </a></li>
-            <li><a href="AboutUs.html">
-                <h6>About us</h6>
-              </a></li>
-            <li><a href="Initiative.html">
-                <h6>Initiative</h6>
-              </a></li>
-          </ul>
+      <!-- <div class="col-md-3">
+            <ul class="list-unstyled text-light">
+                <li><a href="index.html"><h6>Home</h6></a></li>
+                <li><a href="safety.html"><h6>Safety</h6></a></li>
+                <li><a href="Drive_with_us.html"><h6>Drive with us</h6></a></li>
+                <li><a href="AboutUs.html"><h6>About us</h6></a></li>
+                <li><a href="Initiative.html"><h6>Initiative</h6></a></li>
+            </ul>
+        </div> -->
+      <div class="col-md-3">
+        <ul class="list-unstyled text-light">
+          <li><a href="faq.html">
+              <h6>FAQs</h6>
+            </a></li>
+          <li><a href="privacy.html">
+              <h6>Privacy Policy</h6>
+            </a></li>
+          <li><a href="#">
+              <h6>Terms & Conditions</h6>
+            </a></li>
+        </ul>
+        <div class="address">
+          <h6>Address:</h6>
+          <p>Register Office: 737-738, 7 Floor, Mall of Jaipur, Gandhi Path, W B Block, Vaishali Nagar, Jaipur, Raj
+            302021</p>
+          <p>Branch Office:G 148 First Floor South City 2, Gurugram, Haryana 122018</p>
+          <p>Email: reachus@rydr.co.in</p>
         </div>
+      </div>
 
-        <!-- <div class="col-md-3">
-              <ul class="list-unstyled text-light">
-                  <li><a href="index.html"><h6>Home</h6></a></li>
-                  <li><a href="safety.html"><h6>Safety</h6></a></li>
-                  <li><a href="Drive_with_us.html"><h6>Drive with us</h6></a></li>
-                  <li><a href="AboutUs.html"><h6>About us</h6></a></li>
-                  <li><a href="Initiative.html"><h6>Initiative</h6></a></li>
-              </ul>
-          </div> -->
-        <div class="col-md-3">
-          <ul class="list-unstyled text-light">
-            <li><a href="faq.html">
-                <h6>FAQs</h6>
-              </a></li>
-            <li><a href="privacy.html">
-                <h6>Privacy Policy</h6>
-              </a></li>
-            <li><a href="#">
-                <h6>Terms & Conditions</h6>
-              </a></li>
-          </ul>
-          <div class="address">
-            <h6>Address:</h6>
-            <p>Register Office: 737-738, 7 Floor, Mall of Jaipur, Gandhi Path, W B Block, Vaishali Nagar, Jaipur, Raj
-              302021</p>
-            <p>Branch Office:G 148 First Floor South City 2, Gurugram, Haryana 122018</p>
-            <p>Email: reachus@rydr.co.in</p>
-          </div>
+      <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
+        <div class="form-heading">
+          <h3>Contact Us</h3>
         </div>
-
-        <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
-          <div class="form-heading">
-            <h3>Contact Us</h3>
-          </div>
-          <div class="contact-form">
-            <table class="table-black">
-              <tbody>
-                <tr>
-                  <td><input placeholder="Name" type="text" class="form-control form-input-block"></td>
-                </tr>
-                <tr>
-                  <td><input placeholder="Contact Number" type="number" class="form-control"></td>
-                </tr>
-                <tr>
-                  <td><input placeholder="Email" type="email" class="form-control"></td>
-                </tr>
-                <tr>
-                  <td><textarea placeholder="Message" name="" id="" class="form-control" rows="3"></textarea></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="sub-btn">
-            <button type="submit" class="btn btn-primary mt-2"><span>Contact</span></button>
-          </div>
-
+        <div class="contact-form">
+          <table class="table-black">
+            <tbody>
+              <tr>
+                <td><input placeholder="Name" type="text" class="form-control form-input-block"></td>
+              </tr>
+              <tr>
+                <td><input placeholder="Contact Number" type="number" class="form-control"></td>
+              </tr>
+              <tr>
+                <td><input placeholder="Email" type="email" class="form-control"></td>
+              </tr>
+              <tr>
+                <td><textarea placeholder="Message" name="" id="" class="form-control" rows="3"></textarea></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="col-md-1 d-flex align-items-center justify-content-center mt-2">
-
-          <ul class="social-icons list-inline d-flex flex-column">
-            <li class="list-inline-item"><a href="#"><img src="images/demo/insta.png" alt=""></a></li>
-            <li class="list-inline-item"><a href="#"><img src="images/demo/fb.png" alt=""></a></li>
-            <li class="list-inline-item"><a href="#"><img src="images/demo/twitter.png" alt=""></a></li>
-          </ul>
+        <div class="sub-btn mt-3">
+          <button type="submit" class="btn btn-primary"><span>Contact</span></button>
         </div>
 
       </div>
-      <hr style="border-top: 1px solid rgba(255, 255, 255, 0.2);">
-      <div class="row flex-row justify-content-center mt-2">
-        <div class="col-md-12 text-center">
-          <p id="copyright" class="copyright-content" style="opacity: 0.6;">&copy; <span id="year"></span> @ First And
-            Last Mile Connectivity India PVT. Limited. All Rights Reserved.</p>
-        </div>
+      <div class="col-md-1 d-flex align-items-center justify-content-center  mt-2">
+
+        <ul class="social-icons list-inline d-flex flex-column mt-2">
+          <li class="list-inline-item"><a href="#"><img src="images/demo/insta.png" alt=""></a></li>
+          <li class="list-inline-item"><a href="#"><img src="images/demo/fb.png" alt=""></a></li>
+          <li class="list-inline-item"><a href="#"><img src="images/demo/twitter.png" alt=""></a></li>
+        </ul>
+      </div>
+
+    </div>
+    <hr style="border-top: 1px solid rgba(255, 255, 255, 0.2);">
+    <div class="row flex-row justify-content-center mt-2">
+      <div class="col-md-12 text-center">
+        <p id="copyright" class="copyright-content" style="opacity: 0.6;">&copy; <span id="year"></span> @ First And
+          Last Mile Connectivity India PVT. Limited. All Rights Reserved.</p>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
 
   <script>
     document.addEventListener('DOMContentLoaded', (event) => {
@@ -456,6 +474,23 @@
     }
     gtag('js', new Date());
     gtag('config', 'UA-23581568-13');
+
+
+
+
+     // Adjust image height based on text content
+  window.addEventListener('load', function() {
+    adjustImageHeight();
+  });
+
+  function adjustImageHeight() {
+    var textHeight = document.getElementById('textContent').clientHeight;
+    document.getElementById('dynamicImg').style.height = textHeight + 'px';
+  }
+
+  // If you want to dynamically adjust image height when text content changes, you can use an event listener
+  // For example:
+  // document.getElementById('textContent').addEventListener('input', adjustImageHeight);
   </script>
 </body>
 

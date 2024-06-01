@@ -26,7 +26,14 @@ button{
   height: 40px !important;
   right: 60px !important;
   bottom: 55px !important;
+  
 }
+
+.fa-angle-up:before {
+  content: "\f106";
+  font-size: 40px;}
+
+  
 .section-margin{
   margin-top: 70px;
 }
@@ -199,6 +206,7 @@ text-align: justify;
 
 .accordion{
 width: 50%;
+z-index: 100;
 }
 .accordion-button{
 font-size: 20px !important;
@@ -559,8 +567,8 @@ padding: 5px 0;
 
 .customer-cards,.driver-cards{
 margin-top: 30px;
-  background-color: #fde8e8;
-  width: 75% !important;
+  /* background-color: #fde8e8; */
+  width: 77% !important;
   padding: 20px;
    display: flex;
     flex-direction: row;
@@ -771,6 +779,7 @@ padding: 0 70px;
     color: #fff;               /* White text color */
     padding: 50px 0;
     margin-top: 30px;
+  
   }
   
   #footer h3 {
@@ -833,10 +842,12 @@ line-height: 50px;
 
   .address p {
   font-size: 13px;
+  color: #5d6063;
   }
 
   .copyright-content{
     font-size: 13px !important;
+    color: #5d6063;
   }
 
 
@@ -972,6 +983,7 @@ width: 92%
     flex-direction: row;
     width: 72%;
     box-shadow: 0 4px 8px rgba(151, 151, 151, 0.377);
+    padding: 20px;
 }
 
 .first-initiative {
@@ -996,6 +1008,10 @@ margin-top: 50px;
 
 .first-details{
   width: 100%;
+}
+
+.details{
+  padding-left: 20px;
 }
 
 
@@ -1085,8 +1101,8 @@ margin-top: 50px;
  /* TESTING CSS  */
 
  .customer-cards, .driver-cards {
-  background-color: #fde8e8;
-  width: 80%;
+  
+ 
   padding: 20px;
   display: flex;
   flex-direction: row; /* Change flex direction to column */
@@ -1097,7 +1113,7 @@ margin-top: 50px;
 }
 
 .customer-safety-cards{
-  background-color: #fde8e8;
+  /* background-color: #fde8e8; */
   width: 70%;
   padding: 10px;
   display: flex;
