@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="UTF-8">
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>FAQs</title>
+  <title>FAQs</title>
 
-    <link rel="icon" href="images/favicon/favicon.ico">
+  <link rel="icon" href="images/favicon/favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="css/style.css">
@@ -16,7 +17,8 @@
   <!-- --  -->
   <link rel="stylesheet" href="second.css">
   <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   <!-- Responsive  -->
 
@@ -28,16 +30,54 @@
   <!-- --  -->
 
 
-   <!-- Poppins Fonts  -->
+  <!-- Poppins Fonts  -->
 
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
-   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+
   <script defer referrerpolicy="origin" src="js/s.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+  <style>
+
+    .faqs{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+     .faqs-accordion {
+    background-color: #eee;
+    cursor: pointer;
+    padding: 18px;
+    width: 72%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+    margin: 20px;
+    border-radius:10px ;
+    font-weight: 500;
+  }
+
+  .active, .faqs-accordion:hover {
+    /* background-color: #ccc; */
+  }
+
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+  </style>
 </head>
+
 <body>
   <header class="header-area">
     <div class="main-header-area">
@@ -81,105 +121,98 @@
     </div>
   </header>
 
-      <section>
+  <section>
 
-        
-  <section class="">
-    <div class="breadcrumb-area mb-0">
-      <div class="container">
-        <div class="row title align-items-end">
-          <div class="col-12">
-            <div class="breadcumb--con">
 
+    <section class="">
+      <div class="breadcrumb-area mb-0">
+        <div class="container">
+          <div class="row title align-items-end">
+            <div class="col-12">
+              <div class="breadcumb--con">
+
+              </div>
             </div>
           </div>
         </div>
+
       </div>
-   
-    </div>
 
-    <!-- Banner Section  -->
+      <!-- Banner Section  -->
 
-    <div class="top-banner position-relative">
-      <nav aria-label="breadcrumb" class="position-absolute back-button">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="index.html">
-              <i class="fa fa-home"></i>
-              Home</a>
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">FAQs</li>
-        </ol>
-      </nav>
-    </div>
-
-
-      </section>
-      <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              Accordion Item #1
-            </button>
-          </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-              Accordion Item #2
-            </button>
-          </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-              Accordion Item #3
-            </button>
-          </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-          </div>
-        </div>
+      <div class="top-banner position-relative">
+        <nav aria-label="breadcrumb" class="position-absolute back-button">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="index.html">
+                <i class="fa fa-home"></i>
+                Home</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">FAQs</li>
+          </ol>
+        </nav>
       </div>
-      <section>
 
-        
-        
-      </section>
- 
-<!-- FOOTER SECTION  -->
-  
-<footer id="footer">
-  <div class="container">
-    <div class="row justify-content-between ">
-        <div class="col-md-5 d-flex gap-5">
+
+    </section>
+
+    <section class="faqs">
+      <h2 class="sub-heading">FAQ Section</h2>
+
+      <button class="faqs-accordion">Question 1</button>
+      <div class="panel">
+        <p>Answer to question 1.</p>
+      </div>
+      
+      <button class="faqs-accordion">Question 2</button>
+      <div class="panel">
+        <p>Answer to question 2.</p>
+      </div>
+      
+      <button class="faqs-accordion">Question 3</button>
+      <div class="panel">
+        <p>Answer to question 3.</p>
+      </div>
+
+    </section>
+
+    <!-- FOOTER SECTION  -->
+
+    <footer id="footer">
+      <div class="container">
+        <div class="row justify-content-between ">
+          <div class="col-md-5 d-flex gap-5">
             <ul class="list-unstyled text-light ">
-                <li class="d-flex flex-column">
-                    <h4>Download Customer App</h4>
-                    <a class="app-png" href="#"><img src="images/demo/google-play-png-logo-3798.png" alt=""></a>
-                    <a class="app-png" href="#"><img src="images/demo/app-store-png-logo-33112.png" alt=""></a>
-                </li>
-                <li>
-                    <h4 class="mt-3"> Download Driver App</h4>
-                    <a class="app-png" href="#"><img src="images/demo/google-play-png-logo-3798.png" alt=""></a>
-                </li>
+              <li class="d-flex flex-column">
+                <h4>Download Customer App</h4>
+                <a class="app-png" href="#"><img src="images/demo/google-play-png-logo-3798.png" alt=""></a>
+                <a class="app-png" href="#"><img src="images/demo/app-store-png-logo-33112.png" alt=""></a>
+              </li>
+              <li>
+                <h4 class="mt-3"> Download Driver App</h4>
+                <a class="app-png" href="#"><img src="images/demo/google-play-png-logo-3798.png" alt=""></a>
+              </li>
             </ul>
             <ul class="list-unstyled text-light">
-                <li><a href="index.html"><h6>Home</h6></a></li>
-                <li><a href="safety.html"><h6>Safety</h6></a></li>
-                <li><a href="Drive_with_us.html"><h6>Drive with us</h6></a></li>
-                <li><a href="AboutUs.html"><h6>About us</h6></a></li>
-                <li><a href="Initiative.html"><h6>Initiative</h6></a></li>
+              <li><a href="index.html">
+                  <h6>Home</h6>
+                </a></li>
+              <li><a href="safety.html">
+                  <h6>Safety</h6>
+                </a></li>
+              <li><a href="Drive_with_us.html">
+                  <h6>Drive with us</h6>
+                </a></li>
+              <li><a href="AboutUs.html">
+                  <h6>About us</h6>
+                </a></li>
+              <li><a href="Initiative.html">
+                  <h6>Initiative</h6>
+                </a></li>
             </ul>
-        </div>
+          </div>
 
-        <!-- <div class="col-md-3">
+          <!-- <div class="col-md-3">
             <ul class="list-unstyled text-light">
                 <li><a href="index.html"><h6>Home</h6></a></li>
                 <li><a href="safety.html"><h6>Safety</h6></a></li>
@@ -188,74 +221,99 @@
                 <li><a href="Initiative.html"><h6>Initiative</h6></a></li>
             </ul>
         </div> -->
-        <div class="col-md-3">
+          <div class="col-md-3">
             <ul class="list-unstyled text-light">
-                <li><a href="faq.html"><h6>FAQs</h6></a></li>
-                <li><a href="privacy.html"><h6>Privacy Policy</h6></a></li>
-                <li><a href="#"><h6>Terms & Conditions</h6></a></li>
+              <li><a href="faq.html">
+                  <h6>FAQs</h6>
+                </a></li>
+              <li><a href="privacy.html">
+                  <h6>Privacy Policy</h6>
+                </a></li>
+              <li><a href="#">
+                  <h6>Terms & Conditions</h6>
+                </a></li>
             </ul>
             <div class="address">
-                <h6>Address:</h6>
-                <p>Register Office: 737-738, 7 Floor, Mall of Jaipur, Gandhi Path, W B Block, Vaishali Nagar, Jaipur, Raj 302021</p>
-                <p>Branch Office:G 148 First Floor South City 2, Gurugram, Haryana 122018</p>
-                <p>Email: reachus@rydr.co.in</p>
+              <h6>Address:</h6>
+              <p>Register Office: 737-738, 7 Floor, Mall of Jaipur, Gandhi Path, W B Block, Vaishali Nagar, Jaipur, Raj
+                302021</p>
+              <p>Branch Office:G 148 First Floor South City 2, Gurugram, Haryana 122018</p>
+              <p>Email: reachus@rydr.co.in</p>
             </div>
-        </div>
+          </div>
 
-        <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
+          <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
             <div class="form-heading">
-                <h3>Contact Us</h3>
+              <h3>Contact Us</h3>
             </div>
             <div class="contact-form">
-                <table class="table-black">
-                    <tbody>
-                        <tr>
-                            <td><input placeholder="Name" type="text" class="form-control form-input-block"></td>
-                        </tr>
-                        <tr>
-                            <td><input placeholder="Contact Number" type="number" class="form-control"></td>
-                        </tr>
-                        <tr>
-                            <td><input placeholder="Email" type="email" class="form-control"></td>
-                        </tr>
-                        <tr>
-                            <td><textarea placeholder="Message" name="" id="" class="form-control" rows="3"></textarea></td>
-                        </tr>
-                    </tbody>
-                </table>
+              <table class="table-black">
+                <tbody>
+                  <tr>
+                    <td><input placeholder="Name" type="text" class="form-control form-input-block"></td>
+                  </tr>
+                  <tr>
+                    <td><input placeholder="Contact Number" type="number" class="form-control"></td>
+                  </tr>
+                  <tr>
+                    <td><input placeholder="Email" type="email" class="form-control"></td>
+                  </tr>
+                  <tr>
+                    <td><textarea placeholder="Message" name="" id="" class="form-control" rows="3"></textarea></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class="sub-btn">
-                <button type="submit" class="btn btn-primary"><span>Contact</span></button>
+              <button type="submit" class="btn btn-primary"><span>Contact</span></button>
             </div>
-           
-        </div>
-        <div class="col-md-1 d-flex align-items-center justify-content-center mt-2 ">
-          
+
+          </div>
+          <div class="col-md-1 d-flex align-items-center justify-content-center mt-2 ">
+
             <ul class="social-icons list-inline d-flex flex-column  mt-2">
-                <li class="list-inline-item"><a href="#"><img src="images/demo/insta.png" alt=""></a></li>
-                <li class="list-inline-item"><a href="#"><img src="images/demo/fb.png" alt=""></a></li>
-                <li class="list-inline-item"><a href="#"><img src="images/demo/twitter.png" alt=""></a></li>
+              <li class="list-inline-item"><a href="#"><img src="images/demo/insta.png" alt=""></a></li>
+              <li class="list-inline-item"><a href="#"><img src="images/demo/fb.png" alt=""></a></li>
+              <li class="list-inline-item"><a href="#"><img src="images/demo/twitter.png" alt=""></a></li>
             </ul>
+          </div>
+
         </div>
-        
-    </div>
-    <hr style="border-top: 1px solid rgba(255, 255, 255, 0.2);">
-    <div class="row flex-row justify-content-center mt-2">
-      <div class="col-md-12 text-center">
-        <p id="copyright" class="copyright-content" style="opacity: 0.6;">&copy; <span id="year"></span> @ First And Last Mile Connectivity India PVT. Limited. All Rights Reserved.</p>
+        <hr style="border-top: 1px solid rgba(255, 255, 255, 0.2);">
+        <div class="row flex-row justify-content-center mt-2">
+          <div class="col-md-12 text-center">
+            <p id="copyright" class="copyright-content" style="opacity: 0.6;">&copy; <span id="year"></span> @ First And
+              Last Mile Connectivity India PVT. Limited. All Rights Reserved.</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</footer>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+        const yearSpan = document.getElementById('year');
+        const currentYear = new Date().getFullYear();
+        yearSpan.textContent = currentYear;
+      });
+    </script>
+
 
 <script>
-  document.addEventListener('DOMContentLoaded', (event) => {
-    const yearSpan = document.getElementById('year');
-    const currentYear = new Date().getFullYear();
-    yearSpan.textContent = currentYear;
-  });
+  var acc = document.getElementsByClassName("faqs-accordion");
+  for (var i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
 </script>
 
-    
+
 </body>
+
 </html>

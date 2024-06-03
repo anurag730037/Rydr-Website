@@ -42,6 +42,9 @@
   <script defer referrerpolicy="origin" src="js/s.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 
+   <!-- AOS Link  -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <style>
     .social-media-accordion {
       position: fixed;
@@ -187,7 +190,7 @@
     <div class="d-flex flex-column justify-content-center align-items-center section-margin">
       <h4 class="text-center sub-heading section-margin w-75">We Ensure The Well Being of Both, Our Customers and Drivers</h4>
 
-      <div class="new-safety-card-section ">
+      <div class="new-safety-card-section "  data-aos="zoom-in">
         <div class="new-safety-card-container">
           <div class="new-safety-card">
             <img src="images/cust_image-021.png" alt="Card Image 1" class="new-safety-card-img">
@@ -358,12 +361,6 @@
   </script>
 
 
-
-
-
-
-
-
   <script src="JavaScript/onclicked.js"></script>
 
 
@@ -396,6 +393,15 @@
     });
   </script>
 
+  <!-- AOS JS  -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 80,
+      duration: 1000,
+    }
+    );
+  </script>
 
   <script>
     window.dataLayer = window.dataLayer || [];

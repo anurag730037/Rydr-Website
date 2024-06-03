@@ -439,6 +439,7 @@ padding: 0 10px
  
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
 .mission-content,
@@ -703,6 +704,7 @@ height: 100px;
     margin: 10px 0;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     
 }
 
@@ -929,7 +931,7 @@ width: 92%
   background-color: white;
   z-index: 1;
   margin: 10px;
-
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -984,6 +986,7 @@ width: 92%
     width: 72%;
     box-shadow: 0 4px 8px rgba(151, 151, 151, 0.377);
     padding: 20px;
+    border-radius: 8px;
 }
 
 .first-initiative {
@@ -1040,6 +1043,7 @@ flex-wrap: wrap;
     /* justify-content: space-around; */
     width: 25%;
     box-shadow: 0 4px 8px rgba(151, 151, 151, 0.377);
+    border-radius: 8px;
 }
 .method-card img {
     width: 100%;
@@ -1243,6 +1247,7 @@ flex-wrap: wrap;
   justify-content: center;
   background-color: #f9e5e5;
   width: 72%;
+  border-radius: 8px;
 }
 
 .new-safety-card-container {
@@ -1413,6 +1418,7 @@ flex-wrap: wrap;
         margin: 5px;
         padding: 15px;
         box-sizing: border-box;
+        border-radius: 8px;
     }
     .customer-item img {
         width: 100%;
