@@ -13,9 +13,14 @@
   }
 
   .master-head{
-    margin-top: 50px !important;
+    /* margin-top: 50px !important; */
     /* margin-bottom: -50px; */
+    margin-top: 100px;
   }
+
+  .safety-cust-card {
+    margin-top: 250px;
+}
 
   .super-sub-points{
     font-size: 20px;
@@ -184,8 +189,8 @@ border: 0px;
         object-fit: contain;
     }
     .method-card p {
-        text-align: center;
-        /* padding: 0px 50px */
+        text-align: justify;
+        padding: 0px 12px
     }
 
     .methods-desc{
@@ -205,6 +210,8 @@ border: 0px;
     .initi-img {
       align-self: center; /* Center the image on smaller screens */
       object-fit: contain;
+      justify-content: center;
+      align-items: center;
     }
 
     .side-padding{
@@ -214,6 +221,7 @@ border: 0px;
 
     .customer-item{
       width: 45%;
+      
     }
    
 
