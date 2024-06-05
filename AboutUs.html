@@ -89,6 +89,11 @@
       object-fit: cover;
       border-radius: 8px;
     }
+
+    .top-banner{
+      background: url('images/about-banner.jpg') no-repeat center center;
+      background-size: cover;
+    }
   </style>
 </head>
 
@@ -155,14 +160,14 @@
 
   <div class="top-banner position-relative">
     <nav aria-label="breadcrumb" class="position-absolute back-button">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="index.html">
-            <i class="fa fa-home"></i>
-            Home /</a>
-        </li>
-        <!-- <li class="breadcrumb-item active" aria-current="page">About Us</li> -->
-      </ol>
+      <div id="homeButton" class="sticky-button">
+        <a href="index.html"> 
+          <div id="homeButton" class="sticky-button">
+              <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </div>
+        </a>
+        
+    </div>
     </nav>
   </div>
 

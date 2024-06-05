@@ -60,6 +60,46 @@
         flex-direction: row;
     }
 
+    #scrollUp{
+      width: 30px !important;
+      height: 30px !important;
+      right: 48px !important;
+      bottom: 55px !important;
+      font-size: 27px !important;
+      line-height: 0 !important;
+      
+    }
+    
+    .fa-angle-up::before{
+      font-size: 25px;
+    }
+
+    .sticky-button {
+      width: 30px;
+      height: 30px;
+    }
+
+    .fa-angle-left{
+      font-size: 28px;
+    }
+
+    .social-media-accordion{
+      right: 5px;
+    }
+
+    .social-icons img {
+      width: 30px;
+      height: 28px;}
+
+    .accordion-btn{
+      height: 30px;
+      width: 30px;
+    }
+
+    .accordion-content img {
+      width: 30px;
+      height: 30px;
+    }
     .top-right img {
         height: auto;
         width: 250px;
@@ -133,6 +173,11 @@ flex-direction: row;
     .new-safety-card {
       width: 200px;
       height: 100%;
+    }
+
+    .safety-card{
+      width: 100%;
+      margin: 0;
     }
 
     .customer-cards ,.driver-cards{

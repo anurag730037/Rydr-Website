@@ -46,68 +46,10 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
   <style>
-    .social-media-accordion {
-      position: fixed;
-      bottom: 50px;
-      right: 0px;
-      z-index: 1000;
-    }
-
-    .accordion-btn {
-      background-color: #c30000;
-      color: white;
-      padding: 10px;
-      border: none;
-      cursor: pointer;
-      outline: none;
-      transition: 0.4s;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 40px;
-      height: 40px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      margin: 5px;
-      box-shadow: 0 0px 2px 2px rgb(249 229 229);
-    }
-
-    .accordion-btn:hover {
-      background-color: #8f0303;
-    }
-
-    .accordion-content {
-      display: none;
-      flex-direction: column;
-      margin-top: 10px;
-      background-color: transparent;
-      border-radius: 5px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      padding: 10px;
-    }
-
-    .accordion-content img {
-      width: 30px;
-      height: 30px;
-      margin: 5px 0;
-    }
-
-    .accordion-content a {
-      /* padding: 5px; */
-      text-align: center;
-      text-decoration: none;
-      color: black;
-      border-top: 1px solid #f1f1f1;
-      font-size: 14px;
-    }
-
-    .accordion-content a:hover {
-      background-color: #f1f1f1;
-    }
-
-    .accordion-content a:first-child {
-      border-top: none;
-    }
+        .top-banner{
+          background: url('images/safety-banner.jpg') no-repeat center center;
+          background-size: cover;
+        }
   </style>
 </head>
 
@@ -160,11 +102,7 @@
     <div class="breadcrumb-area mb-0">
       <div class="container">
         <div class="row title align-items-end">
-          <div class="col-12">
-            <div class="breadcumb--con">
-
-            </div>
-          </div>
+         
         </div>
       </div>
       <div class="breadcrumb-bg-curve">
@@ -176,14 +114,14 @@
 
     <div class="top-banner position-relative">
       <nav aria-label="breadcrumb" class="position-absolute back-button">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item">
-            <a href="index.html">
-              <i class="fa fa-home"></i>
-              Home</a>
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">Safety</li>
-        </ol>
+        <div id="homeButton" class="sticky-button">
+          <a href="index.html"> 
+            <div id="homeButton" class="sticky-button">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+              </div>
+          </a>
+          
+      </div>
       </nav>
     </div>
 

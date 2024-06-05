@@ -512,7 +512,7 @@ input:focus {
 
 #scrollUp:focus,
 #scrollUp:hover {
-  background-color: #000000;
+  background-color:darkred;
   color: #ffffff;
 }
 
@@ -668,7 +668,7 @@ input:focus {
 
 .header-area .search-icon {
   position: relative;
-  z-index: 1;
+  z-index: 1000000000000;
   margin-left: 14px;
 }
 
@@ -1101,7 +1101,7 @@ input:focus {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: -1;
+  z-index: -167676;
 }
 
 .single-welcome-slide .background-curve :hover {
@@ -2324,23 +2324,24 @@ body>#customer_signup_form {
 }
 
 .single-service-area .service-icon {
-  background-color: var(--secondary-clr);
+  /* background-color: var(--secondary-clr); */
+  background-color: #fcfcfcee;
   width: 145px;
-  height: 110px;
+  height: 90px;
   font-size: 42px;
   color: #303030;
   text-align: center;
-  line-height: 110px;
-  border-radius: 80px 200px 200px 362px;
-  margin: 0 auto 40px;
+  line-height: 100px;
+  border-radius: 80px 200px 200px 262px;
+  /* margin: 0 auto 40px; */
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
   transition-duration: 500ms;
+
 }
 
 .single-service-area img {
-  width: 10rem;
-  margin-bottom: 2rem;
+ margin-bottom: 5px;
 }
 
 .single-service-area h5 {
@@ -2355,7 +2356,7 @@ body>#customer_signup_form {
 
 .single-service-area:focus .service-icon,
 .single-service-area:hover .service-icon {
-  background-color: var(--primary-clr);
+background-color: #ffe1e1;
   color: #ffffff;
   -webkit-box-shadow: var(--pr-shadow);
   box-shadow: var(--pr-shadow);

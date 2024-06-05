@@ -99,6 +99,10 @@
   img {
     max-width: 100%;
   }
+  .top-banner{
+      background: url('images/final-init-banner.jpg') no-repeat center center;
+      background-size: cover;
+    }
 </style>
 </head>
 
@@ -163,14 +167,14 @@
 
   <div class="top-banner position-relative">
     <nav aria-label="breadcrumb" class="position-absolute back-button">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="index.html">
-            <i class="fa fa-home"></i>
-            Home</a>
-        </li>
-        <!-- <li class="breadcrumb-item active" aria-current="page">Our Initiative</li> -->
-      </ol>
+      <div id="homeButton" class="sticky-button">
+        <a href="index.html"> 
+          <div id="homeButton" class="sticky-button">
+              <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </div>
+        </a>
+        
+    </div>
     </nav>
   </div>
 
@@ -203,7 +207,7 @@
       <div class="methods ">
 
         <div class="method-card ">
-          <img src="images/demo/leaf.png" alt="">
+          <img src="images/demo/carbon-neo.png" alt="">
           <div class="methods-desc">
             <p class="">
               All Rydr rides are carbon neutral – we offset every gram of CO2 emitted via Using Electric vehicles
@@ -212,7 +216,7 @@
         </div>
 
         <div class="method-card ">
-          <img src="images/demo/method-2.png" alt="">
+          <img src="images/demo/scooter.png" alt="">
           <div class="methods-desc">
             <p class="">
               Select Rydr to reduce emissions for your ride – electric bike cabs, every time
@@ -221,7 +225,7 @@
         </div>
 
         <div class="method-card ">
-          <img src="images/demo/method-3.png" alt="">
+          <img src="images/demo/plant.png" alt="">
           <div class="methods-desc">
             <p class="">
               For every ride taken, we plant a tree. This not only helps in offsetting any minimal emissions produced
