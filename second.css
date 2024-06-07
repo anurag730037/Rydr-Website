@@ -20,6 +20,11 @@ button{
   margin: 0 20px;
 }
 
+.empty_error{
+  border: 2px solid red !important;
+  background-color: #c30000;
+}
+
 #scrollUp{
   box-shadow: 0 0px 2px 2px rgb(249 229 229) !important;
   width: 40px !important;
@@ -314,7 +319,7 @@ text-align: justify;
 
 .know-more{
   background-color:#C30000;
-  padding: 6px 11px;
+  padding: 6px 12px;
   text-decoration: none;
   color:white;
   font-size: 15px;

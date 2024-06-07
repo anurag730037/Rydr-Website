@@ -735,6 +735,7 @@ input:focus {
   }
 .classy-nav-container .classy-navbar .classynav ul li.current-item a {
   color: var(--primary-clr);
+  font-weight: 700;
 }
 
 .classy-nav-container .classy-navbar .classynav ul li a:focus,

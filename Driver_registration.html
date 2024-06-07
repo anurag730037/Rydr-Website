@@ -250,7 +250,7 @@
                                         placeholder="Example: DL-1234567890" required>
                                 </div>
                                 <div class="text-center gap-2">
-                                    <button type="button" class=" next-btn"
+                                        <button type="button" class=" next-btn"
                                         id="driving-license-next">Next</button>
                                 </div>
                             </form>
@@ -443,7 +443,7 @@
                       </tbody>
                   </table>
               </div>
-              <div class="sub-btn">
+               <div class="sub-btn">
                   <button type="submit" class="btn btn-primary"><span>Contact</span></button>
               </div>
              
@@ -481,7 +481,9 @@
 
   <script src="JavaScript/onclicked.js"></script>
 
+  <script src="JavaScript/Registration.js"></script>
 
+  <script src="JavaScript/contact-form.js"></script>
   <script src="js/jquery.min.js"></script>
 
   <script src="js/popper.min.js"></script>
@@ -495,6 +497,7 @@
   <script src="js/testimonial.js"></script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -511,15 +514,28 @@
             document.getElementById('collapseTwo').classList.add('show');
         });
 
-        document.getElementById('driving-license-next').addEventListener('click', function () {
-            // Check if DL number is provided
-            // var dlNumber = document.getElementById('dl_number').value;
-            // if (dlNumber.trim() === '') {
-            //     alert('Please enter a valid DL number.');
-            //     return;
-            // }
+        dlNumberField.addEventListener('input', function() {
+        if (dlNumberField.value.trim() === '') {
+            nextButton.disabled = true;
+            dlNumberField.classList.add('empty_error');
+        } else {
+            nextButton.disabled = false;
+            dlNumberField.classList.remove('empty_error');
+        }
+    });
 
-            // If DL number is valid, redirect to the next accordion
+
+        document.getElementById('driving-license-next').addEventListener('click', function () {
+           // Check if DL number is provided
+           var dlNumberField = document.getElementById('dl_number')
+            var dlNumber = document.getElementById('dl_number').value;
+            if (dlNumber.trim() === '') {
+                dlNumberField.classList.add('empty_error');
+
+                return;
+            }
+
+             // If DL number is valid, redirect to the next accordion
             document.getElementById('collapseTwo').classList.remove('show');
             document.getElementById('collapseThree').classList.add('show');
         });

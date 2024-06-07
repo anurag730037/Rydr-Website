@@ -82,10 +82,6 @@
                 </ul>
               </div>
 
-              <!-- <div class="get-a-quote ml-4 mr-3" data-toggle="modal" data-target="#download_rydr">
-                <a href="#" class="btn rydr-btn">Download App</a>
-              </div> -->
-
               <div class="login-register-btn mx-3" data-toggle="modal" data-target="#customer-login">
                 <a href="login.html">
                   <i class="bi bi-person-circle"></i>
@@ -93,10 +89,8 @@
                 </a>
               </div>
             </div>
-
           </div>
         </nav>
-
       </div>
     </div>
   </header>
@@ -549,22 +543,22 @@
             <table class="table-black">
               <tbody>
                 <tr>
-                  <td><input placeholder="Name" type="text" class="form-control form-input-block"></td>
+                  <td><input placeholder="Name" type="text" class="form-control form-input-block" name="connect-name" id="connect-name"></td>
                 </tr>
                 <tr>
-                  <td><input placeholder="Contact Number" type="number" class="form-control text-decoration-none"></td>
+                  <td><input placeholder="Contact Number" type="number" class="form-control text-decoration-none" name="connect-phone" id="connect-phone"></td>
                 </tr>
                 <tr>
-                  <td><input placeholder="Email" type="email" class="form-control"></td>
+                  <td><input placeholder="Email" type="email" class="form-control" name="connect-email" id="connect-email" ></td>
                 </tr>
                 <tr>
-                  <td><textarea placeholder="Message" name="" id="" class="form-control" rows="3"></textarea></td>
+                  <td><textarea placeholder="Message" name="connect-message" id="connect-message" class="form-control" rows="3"></textarea></td>
                 </tr>
               </tbody>
             </table>
           </div>
           <div class="sub-btn mt-3">
-            <button type="submit" class="btn btn-primary"><span>Contact</span></button>
+            <button type="submit" class="btn btn-primary" name="contact-submit" id="contact-submit"><span>Contact</span></button>
           </div>
 
         </div>
@@ -613,6 +607,7 @@
   <script src="JavaScript/onclicked.js"></script>
 
 
+  <script src="JavaScript/contact-form.js"></script>
   <script src="js/jquery.min.js"></script>
 
   <script src="js/popper.min.js"></script>
