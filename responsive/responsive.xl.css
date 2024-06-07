@@ -9,3 +9,82 @@
    } */
 }
 
+
+
+@media only screen and (min-width: 2000px) and (max-width: 2560px) {
+    
+
+    p{
+    font-size: 1.1rem;
+    font-size: 27px;}
+
+    .mission-container {
+        width: 60%;
+    }
+    .sub-heading {
+        font-size: 60px;
+    }
+    .super-sub-points {
+        font-size: 40px
+    }
+    .why-choose{
+        width: 60%;
+    }
+    .points p {
+        font-size: 30px;
+    }
+    .bottom-box h4{
+        font-size: 40px;
+    }
+    .customer-cards-second{
+        width: 79%;
+    }
+    .safety-text {
+        width: 60%;
+    }
+    .know-more {
+        font-size: 20px
+    }
+
+    .new-safety-card {
+        width: 45%;
+    }
+
+    .new-safety-card-section{
+        width: 59%;
+    }
+
+     .new-safety-card-container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .cust-saf-points {
+            width: 59%;
+        }
+
+        .separate-safety {
+            width: 59%;
+        }
+
+        .accordion{
+            width: 100%;
+            font-size: 30px;
+        }
+
+        .image-container {
+            width: 60%;
+        }
+
+        .methods {
+            width: 61%;
+        }
+        .initiative-top {
+            width: 60%;
+        }
+        .carbon_img {
+            width: 60%;
+        }
+    
+}

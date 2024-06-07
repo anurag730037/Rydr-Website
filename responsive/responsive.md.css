@@ -1,18 +1,18 @@
 @media only screen and (max-width: 768px) {
 
-  .classy-nav-container .classy-navbar{
+  .classy-nav-container .classy-navbar {
     height: 60px;
   }
 
-  .section-margin{
+  .section-margin {
     margin-top: 30px;
   }
 
-  p{
+  p {
     font-size: 17px;
   }
 
-  .master-head{
+  .master-head {
     /* margin-top: 50px !important; */
     /* margin-bottom: -50px; */
     margin-top: 100px;
@@ -20,263 +20,327 @@
 
   .safety-cust-card {
     margin-top: 250px;
-}
+  }
 
-  .super-sub-points{
+  .super-sub-points {
     font-size: 20px;
     text-transform: capitalize;
-    }
+  }
 
-  .sub-heading{
+  .sub-heading {
     color: #000000;
     font-size: 30px;
     line-height: 30px;
     text-align: center;
     margin: 40px auto;
     font-weight: 700;
-   position: relative;
+    position: relative;
     display: block;
-   margin-bottom: 30px;
-   text-transform: capitalize;
-    }
-  
-  .sub-heading::after{
-      content: "";
-      text-align: center;
-      background: #c30000;
-      width: 90px;
-      height: 2px;
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      bottom: -3px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
   }
 
-    h2{
-        font-size: 30px !important;
-    }
-    .second-top{
-        flex-direction: row;
-    }
+  .sub-heading::after {
+    content: "";
+    text-align: center;
+    background: #c30000;
+    width: 90px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -3px;
+  }
 
-    #scrollUp{
-      width: 30px !important;
-      height: 30px !important;
-      right: 48px !important;
-      bottom: 55px !important;
-      font-size: 27px !important;
-      line-height: 0 !important;
-      
-    }
-    
-    .fa-angle-up::before{
-      font-size: 25px;
-    }
+  h2 {
+    font-size: 30px !important;
+  }
 
-    .sticky-button {
-      width: 30px;
-      height: 30px;
-    }
+  .second-top {
+    flex-direction: row;
+  }
 
-    .fa-angle-left{
-      font-size: 28px;
-    }
+  #scrollUp {
+    width: 30px !important;
+    height: 30px !important;
+    right: 48px !important;
+    bottom: 55px !important;
+    font-size: 27px !important;
+    line-height: 0 !important;
 
-    .social-media-accordion{
-      right: 5px;
-    }
+  }
 
-    .social-icons img {
-      width: 30px;
-      height: 28px;}
+  .fa-angle-up::before {
+    font-size: 25px;
+  }
 
-    .accordion-btn{
-      height: 30px;
-      width: 30px;
-    }
+  .sticky-button {
+    width: 30px;
+    height: 30px;
+  }
 
-    .accordion-content img {
-      width: 30px;
-      height: 30px;
-    }
-    .top-right img {
-        height: auto;
-        width: 250px;
-    }
+  .fa-angle-left {
+    font-size: 28px;
+  }
 
-    .login{
-      width: 50%;
-        margin-top: 10%;}
-    
-    /* Mission  */
+  .social-media-accordion {
+    right: 5px;
+  }
 
-    .mission-heading {
-        margin-right: 0; /* Remove margin for smaller screens */
-      }
-      
-      .about-us-content {
-        flex-direction: column; /* Stack elements vertically on smaller screens */
-        align-items: center; /* Center items vertically */
-        gap: 20px; /* Reduce gap between elements */
-      }
-      
-      .mission-content {
-        text-align: center; /* Center text content */
-        /* Add some bottom margin */
-      }
-      
-      .mission-img
-      {
-        width: 80%; /* Make images take 80% width on smaller screens */
-        max-width: 300px; /* Set maximum width for images */
-      }
-      
-      /* Reorder image above content */
-      .mission-content {
-        order: 2; /* Set content order to 2 */
-      }
-      
-      .mission-img,
-      .mission-img-3 {
-        order: 1; /* Set image order to 1 */
-      }
+  .social-icons img {
+    width: 30px;
+    height: 28px;
+  }
 
-      .why-choose {
-        flex-direction: column; /* Stack items vertically on small screens */
-      }
-    
-      .why-choose-content, .why-choose-image {
-        margin: 10px 0; /* Adjust margins for stacked layout */
-      }
+  .accordion-btn {
+    height: 30px;
+    width: 30px;
+  }
 
-      /* Safety  */
+  .accordion-content img {
+    width: 30px;
+    height: 30px;
+  }
 
-   .breadcrumb-area {
-        height:0;
-    }
-    .safety-top{
-       
-        align-items: center;
-    }
-     .safety-img img{
-        width: 120px !important;
-    }
-    .new-safety-card-container{
-      flex-direction: row;
-      align-items: flex-start;
-    }
+  .top-right img {
+    height: auto;
+    width: 250px;
+  }
 
-    .new-safety-card-section{
-flex-direction: row;
-    }
-    .new-safety-card {
-      width: 200px;
-      height: 100%;
-    }
+  .login {
+    width: 50%;
+    margin-top: 10%;
+  }
 
-    .safety-card{
+  /* Mission  */
+
+  .mission-heading {
+    margin-right: 0;
+    /* Remove margin for smaller screens */
+  }
+
+  .about-us-content {
+    flex-direction: column;
+    /* Stack elements vertically on smaller screens */
+    align-items: center;
+    /* Center items vertically */
+    gap: 20px;
+    /* Reduce gap between elements */
+  }
+
+  .mission-content {
+    text-align: center;
+    /* Center text content */
+    /* Add some bottom margin */
+  }
+
+  .mission-img {
+    width: 80%;
+    /* Make images take 80% width on smaller screens */
+    max-width: 300px;
+    /* Set maximum width for images */
+  }
+
+  /* Reorder image above content */
+  .mission-content {
+    order: 2;
+    /* Set content order to 2 */
+  }
+
+  .mission-img,
+  .mission-img-3 {
+    order: 1;
+    /* Set image order to 1 */
+  }
+
+  .why-choose {
+    flex-direction: column;
+    /* Stack items vertically on small screens */
+  }
+
+  .why-choose-content,
+  .why-choose-image {
+    margin: 10px 0;
+    /* Adjust margins for stacked layout */
+  }
+
+  /* Safety  */
+
+  .breadcrumb-area {
+    height: 0;
+  }
+
+  .safety-top {
+
+    align-items: center;
+  }
+
+  .safety-img img {
+    width: 120px !important;
+  }
+
+  .new-safety-card-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .new-safety-card-section {
+    flex-direction: row;
+  }
+
+  .new-safety-card {
+    width: 200px;
+    height: 100%;
+  }
+
+  .safety-card {
+    width: 100%;
+    margin: 0;
+  }
+
+  .customer-cards,
+  .driver-cards {
+    flex-direction: column;
+
+  }
+
+  .cust-box-1,
+  .cust-box-2,
+  .cust-box-3,
+  .driver-box-1,
+  .driver-box-2,
+  .driver-box-3,
+  .driver-box-4 {
+    width: fit-content;
+  }
+
+  .card img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .safety-text {
+    padding: 0px;
+  }
+
+  .customer-safety-cards {
+    width: 100%;
+    /* Set full width on smaller screens */
+  }
+
+  .text-shrink {
+    padding: 0 30px;
+  }
+
+  /* Advantages  */
+
+  .adv-card {
+    flex-direction: column;
+    border: 0px;
+  }
+
+  .adv-card-title {
+    text-align: center;
+  }
+  .single-service-area h5{
+    font-size: 15px;
+  }
+
+  /* Initiative  */
+
+  @media only screen and (max-width: 485px) {
+    .first-details {
+        font-size: 14px;
+    }
+}
+
+  .methods {
+    justify-content: space-around;
+  }
+
+  .method-card img {
+    width: 100%;
+    height: 175px;
+    object-fit: contain;
+  }
+
+  .method-card p {
+    text-align: justify;
+    padding: 0px 12px
+  }
+
+  .method-card p {
+    text-align: justify;
+    padding: 0px 12px;
+    font-size: 12px;
+  }
+
+
+.methods-desc {
+  text-align: justify;
+  padding: 10px 0px;
+}
+
+.planting-section p,
+h1 {
+  padding-left: 0;
+}
+
+.initiative-top {
+  flex-direction: column;
+  /* Stack items vertically on smaller screens */
+  gap: 10px;
+  /* Adjust gap for smaller screens */
+}
+
+.initi-img {
+  align-self: center;
+  /* Center the image on smaller screens */
+  object-fit: contain;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.customer-item {
+  width: 45%;
+
+}
+
+
+.customer-cards-second {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+}
+
+@media only screen and (max-width: 670px) {
+ 
+  .new-safety-card-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .customer-cards-second {
+      flex-direction: column;
+  }
+  .customer-item{
       width: 100%;
-      margin: 0;
-    }
-
-    .customer-cards ,.driver-cards{
-        flex-direction: column;
-        
-    }
-    .cust-box-1,
-    .cust-box-2,
-    .cust-box-3 ,
-    .driver-box-1,
-    .driver-box-2,
-    .driver-box-3,
-    .driver-box-4 {
-      width: fit-content; 
-    }
-
-    .card img{
-        height: 100px;
-        width: 100px;
-    }
-
-    .safety-text{
-        padding: 0px;
-    }
-
-    .customer-safety-cards {
-        width: 100%; /* Set full width on smaller screens */
-      }
-
-    .text-shrink{
-        padding: 0 30px;
-    }
-
-    /* Advantages  */
-
-   .adv-card {
-flex-direction: column;
-border: 0px;
-    }
-    .adv-card-title{
-        text-align: center;
-    }
-
-    /* Initiative  */
-
-    
-    .methods{
-        justify-content: space-around;
-    }
-
-    .method-card img {
-        width: 100%;
-        height: 175px;
-        object-fit: contain;
-    }
-    .method-card p {
-        text-align: justify;
-        padding: 0px 12px
-    }
-
-    .methods-desc{
-      text-align: justify;
-      padding: 10px 0px !important;
-    }
-
-    .planting-section p,h1{
-      padding-left: 0;
-    }
-
-    .initiative-top {
-      flex-direction: column; /* Stack items vertically on smaller screens */
-      gap: 10px; /* Adjust gap for smaller screens */
-    }
-  
-    .initi-img {
-      align-self: center; /* Center the image on smaller screens */
-      object-fit: contain;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .side-padding{
-      padding-left: 0;
-      padding-right: 0;
-    }
-
-    .customer-item{
-      width: 45%;
-      
-    }
-   
-
-    .customer-cards-second{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-    }
-
-    
-  
   }
+
+  .new-safety-card {
+      width: 80%;
+      height: auto;
+      
+  }
+}

@@ -131,9 +131,9 @@
       <div class="new-safety-card-section "  data-aos="zoom-in">
         <div class="new-safety-card-container">
           <div class="new-safety-card">
-            <img src="images/cust_image-021.png" alt="Card Image 1" class="new-safety-card-img">
+            <img src="images/cust-img-212.png" alt="Card Image 1" class="new-safety-card-img">
             <div class="new-safety-card-content">
-              <h3 class="new-safety-card-heading super-sub-points text-center">For Customer</h3>
+              <h3 class="new-safety-card-heading super-sub-points text-center"><strong>For Customer</strong></h3>
               <p class="">Rides are tracked by Rydr, with access to latitude and longitude
                 Data.</p>
             </div>
@@ -144,7 +144,7 @@
           <div class="new-safety-card">
             <img src="images/slider-1.png" alt="Card Image 2" class="new-safety-card-img">
             <div class="new-safety-card-content">
-              <h3 class="new-safety-card-heading super-sub-points text-center">For Drivers</h3>
+              <h3 class="new-safety-card-heading super-sub-points text-center"><strong>For Drivers</strong></h3>
               <p class="">From hiring, to monitoring, to ongoing checks, we take all
                 necessary steps to ensure our Riders safety.</p>
             </div>
@@ -330,6 +330,32 @@
       });
     });
   </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const footer = document.getElementById('footer');
+    const accordion = document.querySelector('.social-media-accordion');
+    
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          accordion.classList.add('hidden'); // Add hidden class to hide accordion
+        } else {
+          accordion.classList.remove('hidden'); // Remove hidden class to show accordion
+        }
+      });
+    }, observerOptions);
+
+    observer.observe(footer);
+  });
+</script>
+
 
   <!-- AOS JS  -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

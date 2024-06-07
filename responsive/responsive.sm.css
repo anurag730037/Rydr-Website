@@ -62,7 +62,8 @@
     }
 
     .new-safety-card {
-        width: 250px;
+        /* width: 250px; */
+        width: 100%;
         height: auto;
     }
 
@@ -106,10 +107,13 @@ width: 100%;
     font-size: 12px;
 }
 
+.single-service-area h5 {
+    font-size: 12px;
+}
+
     /* Initiative  */
 
     .first-details {
-        
         font-size: 14px;
     }
 
@@ -127,7 +131,13 @@ width: 100%;
 
     .method-card p {
         padding: 0px 15px;
+        font-size: 15px;
     }
+
+        .planting-section p {
+            font-size: 15px;
+            padding: 0 8px;
+        }
     .initiative-top{
         flex-direction: column;
         align-items: center;
@@ -143,4 +153,28 @@ width: 100%;
     .planting-section p,h1{
         padding-left: 0;
       }
+}
+
+
+@media only screen and (max-width: 390px) {
+    .first-details{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .adv-section{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .adv-card{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .first-details {
+        font-size: 11px;
+    }
 }
