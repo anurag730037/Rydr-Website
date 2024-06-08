@@ -21,8 +21,7 @@ button{
 }
 
 .empty_error{
-  border: 2px solid red !important;
-  background-color: #c30000;
+  border: 2px solid #c30000 !important;
 }
 
 #scrollUp{
@@ -244,8 +243,8 @@ text-transform: capitalize;
 
 .classy-navbar{
   /* background-color: transparent; */
-background-color: #fde8e8;
-border-bottom: 1px solid #d34c4c;
+background-color: #f9e5e5;
+/* border-bottom: 1px solid #d34c4c; */
 
 }
 

@@ -221,7 +221,7 @@
                                     </div>
                                 </div>
                                 <div class="text-center gap-2">
-                                    <button type="button" class=" next-btn" id="profile-next">Next</button>
+                                    <button type="button" class=" next-btn" id="profile-next" >Next</button>
                                 </div>
 
 
@@ -357,14 +357,12 @@
                         placeholder="Enter Aadhaar Card number" required>
                 </div>
                 <div class=" text-center gap-2">
-                    <button type="submit" class=" next-btn">Submit</button>
+                    <button type="submit" class="next-btn" id="reg-submit">Submit</button>
                 </div>
             </form>
         </div>
     </div>
 </div>
-
-                
 
             </div>
         </div>
@@ -422,32 +420,33 @@
           </div>
 
           <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
-              <div class="form-heading">
-                  <h3>Contact Us</h3>
-              </div>
-              <div class="contact-form">
-                  <table class="table-black">
-                      <tbody>
-                          <tr>
-                              <td><input placeholder="Name" type="text" class="form-control form-input-block"></td>
-                          </tr>
-                          <tr>
-                              <td><input placeholder="Contact Number" type="number" class="form-control"></td>
-                          </tr>
-                          <tr>
-                              <td><input placeholder="Email" type="email" class="form-control"></td>
-                          </tr>
-                          <tr>
-                              <td><textarea placeholder="Message" name="" id="" class="form-control" rows="3"></textarea></td>
-                          </tr>
-                      </tbody>
-                  </table>
-              </div>
-               <div class="sub-btn">
-                  <button type="submit" class="btn btn-primary"><span>Contact</span></button>
-              </div>
-             
+            <div class="form-heading">
+              <h3>Contact Us</h3>
+            </div>
+            <div class="contact-form">
+              <table class="table-black">
+                <tbody>
+                  <tr>
+                    <td><input placeholder="Name" type="text" class="form-control form-input-block" name="connect-name" id="connect-name"></td>
+                  </tr>
+                  <tr>
+                    <td><input placeholder="Contact Number" type="number" class="form-control text-decoration-none" name="connect-phone" id="connect-phone"></td>
+                  </tr>
+                  <tr>
+                    <td><input placeholder="Email" type="email" class="form-control" name="connect-email" id="connect-email" ></td>
+                  </tr>
+                  <tr>
+                    <td><textarea placeholder="Message" name="connect-message" id="connect-message" class="form-control" rows="3"></textarea></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="sub-btn mt-3">
+              <button type="submit" class="btn btn-primary" name="contact-submit" id="contact-submit"><span>Contact</span></button>
+            </div>
+  
           </div>
+  
           <div class="col-md-1 d-flex align-items-center justify-content-center  mt-2">
             
               <ul class="social-icons list-inline d-flex flex-column  mt-2">
@@ -509,47 +508,6 @@
   </script>
 
     <script>
-        document.getElementById('profile-next').addEventListener('click', function () {
-            document.getElementById('collapseOne').classList.remove('show');
-            document.getElementById('collapseTwo').classList.add('show');
-        });
-
-        dlNumberField.addEventListener('input', function() {
-        if (dlNumberField.value.trim() === '') {
-            nextButton.disabled = true;
-            dlNumberField.classList.add('empty_error');
-        } else {
-            nextButton.disabled = false;
-            dlNumberField.classList.remove('empty_error');
-        }
-    });
-
-
-        document.getElementById('driving-license-next').addEventListener('click', function () {
-           // Check if DL number is provided
-           var dlNumberField = document.getElementById('dl_number')
-            var dlNumber = document.getElementById('dl_number').value;
-            if (dlNumber.trim() === '') {
-                dlNumberField.classList.add('empty_error');
-
-                return;
-            }
-
-             // If DL number is valid, redirect to the next accordion
-            document.getElementById('collapseTwo').classList.remove('show');
-            document.getElementById('collapseThree').classList.add('show');
-        });
-
-        document.getElementById('vehicle-rc-next').addEventListener('click', function () {
-            document.getElementById('collapseThree').classList.remove('show');
-            document.getElementById('collapseFour').classList.add('show');
-        });
-
-        document.getElementById("pan-card-next").addEventListener('click' , function () {
-            document.getElementById('collapseFour').classList.remove('show');
-            document.getElementById('collapseFive').classList.add('show');
-
-        });
-
+       
     </script>
 </body>
