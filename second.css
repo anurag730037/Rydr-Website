@@ -309,19 +309,48 @@ align-items: center;
 .banner-btn-1{
 background-color: black !important;
 color: white !important;
-line-height: 35px;
+/* line-height: 35px; */
 text-align: center;
 font-weight: 600;
-
+padding: 10px 20px !important;
+border: 2px solid #cdcdcd !important;
+border-radius: 50px;
+background-color: #ffffff;
+-webkit-transition-duration: 500ms;
+-o-transition-duration: 500ms;
+transition-duration: 500ms;
 }
+
 
 .banner-btn-2{
   background-color:#c91919 !important;
   color: white !important;
-  line-height: 35px;
+  /* line-height: 35px; */
   text-align: center;
   font-weight: 600;
+  padding: 10px 20px !important;
+  border: 2px solid #cdcdcd !important;
+  border-radius: 50px;
+  background-color: #ffffff;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .banner-btn-1{
+    font-size: 13px !important;
+    padding: 5px 12px !important;
   }
+  .banner-btn-2{
+    font-size: 13px !important;
+    padding: 5px 12px !important;
+  }
+  .single-welcome-slide .welcome-text h5 {
+    margin-bottom: 30px;
+}
+}
+
 
 
 p{

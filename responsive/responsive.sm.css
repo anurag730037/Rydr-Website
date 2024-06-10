@@ -13,6 +13,8 @@
         width: 100%;
         
     }
+
+
     .customer-cards{
         width: 90%;
       }
@@ -178,3 +180,17 @@ width: 100%;
         font-size: 11px;
     }
 }
+
+@media only screen and (min-width: 100px) and (max-width: 400px) {
+    .banner-btn-1{
+      font-size: 13px !important;
+      padding: 5px 12px !important;
+    }
+    .banner-btn-2{
+      font-size: 13px !important;
+      padding: 5px 12px !important;
+    }
+    .single-welcome-slide .welcome-text h5 {
+      margin-bottom: 20px;
+  }
+  }

@@ -476,6 +476,9 @@ input:focus {
   .section-heading h2 {
     font-size: 42px;
   }
+  .rydr-btn {
+    padding: 0 20px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -533,7 +536,7 @@ input:focus {
   font-size: 14px;
   font-weight: 300;
   display: inline-block;
-  padding: 0 30px;
+  /* padding: 0 30px; */
   text-align: center;
   text-transform: capitalize;
   color: var(--primary-clr);
@@ -559,6 +562,14 @@ input:focus {
   background-color: var(--primary-clr);
   color: #ffffff;
 } */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  .rydr-btn {
+    min-width: 120px;
+    padding: 0 20px;
+  }
+}
 
 .rydr-btn.btn-2 {
   background-color: #cdcdcd;
@@ -1303,6 +1314,9 @@ input:focus {
   }
 }
 
+
+
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .single-welcome-slide .welcome-text h5 {
     font-size: 13px;
@@ -1313,6 +1327,8 @@ input:focus {
     /* margin-bottom: 20px; */
   }
 }
+
+
 
 body>#customer_signup_form {
   height: 100vh;
@@ -1382,7 +1398,7 @@ body>#customer_signup_form {
   }
 
   .single-welcome-slide .welcome-text h5 {
-    font-size: 17px;
+    font-size: 14px;
   }
 
   .single-welcome-slide .welcome-text .btn-2 {
@@ -1403,6 +1419,7 @@ body>#customer_signup_form {
   }
 
   .single-welcome-slide .welcome-text h5 {
+    font-size: 13px;
     margin-bottom: 40px;
   }
 
@@ -3946,6 +3963,14 @@ background-color: #ffe1e1;
 
   .testi-wrap {
     height: 550px;
+  }
+}
+
+
+@media only screen and (max-width: 766px) and (min-width: 401px) {
+  .single-welcome-slide .welcome-text h5 {
+    font-size: 14px ;
+    margin-bottom: 40px;
   }
 }
 
