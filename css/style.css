@@ -527,7 +527,7 @@ input:focus {
 .rydr-btn {
   position: relative;
   z-index: 1;
-  min-width: 160px;
+  min-width: 180px;
   height: 50px;
   line-height: 50px;
   font-size: 14px;
@@ -1156,7 +1156,7 @@ input:focus {
 
 .single-welcome-slide .welcome-text h2 {
   /* font-size: 72px; */
-  font-size: 45px;
+  font-size: 43px;
   display: block;
   line-height: 1.2;
   /* text-transform: capitalize; */
@@ -1252,7 +1252,7 @@ input:focus {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .single-welcome-slide .welcome-text h2 {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .coming-soon img {
@@ -1283,12 +1283,13 @@ input:focus {
 }
 
 .single-welcome-slide .welcome-text h2 span {
-  color: var(--primary-clr);
+  /* color: var(--primary-clr); */
+  font-weight: 600;
 }
 
 .single-welcome-slide .welcome-text h5 {
-  font-size: 22px;
-  color: #303030;
+  font-size: 18px;
+  color: #242424;
   /* margin-bottom: 60px; */
   margin-bottom: 40px;
   display: block;
@@ -1297,14 +1298,14 @@ input:focus {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .single-welcome-slide .welcome-text h5 {
-    font-size: 18px;
+    font-size: 17px;
     margin-bottom: 40px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .single-welcome-slide .welcome-text h5 {
-    font-size: 14px;
+    font-size: 13px;
     margin-bottom: 40px;
   }
 
@@ -1381,7 +1382,7 @@ body>#customer_signup_form {
   }
 
   .single-welcome-slide .welcome-text h5 {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .single-welcome-slide .welcome-text .btn-2 {
@@ -1398,7 +1399,7 @@ body>#customer_signup_form {
 @media only screen and (max-width: 400px) {
   .single-welcome-slide .welcome-text h2 {
     margin-bottom: 10px;
-    font-size: 35px;
+    font-size: 33px;
   }
 
   .single-welcome-slide .welcome-text h5 {

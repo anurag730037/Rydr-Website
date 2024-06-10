@@ -24,6 +24,8 @@ button{
   border: 2px solid #c30000 !important;
 }
 
+
+
 #scrollUp{
   box-shadow: 0 0px 2px 2px rgb(249 229 229) !important;
   width: 40px !important;
@@ -96,7 +98,9 @@ transition: opacity 0.5s ease, visibility 0.5s ease; /* Smooth transition */
   visibility: hidden;
 }
 
-.accordion-btn {
+
+
+.social-accordion-btn {
   background-color: #c30000;
   color: white;
   padding: 10px;
@@ -114,8 +118,22 @@ transition: opacity 0.5s ease, visibility 0.5s ease; /* Smooth transition */
   box-shadow: 0 0px 1px 1px rgb(249 229 229);
 }
 
-.accordion-btn:hover {
-  background-color: #8f0303;
+.accordion-item{
+  margin-top: 10px;
+  box-shadow: 4px 4px #afa9a9;
+  border-radius: 8px;
+}
+/* .accordion:active{
+  background-color: #f5bdbd !important;
+} */
+
+.accordion-button:not(.collapsed) {
+background-color: #f9e5e5 !important;
+color: #303030 !important;
+}
+
+.accordion-button:focus{
+  box-shadow: 0 0 0 0.10rem rgba(255, 238, 238, 0.993) !important;
 }
 
 .accordion-content {
@@ -172,10 +190,10 @@ transition: opacity 0.5s ease, visibility 0.5s ease; /* Smooth transition */
  position: relative;
   display: block;
  margin-bottom: 30px;
- text-transform: capitalize;
+ text-transform: uppercase;
   }
 
-.sub-heading::after{
+/* .sub-heading::after{
     content: "";
     text-align: center;
     background: #c30000;
@@ -186,7 +204,7 @@ transition: opacity 0.5s ease, visibility 0.5s ease; /* Smooth transition */
     right: 0;
     margin: 0 auto;
     bottom: -7px;
-}
+} */
 
 .master-head{
   margin-top: 100px !important;
@@ -243,7 +261,7 @@ text-transform: capitalize;
 
 .classy-navbar{
   /* background-color: transparent; */
-background-color: #f9e5e5;
+background-color: #ffffff;
 /* border-bottom: 1px solid #d34c4c; */
 
 }
@@ -434,19 +452,21 @@ border: 1px solid  white;
   flex-direction: row;
   justify-content: center;
   gap: 30px;
-  padding: 20px 0;
+  padding: 15px 0;
   align-items: stretch;
-  margin: 10px 0;
-  background-color: white;
+  margin-top: 10px;
+  background-color: #f9e5e5;
   box-shadow: 0 4px 8px rgba(245, 198, 198, 0.1);
   border-radius: 8px;
   transition: #fde8e8 1.5s ease-in-out, box-shadow 1.5s ease-in-out;
 }
-
+/* 
 .about-us-content:hover {
   background-color: #fde8e8;
   box-shadow: 0 8px 16px rgba(243, 187, 187, 0.2);
-}
+    background-image: linear-gradient(to right,#fab9b9, #fae5e5);
+
+} */
 
 
 .mission-content{
@@ -507,6 +527,7 @@ border: 1px solid  white;
   border-radius: 8px;
   overflow: hidden;
   
+  
 }
 
 .points p {
@@ -525,20 +546,22 @@ border: 1px solid  white;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px 20px 20px 0px;
+  padding: 20px 20px 20px 20px;
   box-sizing: border-box;
 }
 .why-choose-content {
-  background-color: #fde8e8;
+  background-color: #f9e5e5;
 }
 .why-choose-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+ 
 }
 .points {
   list-style-type: disc;
   padding-left: 20px;
+
 }
 .points li {
   margin-bottom: 10px;
@@ -575,7 +598,7 @@ border: 1px solid  white;
 }
 .bottom-box h4{
 margin: 0;
-padding: 5px 0;
+padding: 0;
 }
 
 
@@ -693,14 +716,20 @@ height: 100px;
 }
 
 
-.bottom-box.active {
-  /* background-color: #c51b1b;
-    color: white; */
-
-    border-bottom: 3px groove #C30000;
-    color: #000000;
+.bottom-box h4.active {
+  position: relative;
+  color: #000000;
 }
 
+.bottom-box h4.active::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px; /* Adjust based on the desired distance from the text */
+  width: 80%; /* Adjust based on how long you want the underline to be */
+  border-bottom: 3px groove #C30000;
+}
 .fixed-top {
   top: 0;  /* Position the "box" element at the top of the page */
   left: 50%;
@@ -728,14 +757,14 @@ height: 100px;
    width: 75%;
     /* align-items: stretch; */
     margin: 10px 0;
-    background-color: white;
+    background-color: #f9e5e5;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     
 }
 
 .safety-text p {
-  padding: 5px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
 }
 
 .text-shrink{
@@ -1523,14 +1552,15 @@ flex-wrap: wrap;
     .customer-cards-second {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         /* flex-wrap: wrap; */
     }
     .customer-item {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 40%;
+        width: 25%;
+        background-color: #f9e5e5;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         margin: 5px;
         padding: 15px;
