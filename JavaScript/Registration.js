@@ -36,6 +36,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     profileNextButton.addEventListener('click', function() {
         if (validateFields(profileFields, profileForm)) {
+
+            // Moving to Next Accordian
             document.getElementById('collapseOne').classList.remove('show');
             document.getElementById('collapseTwo').classList.add('show');
         }
@@ -94,6 +96,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Submit button click event
     document.getElementById("registration-submit").addEventListener('click', function () {
+        // event.preventDefault();
+
         var allFieldsFilled = true;
         var fieldsToCheck = document.querySelectorAll('#profile-form input, #profile-form textarea, #profile-form select, #driving-license-form input, #pan-card-form input, #aadhaar-card-form input');
         
@@ -132,7 +136,65 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
         else{
-            document.getElementById('main-form').submit();
+            // Gathering Data From All Forms
+
+            var profileForm = new FormData(document.getElementById('profile-form'));
+            var drivingLicenseForm = new FormData(document.getElementById('driving-license-form'));
+            var vehicleRcForm = new FormData(document.getElementById('vehicle-rc-form'));
+            var panCardForm = new FormData(document.getElementById('pan-card-form'));
+            var aadhaarCardForm = new FormData(document.getElementById('aadhaar-card-form'));
+
+              // Combine all data into a single object
+              var combinedData = {};
+
+            profileForm.forEach((value, key) => {
+                combinedData[key] = value;
+            });
+            drivingLicenseForm.forEach((value, key) => {
+                combinedData[key] = value;
+            });
+            vehicleRcForm.forEach((value, key) => {
+                combinedData[key] = value;
+            });
+            panCardForm.forEach((value, key) => {
+                combinedData[key] = value;
+            });
+            aadhaarCardForm.forEach((value, key) => {
+                combinedData[key] = value;
+            });
+
+            // FormData object for file uploads
+
+            var formData = new FormData();
+
+            formData.append('profile_image', document.getElementById('profile_image').files[0]);
+
+            formData.append('data' , JSON.stringify(combinedData))
+
+            fetch('https://httpbin.org/post' ,{
+                method:'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                alert('Form submitted successfully!');
+                // Reset all forms after successful submission
+                document.getElementById('profile-form').reset();
+                document.getElementById('driving-license-form').reset();
+                document.getElementById('vehicle-rc-form').reset();
+                document.getElementById('pan-card-form').reset();
+                document.getElementById('aadhaar-card-form').reset();
+                // Hide all accordions and show the first one
+                document.getElementById('collapseOne').classList.remove('show');
+                document.getElementById('collapseTwo').classList.remove('show');
+                document.getElementById('collapseThree').classList.remove('show');
+                document.getElementById('collapseFour').classList.remove('show');
+                document.getElementById('collapseFive').classList.remove('show');
+            })
+            .catch((error) => {
+                console.error('Error:', error)
+            })
         }
     });
 });

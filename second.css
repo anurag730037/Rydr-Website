@@ -340,11 +340,11 @@ transition-duration: 500ms;
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .banner-btn-1{
     font-size: 13px !important;
-    padding: 5px 12px !important;
+    padding: 6px 12px !important;
   }
   .banner-btn-2{
     font-size: 13px !important;
-    padding: 5px 12px !important;
+    padding: 6px 12px !important;
   }
   .single-welcome-slide .welcome-text h5 {
     margin-bottom: 30px;
