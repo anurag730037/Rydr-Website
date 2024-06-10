@@ -491,7 +491,7 @@ border: 1px solid  white;
   gap: 30px;
   padding: 15px 0;
   align-items: stretch;
-  margin-top: 10px;
+  margin-top: 15px;
   background-color: #f9e5e5;
   box-shadow: 0 4px 8px rgba(245, 198, 198, 0.1);
   border-radius: 8px;
@@ -961,9 +961,9 @@ line-height: 50px;
     align-items: center;
   }
 
-  .form-group textarea{
-    /* width: 70%; */
-  }
+  /* .form-group textarea{
+    width: 70%;
+  } */
 
   .form-group label{
     width: auto;
@@ -986,10 +986,15 @@ line-height: 50px;
     margin: 0;
   }
   
-  /* Firefox */
-  input[type=number] {
-    -moz-appearance: textfield;
-  }
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Standard */
+input[type=number] {
+  appearance: textfield;
+}
 
 
   /* About us Page  */
@@ -1045,9 +1050,9 @@ width: 92%
   height: 80px;
 }
 
-.adv-card-img:hover {
-  /* filter: grayscale(100%); */
-}
+/* .adv-card-img:hover {
+  filter: grayscale(100%);
+} */
 
 .adv-card-content {
   margin-top: 10px;
@@ -1059,9 +1064,6 @@ width: 92%
   text-align: center;
 }
 
-.adv-card-description {
- 
-}
 
 .next-btn{
   background-color: #C30000;
@@ -1251,9 +1253,6 @@ flex-wrap: wrap;
 
 /* Drive With us  */
 
-.font-family-Aileron{
-  /* font-family: "Aileron" !important; */
-}
 
 /* Drive With Us - Driver Registration  */
 
@@ -1654,9 +1653,9 @@ flex-wrap: wrap;
       margin-right: 0;
     }
 
-    .driver-items{
-      /* width: calc(25% - 20px); */
-    }
+    /* .driver-items{
+      width: calc(25% - 20px);
+    } */
 
     .item-img{
       width: 100%;
