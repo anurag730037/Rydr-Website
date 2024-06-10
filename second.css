@@ -306,6 +306,14 @@ align-items: center;
   font-weight: 500;
 }
 
+
+@media only screen and (max-width: 767px) {
+  .head-banner-text{
+    text-align: center;
+  }
+  
+}
+
 .banner-btn-1{
 background-color: black !important;
 color: white !important;

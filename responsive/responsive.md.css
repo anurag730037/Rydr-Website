@@ -40,7 +40,7 @@
     text-transform: capitalize;
   }
 
-  .sub-heading::after {
+  /* .sub-heading::after {
     content: "";
     text-align: center;
     background: #c30000;
@@ -51,7 +51,7 @@
     right: 0;
     margin: 0 auto;
     bottom: -3px;
-  }
+  } */
 
   h2 {
     font-size: 30px !important;
@@ -114,19 +114,7 @@
   }
 
 
-  @media only screen and (min-width: 100px) and (max-width: 767px) {
-    .banner-btn-1{
-      font-size: 13px !important;
-      padding: 6px 12px !important;
-    }
-    .banner-btn-2{
-      font-size: 13px !important;
-      padding: 6px 12px !important;
-    }
-    .single-welcome-slide .welcome-text h5 {
-      margin-bottom: 25px;
-  }
-  }
+
   /* Mission  */
 
   .mission-heading {
@@ -257,17 +245,12 @@
   .adv-card-title {
     text-align: center;
   }
-  .single-service-area h5{
+
+  .single-service-area h5 {
     font-size: 15px;
   }
 
-  /* Initiative  */
 
-  @media only screen and (max-width: 485px) {
-    .first-details {
-        font-size: 14px;
-    }
-}
 
   .methods {
     justify-content: space-around;
@@ -291,70 +274,111 @@
   }
 
 
-.methods-desc {
-  text-align: justify;
-  padding: 10px 0px;
+  .methods-desc {
+    text-align: justify;
+    padding: 10px 0px;
+  }
+
+  .planting-section p,
+  h1 {
+    padding-left: 0;
+  }
+
+  .initiative-top {
+    flex-direction: column;
+    /* Stack items vertically on smaller screens */
+    gap: 10px;
+    /* Adjust gap for smaller screens */
+  }
+
+  .initi-img {
+    align-self: center;
+    /* Center the image on smaller screens */
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .side-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .customer-item {
+    width: 45%;
+
+  }
+
+
+  .customer-cards-second {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /* Registration Form  */
+
+  .accordion {
+    width: 70%;
 }
-
-.planting-section p,
-h1 {
-  padding-left: 0;
-}
-
-.initiative-top {
-  flex-direction: column;
-  /* Stack items vertically on smaller screens */
-  gap: 10px;
-  /* Adjust gap for smaller screens */
-}
-
-.initi-img {
-  align-self: center;
-  /* Center the image on smaller screens */
-  object-fit: contain;
-  justify-content: center;
-  align-items: center;
-}
-
-.side-padding {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.customer-item {
-  width: 45%;
-
-}
-
-
-.customer-cards-second {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
 }
 
 @media only screen and (max-width: 670px) {
- 
+
   .new-safety-card-container {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 @media only screen and (max-width: 670px) {
   .customer-cards-second {
-      flex-direction: column;
+    flex-direction: column;
   }
-  .customer-item{
-      width: 100%;
+
+  .customer-item {
+    width: 100%;
   }
 
   .new-safety-card {
-      width: 80%;
-      height: auto;
-      
+    width: 80%;
+    height: auto;
+
+  }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 767px) {
+  .banner-btn-1 {
+    font-size: 13px !important;
+    padding: 6px 12px !important;
+  }
+
+  .banner-btn-2 {
+    font-size: 13px !important;
+    padding: 6px 12px !important;
+  }
+
+  .single-welcome-slide .welcome-text h5 {
+    margin-bottom: 25px;
+  }
+}
+
+/* Initiative  */
+
+@media only screen and (max-width: 485px) {
+  .first-details {
+    font-size: 14px;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+  .accordion {
+    width: 80%;
   }
 }
