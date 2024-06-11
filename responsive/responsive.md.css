@@ -75,6 +75,11 @@
     font-size: 25px;
   }
 
+  .social-accordion-btn {
+    width: 30px;
+    height: 30px;
+  }
+
   .sticky-button {
     width: 30px;
     height: 30px;
@@ -322,6 +327,10 @@
 
   .accordion {
     width: 70%;
+}
+
+.policy-section{
+  margin-top: 200px;
 }
 }
 

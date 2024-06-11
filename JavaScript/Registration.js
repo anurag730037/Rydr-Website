@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Profile section validation
     var profileNextButton = document.getElementById('profile-next');
     var profileForm = document.getElementById('profile-form');
@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
         var allFieldsFilled = true;
         var firstEmptyField = null;
 
-        fields.forEach(function(field) {
-            if ((field.type !== 'radio' && field.value.trim() === '') || 
+        fields.forEach(function (field) {
+            if ((field.type !== 'radio' && field.value.trim() === '') ||
                 (field.type === 'radio' && !form.querySelector('input[name="gender"]:checked'))) {
                 allFieldsFilled = false;
                 field.classList.add('empty_error');
@@ -34,12 +34,29 @@ document.addEventListener('DOMContentLoaded', function() {
         return allFieldsFilled;
     }
 
-    profileNextButton.addEventListener('click', function() {
-        if (validateFields(profileFields, profileForm)) {
+    // New function to update accordion icons
+    function updateAccordionIcon(accordionId, isValid) {
+        var accordionButton = document.querySelector(`#${accordionId} .accordion-button`);
+        var iconContainer = document.querySelector(`#${accordionId} .icon-container`);
+        if (isValid) {
+            accordionButton.classList.remove('error');
+            accordionButton.classList.add('success');
+            iconContainer.innerHTML = `<i class="fas fa-check-circle"></i>`;
+        } else {
+            accordionButton.classList.remove('success');
+            accordionButton.classList.add('error');
+            iconContainer.innerHTML = `<i class="fas fa-times-circle"></i>`;
+        }
+    }
 
-            // Moving to Next Accordian
+    profileNextButton.addEventListener('click', function () {
+        if (validateFields(profileFields, profileForm)) {
+            updateAccordionIcon('headingOne', true); // Success icon
+            // Moving to Next Accordion
             document.getElementById('collapseOne').classList.remove('show');
             document.getElementById('collapseTwo').classList.add('show');
+        } else {
+            updateAccordionIcon('headingOne', false); // Error icon
         }
     });
 
@@ -51,8 +68,10 @@ document.addEventListener('DOMContentLoaded', function() {
         if (dlNumber === '') {
             dlNumberField.classList.add('empty_error');
             dlNumberField.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            updateAccordionIcon('headingTwo', false); // Error icon
         } else {
             dlNumberField.classList.remove('empty_error');
+            updateAccordionIcon('headingTwo', true); // Success icon
             document.getElementById('collapseTwo').classList.remove('show');
             document.getElementById('collapseThree').classList.add('show');
         }
@@ -60,10 +79,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Vehicle RC section
     document.getElementById('vehicle-rc-next').addEventListener('click', function () {
+        // Assuming validation logic for Vehicle RC section is not needed
+        updateAccordionIcon('headingThree', true); // Success icon
         document.getElementById('collapseThree').classList.remove('show');
         document.getElementById('collapseFour').classList.add('show');
     });
-
 
     // PAN card section
     document.getElementById("pan-card-next").addEventListener('click', function () {
@@ -73,8 +93,10 @@ document.addEventListener('DOMContentLoaded', function() {
         if (panNumber === '') {
             panNumberField.classList.add('empty_error');
             panNumberField.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            updateAccordionIcon('headingFour', false); // Error icon
         } else {
             panNumberField.classList.remove('empty_error');
+            updateAccordionIcon('headingFour', true); // Success icon
             document.getElementById('collapseFour').classList.remove('show');
             document.getElementById('collapseFive').classList.add('show');
         }
@@ -88,39 +110,56 @@ document.addEventListener('DOMContentLoaded', function() {
         if (aadharNumber === '' || aadharNumber.length !== 12) {
             aadharNumberField.classList.add('empty_error');
             aadharNumberField.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            updateAccordionIcon('headingFive', false); // Error icon
         } else {
             aadharNumberField.classList.remove('empty_error');
+            updateAccordionIcon('headingFive', true); // Success icon
             document.getElementById('collapseFive').classList.remove('show');
         }
     });
 
     // Submit button click event
-    document.getElementById("registration-submit").addEventListener('click', function () {
-        // event.preventDefault();
-
+    document.getElementById("registration-submit").addEventListener('click', function (event) {
+        event.preventDefault();
         var allFieldsFilled = true;
         var fieldsToCheck = document.querySelectorAll('#profile-form input, #profile-form textarea, #profile-form select, #driving-license-form input, #pan-card-form input, #aadhaar-card-form input');
-        
-        fieldsToCheck.forEach(function(field) {
-            if ((field.type !== 'radio' && field.value.trim() === '') || 
+
+        // Track validation status for each section
+        var sectionsValid = {
+            headingOne: true,
+            headingTwo: true,
+            headingThree: true,
+            headingFour: true,
+            headingFive: true
+        };
+
+        fieldsToCheck.forEach(function (field) {
+            if ((field.type !== 'radio' && field.value.trim() === '') ||
                 (field.type === 'radio' && !document.querySelector('input[name="gender"]:checked'))) {
                 allFieldsFilled = false;
                 field.classList.add('empty_error');
+
                 // Highlight the accordion with a red border
                 var accordion = field.closest('.accordion-item');
                 if (accordion) {
-                    accordion.classList.add('error');
+                    var accordionId = accordion.querySelector('.accordion-header').id;
+                    sectionsValid[accordionId] = false;
+
                     var accordionButton = accordion.querySelector('.accordion-button');
                     if (accordionButton) {
                         accordionButton.classList.add('error');
                     }
                 }
-            }else {
+            } else {
                 field.classList.remove('empty_error');
                 // Remove the red border from the accordion
                 var accordion = field.closest('.accordion-item');
                 if (accordion) {
-                    accordion.classList.remove('error');
+                    var accordionId = accordion.querySelector('.accordion-header').id;
+                    if (sectionsValid[accordionId] !== false) {
+                        sectionsValid[accordionId] = true;
+                    }
+
                     var accordionButton = accordion.querySelector('.accordion-button');
                     if (accordionButton) {
                         accordionButton.classList.remove('error');
@@ -129,23 +168,26 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        if(!allFieldsFilled){
+        // Update accordion icons based on section validation
+        for (var section in sectionsValid) {
+            updateAccordionIcon(section, sectionsValid[section]);
+        }
+
+        if (!allFieldsFilled) {
             var firstEmptyField = document.querySelector('.empty_error');
             if (firstEmptyField) {
                 firstEmptyField.scrollIntoView({ behavior: 'smooth', block: 'center' });
             }
-        }
-        else{
+        } else {
             // Gathering Data From All Forms
-
             var profileForm = new FormData(document.getElementById('profile-form'));
             var drivingLicenseForm = new FormData(document.getElementById('driving-license-form'));
             var vehicleRcForm = new FormData(document.getElementById('vehicle-rc-form'));
             var panCardForm = new FormData(document.getElementById('pan-card-form'));
             var aadhaarCardForm = new FormData(document.getElementById('aadhaar-card-form'));
 
-              // Combine all data into a single object
-              var combinedData = {};
+            // Combine all data into a single object
+            var combinedData = {};
 
             profileForm.forEach((value, key) => {
                 combinedData[key] = value;
@@ -164,37 +206,51 @@ document.addEventListener('DOMContentLoaded', function() {
             });
 
             // FormData object for file uploads
-
             var formData = new FormData();
-
             formData.append('profile_image', document.getElementById('profile_image').files[0]);
+            formData.append('data', JSON.stringify(combinedData));
 
-            formData.append('data' , JSON.stringify(combinedData))
-
-            fetch('https://httpbin.org/post' ,{
-                method:'POST',
+            fetch('https://httpbin.org/post', {
+                method: 'POST',
                 body: formData
             })
-            .then(response => response.json())
-            .then(data => {
-                console.log('Success:', data);
-                alert('Form submitted successfully!');
-                // Reset all forms after successful submission
-                document.getElementById('profile-form').reset();
-                document.getElementById('driving-license-form').reset();
-                document.getElementById('vehicle-rc-form').reset();
-                document.getElementById('pan-card-form').reset();
-                document.getElementById('aadhaar-card-form').reset();
-                // Hide all accordions and show the first one
-                document.getElementById('collapseOne').classList.remove('show');
-                document.getElementById('collapseTwo').classList.remove('show');
-                document.getElementById('collapseThree').classList.remove('show');
-                document.getElementById('collapseFour').classList.remove('show');
-                document.getElementById('collapseFive').classList.remove('show');
-            })
-            .catch((error) => {
-                console.error('Error:', error)
-            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Success:', data);
+                    alert('Form submitted successfully!');
+                    // Reset all forms after successful submission
+                    document.getElementById('profile-form').reset();
+                    document.getElementById('driving-license-form').reset();
+                    document.getElementById('vehicle-rc-form').reset();
+                    document.getElementById('pan-card-form').reset();
+                    document.getElementById('aadhaar-card-form').reset();
+
+                    // Remove all error classes and icons
+                    document.querySelectorAll('.accordion-button').forEach(function (button) {
+                        button.classList.remove('error', 'success');
+                    });
+
+                    document.querySelectorAll('.icon-container').forEach(function (iconContainer) {
+                        iconContainer.innerHTML = ''; // Clear the icon HTML
+                    });
+
+
+                    // Hide all accordions and show the first one
+                    document.getElementById('collapseOne').classList.remove('show');
+                    document.getElementById('collapseTwo').classList.remove('show');
+                    document.getElementById('collapseThree').classList.remove('show');
+                    document.getElementById('collapseFour').classList.remove('show');
+                    document.getElementById('collapseFive').classList.remove('show');
+                    // Reset accordion icons and heading colors
+                    // updateAccordionIcon('headingOne', false);
+                    // updateAccordionIcon('headingTwo', false);
+                    // updateAccordionIcon('headingThree', false);
+                    // updateAccordionIcon('headingFour', false);
+                    // updateAccordionIcon('headingFive', false);
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                });
         }
     });
 });

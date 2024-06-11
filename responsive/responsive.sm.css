@@ -1,42 +1,46 @@
 @media only screen and (max-width: 425px) {
- 
-    .login{
-        width: 75%;}
-      
-    .second-top{
+
+    .login {
+        width: 75%;
+    }
+
+    .second-top {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .top-left{
+
+    .top-left {
         width: 100%;
-        
+
     }
 
 
-    .customer-cards{
+    .customer-cards {
         width: 90%;
-      }
-      .customer-item{
-        width: 90%;
-      }
+    }
 
-    .customer-cards{
+    .customer-item {
+        width: 90%;
+    }
+
+    .customer-cards {
         flex-direction: column;
     }
+
     /* .customer-cards img {
         width: 100px;
         height: auto;
     } */
 
-   /* .driver-cards img{
+    /* .driver-cards img{
     width: 140px;
    } */
 
-   .customer-safety-cards{
-    width: 75%;
-   }
+    .customer-safety-cards {
+        width: 75%;
+    }
 
     /* .driver-cards{
         display: block;
@@ -46,18 +50,20 @@
 
 
     .mission-content h3 {
-        font-size: 18px; /* Decrease heading font size for smaller screens */
-      }
-      
-      .mission-content p {
-        font-size: 14px; /* Decrease paragraph font size for smaller screens */
-      }
+        font-size: 18px;
+        /* Decrease heading font size for smaller screens */
+    }
 
-    .social-icons{
+    .mission-content p {
+        font-size: 14px;
+        /* Decrease paragraph font size for smaller screens */
+    }
+
+    .social-icons {
         flex-direction: row !important;
         margin-top: 15px;
     }
-   
+
     .new-safety-card-container {
         flex-direction: column;
         align-items: center;
@@ -73,7 +79,7 @@
     flex-direction: column;
     } */
 
-    .safety-top img{
+    .safety-top img {
         width: 200px;
     }
 
@@ -81,38 +87,38 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    
+
     }
 
-    .safety-page-heading{
+    .safety-page-heading {
         margin: 0px 20px;
     }
 
-    
-    .safety-text p{
-width: 100%;
+
+    .safety-text p {
+        width: 100%;
     }
 
     /* Advantages  */
 
-   .adv-card {
-    flex-direction: column;
-    border: 0px;
-    
+    .adv-card {
+        flex-direction: column;
+        border: 0px;
+
     }
 
-    .adv-card-img{
+    .adv-card-img {
         height: 60px;
     }
-    
 
-.adv-card-title{
-    font-size: 12px;
-}
 
-.single-service-area h5 {
-    font-size: 12px;
-}
+    .adv-card-title {
+        font-size: 12px;
+    }
+
+    .single-service-area h5 {
+        font-size: 12px;
+    }
 
     /* Initiative  */
 
@@ -120,13 +126,15 @@ width: 100%;
         font-size: 14px;
     }
 
-    .methods{
+    .methods {
         flex-direction: column;
     }
-    .method-card {
-     width: auto;}
 
-     .method-card img {
+    .method-card {
+        width: auto;
+    }
+
+    .method-card img {
         width: 100%;
         margin: 20px;
         /* object-fit: cover; */
@@ -137,11 +145,12 @@ width: 100%;
         font-size: 15px;
     }
 
-        .planting-section p {
-            font-size: 15px;
-            padding: 0 8px;
-        }
-    .initiative-top{
+    .planting-section p {
+        font-size: 15px;
+        padding: 0 8px;
+    }
+
+    .initiative-top {
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -149,29 +158,30 @@ width: 100%;
         text-align: center;
     }
 
-    .initi-img{
+    .initi-img {
         height: 200px;
     }
 
-    .planting-section p,h1{
+    .planting-section p,
+    h1 {
         padding-left: 0;
-      }
+    }
 }
 
 
 @media only screen and (max-width: 390px) {
-    .first-details{
+    .first-details {
         font-size: 13px;
     }
 }
 
 @media only screen and (max-width: 370px) {
-    .adv-section{
-      flex-direction: column;
-      align-items: center;
+    .adv-section {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .adv-card{
+    .adv-card {
         width: 70%;
     }
 }
@@ -183,17 +193,19 @@ width: 100%;
 }
 
 @media only screen and (min-width: 100px) and (max-width: 400px) {
-    .banner-btn-1{
-      font-size: 13px !important;
-      padding: 6px 12px !important;
-      text-align:center ;
+    .banner-btn-1 {
+        font-size: 13px !important;
+        padding: 6px 12px !important;
+        text-align: center;
     }
-    .banner-btn-2{
-      font-size: 13px !important;
-      padding: 6px 12px !important;
-      text-align: center;
+
+    .banner-btn-2 {
+        font-size: 13px !important;
+        padding: 6px 12px !important;
+        text-align: center;
     }
+
     .single-welcome-slide .welcome-text h5 {
-      margin-bottom: 20px;
-  }
-  }
+        margin-bottom: 20px;
+    }
+}
