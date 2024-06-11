@@ -196,6 +196,8 @@
     flex-direction: row;
   }
 
+  
+
   .new-safety-card {
     width: 200px;
     height: 100%;
@@ -229,6 +231,29 @@
 
   .safety-text {
     padding: 0px;
+  }
+
+   /* Styles for screens smaller than 768px */
+   .cust-saf-points {
+    padding: 10px;
+    /* Reduce padding on smaller screens */
+  }
+
+  .red-cust {
+    flex-direction: column;
+    /* Stack cards vertically on small screens */
+  }
+
+  .safety-card {
+    width: 100%;
+    /* Make each card full width on small screens */
+    margin: 5px 0;
+    /* Adjust margins for smaller screens */
+  }
+
+  .safety-card-body p {
+    font-size: 12px;
+    /* Adjust font size for better readability */
   }
 
   .customer-safety-cards {
@@ -388,6 +413,6 @@
 @media only screen and (max-width: 500px) {
 
   .accordion {
-    width: 80%;
+    width: 85%;
   }
 }

@@ -1,5 +1,18 @@
 @media only screen and (max-width: 425px) {
 
+    .know-more {
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+
+    #scrollUp {
+        /* right: 7px !important; */
+    }
+
+    .sticky-button {
+        left: 8px;
+    }    
+
     .login {
         width: 75%;
     }
@@ -13,9 +26,7 @@
 
     .top-left {
         width: 100%;
-
     }
-
 
     .customer-cards {
         width: 90%;

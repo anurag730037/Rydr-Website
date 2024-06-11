@@ -1,7 +1,15 @@
+
+/* Base styles */
+body {
+  font-size: 16px;
+  /* Adjust as needed */
+  margin: 0;
+  padding: 0;
+}
+
 p {
   font-family: poppins !important;
   color: #212529;
-
 }
 
 h1,
@@ -21,6 +29,50 @@ button {
   text-transform: uppercase;
 }
 
+.section-margin {
+  margin-top: 70px;
+}
+
+.page-margin {
+  margin-top: 80px;
+}
+
+.sub-heading {
+  color: #000000;
+  font-size: 35px;
+  line-height: 60px;
+  text-align: center;
+  margin: 40px auto;
+  font-weight: 700;
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+/* .sub-heading::after{
+    content: "";
+    text-align: center;
+    background: #c30000;
+    width: 90px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -7px;
+} */
+
+.master-head {
+  margin-top: 100px !important;
+  /* margin-bottom: -50px; */
+}
+
+.super-sub-points {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
 .whole-page {
   margin: 0 20px;
 }
@@ -29,15 +81,12 @@ button {
   border: 2px solid #c30000 !important;
 }
 
-
-
 #scrollUp {
   box-shadow: 0 0px 2px 2px rgb(249 229 229) !important;
   width: 40px !important;
   height: 40px !important;
   right: 60px !important;
   bottom: 55px !important;
-
 }
 
 .fa-angle-up:before {
@@ -69,8 +118,9 @@ button {
 }
 
 .sticky-button:hover {
-  background-color: darkred;
+  background-color: #c30000;
   color: white;
+  border-color: white;
 }
 
 .fa-angle-left:hover {
@@ -178,52 +228,6 @@ button {
 }
 
 
-
-
-
-.section-margin {
-  margin-top: 70px;
-}
-
-.page-margin {
-  margin-top: 80px;
-}
-
-.sub-heading {
-  color: #000000;
-  font-size: 35px;
-  line-height: 60px;
-  text-align: center;
-  margin: 40px auto;
-  font-weight: 700;
-  position: relative;
-  display: block;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-}
-
-/* .sub-heading::after{
-    content: "";
-    text-align: center;
-    background: #c30000;
-    width: 90px;
-    height: 2px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    bottom: -7px;
-} */
-
-.master-head {
-  margin-top: 100px !important;
-  /* margin-bottom: -50px; */
-}
-
-.super-sub-points {
-  font-size: 20px;
-  text-transform: capitalize;
-}
 
 /* Banner Section  */
 
@@ -402,6 +406,7 @@ p {
   color: white;
 }
 
+/* Section  */
 
 .accordion {
   width: 70%;
@@ -433,6 +438,27 @@ p {
   align-items: center;
   justify-content: center;
   padding: 5px 20px;
+}
+
+/* Added CSS for form field layout */
+.form-group.row {
+  margin-bottom: 5px;
+  /* Reduce space between fields */
+}
+
+.form-group button {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .form-group textarea{
+    width: 70%;
+  } */
+
+.form-group label {
+  width: auto;
 }
 
 #toggle-password {
@@ -632,9 +658,6 @@ p {
 /* why choose ends  */
 
 
-
-
-
 /* <!-- Coustomers --> */
 
 .box {
@@ -653,12 +676,10 @@ p {
   align-items: center;
   text-align: center;
   justify-content: center;
-
 }
 
 .bottom-box {
   width: 50%;
-
 }
 
 .bottom-box h4 {
@@ -674,6 +695,7 @@ p {
 }
 
 .carousel-item {
+  margin-right: 0;
   transition: transform 0.6s ease, opacity 0.6s ease;
 }
 
@@ -688,14 +710,20 @@ p {
   justify-content: space-around;
   align-items: center;
   justify-content: center;
+  padding: 20px;
+  display: flex;
+  /* Change flex direction to column */
+  align-items: center;
+  /* Center items vertically */
+  gap: 20px;
+  /* Increase gap between cards */
   border-radius: 20px;
+  font-size: 16px;
+  /* Increase font size for better readability */
 }
-
-
 
 .customer-cards h5 {
   text-align: center;
-
 }
 
 /* New Cust Card  */
@@ -703,16 +731,15 @@ p {
 .safety-page {
   display: flex;
   justify-content: center;
-
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .cust-container {
   /* display: grid; */
   /* grid-template-columns: 1fr 1fr; */
-  gap: 20px;
-  background-color: #fde8e8;
-  display: flex;
-
+  
 }
 
 .new-cust-card {
@@ -725,8 +752,10 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
 }
-
 
 .new-cust-card-header img {
   width: 100%;
@@ -898,6 +927,10 @@ height: 100px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
 }
 
 .footer-section {
@@ -993,26 +1026,7 @@ height: 100px;
 }
 
 
-/* Added CSS for form field layout */
-.form-group.row {
-  margin-bottom: 5px;
-  /* Reduce space between fields */
-}
 
-.form-group button {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* .form-group textarea{
-    width: 70%;
-  } */
-
-.form-group label {
-  width: auto;
-}
 
 table td {
 
@@ -1042,36 +1056,6 @@ input[type=number] {
   appearance: textfield;
 }
 
-
-/* About us Page  */
-
-.about-points {
-  padding: 50px 30px;
-}
-
-.about-part-points {
-  padding: 20px 10px 20px 10px;
-  align-items: stretch;
-  margin: 10px 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-
-/* About us Page End  */
-
-/* Privacy-Poilicy */
-
-.sub-points {
-  margin-left: 20px;
-}
-
-title {
-  margin-top: 100px !important;
-}
-
-.terms_main p {
-  color: #212529;
-}
 
 /* Advantages Page  */
 
@@ -1305,7 +1289,6 @@ img {
 
 /* Drive With us  */
 
-
 /* Drive With Us - Driver Registration  */
 
 .error {
@@ -1321,25 +1304,45 @@ img {
 }
 
 
+/* About us Page  */
+
+.about-points {
+  padding: 50px 30px;
+}
+
+.about-part-points {
+  padding: 20px 10px 20px 10px;
+  align-items: stretch;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* About us Page End  */
+
+/* Privacy-Poilicy */
+
+.sub-points {
+  margin-left: 20px;
+}
+
+title {
+  margin-top: 100px !important;
+}
+
+.terms_main p {
+  color: #212529;
+}
+
+.terms_main ol li {
+  color: #282828;
+  font-weight: 500;
+}
+
 
 /* TESTING CSS  */
 
-.customer-cards,
-.driver-cards {
 
-
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  /* Change flex direction to column */
-  align-items: center;
-  /* Center items vertically */
-  gap: 20px;
-  /* Increase gap between cards */
-  border-radius: 20px;
-  font-size: 16px;
-  /* Increase font size for better readability */
-}
 
 .customer-safety-cards {
   /* background-color: #fde8e8; */
@@ -1369,12 +1372,6 @@ img {
   width: 100%;
 }
 
-.card {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 10px;
-}
-
 .card-img-top {
   width: 100%;
   height: auto;
@@ -1396,64 +1393,6 @@ img {
 }
 
 
-
-/* Editing  */
-/* .customer-safety-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  justify-content: center;
-  margin: 20px;
-}
-
-.safety-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: transparent;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
-  padding: 20px;
-  text-align: center;
-}
-
-.safety-card-img {
-  width: 100%;
-  height: auto;
-  max-height: 150px;
-  object-fit: cover;
-}
-
-.safety-card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex: 1;
-}
-
-.safety-card-title {
-  font-size: 1.5rem;
-  margin: 10px 0;
-}
-
-.safety-card-text {
-  font-size: 1rem;
-  margin: 10px 0;
-}
-
-@media (max-width: 576px) {
-  .customer-safety-cards {
-      grid-template-columns: 1fr;
-      gap: 10px;
-  }
-
-  .safety-card {
-      padding: 10px;
-  }
-} */
-
 /* New Safety  */
 .new-safety-card-section {
   padding: 20px 40px;
@@ -1473,7 +1412,6 @@ img {
 .new-safety-card {
   display: flex;
   flex-direction: column;
-
   width: 40%;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -1548,21 +1486,12 @@ img {
   align-items: center;
 }
 
-
-
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .new-safety-card-container {
     flex-direction: column;
     align-items: center;
   }
-}
-
-
-.safety-page {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
+} */
 
 .cust-container {
   display: flex;
@@ -1570,22 +1499,11 @@ img {
   gap: 20px;
   justify-content: center;
   max-width: 1200px;
+  background-color: #fde8e8;
+  display: flex;  
+  flex-wrap: wrap;
 }
 
-.new-cust-card {
-
-  padding: 20px;
-  border-radius: 10px;
-
-  text-align: center;
-  flex: 1;
-  min-width: 250px;
-  max-width: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
 
 .new-cust-card-img-container {
   width: 100%;
@@ -1637,13 +1555,9 @@ img {
   }
 }
 
-
-
 /* New Safety End  */
 
-
 /* ------------------------------------------------------------------------------------------------------------------------- */
-
 
 .ellipse {
   display: -webkit-box;
@@ -1728,10 +1642,6 @@ img {
   opacity: 1;
 }
 
-.carousel-item {
-  margin-right: 0;
-}
-
 /* .driver-items{
       width: calc(25% - 20px);
     } */
@@ -1743,40 +1653,6 @@ img {
 
 
 /* --------------------------------------- */
-/* Base styles */
-body {
-  font-size: 16px;
-  /* Adjust as needed */
-  margin: 0;
-  padding: 0;
-}
-
-/* Responsive layout based on media queries */
-@media (max-width: 768px) {
-
-  /* Styles for screens smaller than 768px */
-  .cust-saf-points {
-    padding: 10px;
-    /* Reduce padding on smaller screens */
-  }
-
-  .red-cust {
-    flex-direction: column;
-    /* Stack cards vertically on small screens */
-  }
-
-  .safety-card {
-    width: 100%;
-    /* Make each card full width on small screens */
-    margin: 5px 0;
-    /* Adjust margins for smaller screens */
-  }
-
-  .safety-card-body p {
-    font-size: 12px;
-    /* Adjust font size for better readability */
-  }
-}
 
 /* Default styles for all screen sizes */
 .cust-saf-points {
@@ -1795,19 +1671,16 @@ body {
   /* align-items: center; */
   margin: 10px 0;
   /* Add some margin between rows */
-
 }
 
 .safety-card {
   display: flex;
   flex-direction: column;
-
   align-items: center;
   width: calc(35% - 20px);
   /* Account for margins on larger screens */
   margin: 10px;
   padding: 10px;
-
   border-radius: 8px;
   /* Add subtle rounded corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -1833,9 +1706,3 @@ body {
   /* Improve readability on all screens */
 }
 
-/* Privacy-Policy  */
-
-.terms_main ol li {
-  color: #282828;
-   font-weight: 500;
-}

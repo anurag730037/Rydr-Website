@@ -1,22 +1,23 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Profile section validation
-    var profileNextButton = document.getElementById('profile-next');
-    var profileForm = document.getElementById('profile-form');
-    var profileFields = profileForm.querySelectorAll('input, textarea, select');
+    // --- Profile Section Validation ---
+    const profileNextButton = document.getElementById('profile-next');
+    const profileForm = document.getElementById('profile-form');
+    const profileFields = profileForm.querySelectorAll('input, textarea, select');
 
-    // Calculate the maximum allowable date (18 years ago from today)
-    var today = new Date();
-    var maxDate = new Date(today.getFullYear() - 18, today.getMonth(), today.getDate());
-    var maxDateString = maxDate.toISOString().split('T')[0];
-    document.getElementById('dob').setAttribute('max', maxDateString);
+    // Calculate the maximum allowed date (18 years ago from today)
+    const today = new Date();
+    const maxDate = new Date(today.getFullYear() - 18, today.getMonth(), today.getDate());
+    document.getElementById('dob').setAttribute('max', maxDate.toISOString().split('T')[0]);
 
     function validateFields(fields, form) {
-        var allFieldsFilled = true;
-        var firstEmptyField = null;
+        let allFieldsFilled = true;
+        let firstEmptyField = null;
 
         fields.forEach(function (field) {
-            if ((field.type !== 'radio' && field.value.trim() === '') ||
-                (field.type === 'radio' && !form.querySelector('input[name="gender"]:checked'))) {
+            if (
+                (field.type !== 'radio' && field.value.trim() === '') ||
+                (field.type === 'radio' && !form.querySelector('input[name="gender"]:checked'))
+            ) {
                 allFieldsFilled = false;
                 field.classList.add('empty_error');
                 if (!firstEmptyField) {
@@ -34,25 +35,25 @@ document.addEventListener('DOMContentLoaded', function () {
         return allFieldsFilled;
     }
 
-    // New function to update accordion icons
+    // --- Accordion Icon Update Function ---
     function updateAccordionIcon(accordionId, isValid) {
-        var accordionButton = document.querySelector(`#${accordionId} .accordion-button`);
-        var iconContainer = document.querySelector(`#${accordionId} .icon-container`);
+        const accordionButton = document.querySelector(`#${accordionId} .accordion-button`);
+        const iconContainer = document.querySelector(`#${accordionId} .icon-container`);
         if (isValid) {
             accordionButton.classList.remove('error');
             accordionButton.classList.add('success');
-            iconContainer.innerHTML = `<i class="fas fa-check-circle"></i>`;
+            iconContainer.innerHTML = '<i class="fas fa-check-circle"></i>';
         } else {
             accordionButton.classList.remove('success');
             accordionButton.classList.add('error');
-            iconContainer.innerHTML = `<i class="fas fa-times-circle"></i>`;
+            iconContainer.innerHTML = '<i class="fas fa-times-circle"></i>';
         }
     }
 
+    // --- Profile Next Button Click Event ---
     profileNextButton.addEventListener('click', function () {
         if (validateFields(profileFields, profileForm)) {
             updateAccordionIcon('headingOne', true); // Success icon
-            // Moving to Next Accordion
             document.getElementById('collapseOne').classList.remove('show');
             document.getElementById('collapseTwo').classList.add('show');
         } else {
@@ -60,10 +61,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Driving License section
+    // --- Driving License Section ---
     document.getElementById('driving-license-next').addEventListener('click', function () {
-        var dlNumberField = document.getElementById('dl_number');
-        var dlNumber = dlNumberField.value.trim();
+        const dlNumberField = document.getElementById('dl_number');
+        const dlNumber = dlNumberField.value.trim();
 
         if (dlNumber === '') {
             dlNumberField.classList.add('empty_error');
@@ -77,13 +78,14 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Vehicle RC section
+    // --- Vehicle RC Section (Assuming no validation needed)---
     document.getElementById('vehicle-rc-next').addEventListener('click', function () {
-        // Assuming validation logic for Vehicle RC section is not needed
         updateAccordionIcon('headingThree', true); // Success icon
         document.getElementById('collapseThree').classList.remove('show');
         document.getElementById('collapseFour').classList.add('show');
     });
+
+
 
     // PAN card section
     document.getElementById("pan-card-next").addEventListener('click', function () {
@@ -139,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 allFieldsFilled = false;
                 field.classList.add('empty_error');
 
-                // Highlight the accordion with a red border
+                // Highlight the accordion with a red Color
                 var accordion = field.closest('.accordion-item');
                 if (accordion) {
                     var accordionId = accordion.querySelector('.accordion-header').id;
@@ -152,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             } else {
                 field.classList.remove('empty_error');
-                // Remove the red border from the accordion
+                // Remove the red color from the accordion
                 var accordion = field.closest('.accordion-item');
                 if (accordion) {
                     var accordionId = accordion.querySelector('.accordion-header').id;
@@ -217,7 +219,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 .then(response => response.json())
                 .then(data => {
                     console.log('Success:', data);
+                    console.log(data.form.data)
                     alert('Form submitted successfully!');
+
                     // Reset all forms after successful submission
                     document.getElementById('profile-form').reset();
                     document.getElementById('driving-license-form').reset();
@@ -231,7 +235,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     });
 
                     document.querySelectorAll('.icon-container').forEach(function (iconContainer) {
-                        iconContainer.innerHTML = ''; // Clear the icon HTML
+                        iconContainer.innerHTML = '';    // Clear the icon HTML
                     });
 
 
