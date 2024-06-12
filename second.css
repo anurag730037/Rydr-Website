@@ -1077,7 +1077,7 @@ input[type=number] {
 }
 
 .adv-card-img {
-  height: 80px;
+  height: 60px;
 }
 
 /* .adv-card-img:hover {
@@ -1092,6 +1092,7 @@ input[type=number] {
   padding-left: 5px;
   color: #212529;
   text-align: center;
+  font-size: 15px;
 }
 
 
